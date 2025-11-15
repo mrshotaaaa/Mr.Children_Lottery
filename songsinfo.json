@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "Title": "Your Song",
+    "album": "『重力と呼吸』",
+    "albumdetail": "19thAlbum",
+    "release": "2018.10.3",
+    "image": "重力と呼吸.png",
+    "Lyrics": "そう君じゃなきゃ\n君じゃなきゃ",
+        "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/13fJ9LxecEw8QyRhqGxwcP?si=2f5f38ede0824546"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/FU-Y-H0E8xw?si=nk3tWxAu12Y-amy9"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "Title": "終わりなき旅",
+    "album": "『DISCOVERY』",
+    "release": 1998,
+    "Lyrics": "高ければ高い壁の方が\n登った時気持ちいいもんな",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3XfCKKcnArQSyJnZGP7ymx?si=371a7e5145c343b4"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/QCiERL2m3Ss?si=FMY0kcxgRZPzmsIm"
+      }
+    ]
+  }
+]
