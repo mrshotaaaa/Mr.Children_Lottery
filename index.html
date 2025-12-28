@@ -3,60 +3,51 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>YourSong – Mobile 9:16 + MS Gothic + Sync FadeOut</title>
+<title>YourSong – Mobile 9:16 + MS Gothic + Fade</title>
 
-<!-- =========================
-  (1) 設定だけここを触ればOK
-========================= -->
 <style>
   :root{
-    /* ===== フェード時間（CSS変数：JSが起動時に上書き） ===== */
-    --screen-fade-ms: 2000ms;   /* 画面切替（screen1⇄screen2） */
-    --text-fade-ms:   3500ms;   /* 文字（タイトル／歌詞行／情報）のフェード */
+    --screen-fade-ms: 2000ms;   /* 画面切替 */
+    --text-fade-ms:   3500ms;   /* 文字フェード */
+
+    --c-bg: #fff; --c-text:#111; --accent:#2563eb;
 
     /* フォント */
-    --font-lyrics: 20px;                         /* 歌詞の基準サイズ */
-    --font-title: clamp(26px, 5vw, 56px);        /* タイトル（可変） */
-    --font-info: 16px;                           /* 情報テキスト */
+    --font-title: 40px;
+    --font-lyrics: 18px;
+    --font-info: 16px;
 
-    /* 配色 */
-    --c-bg: #ffffff;     /* 画面背景（歌詞用） */
-    --c-text: #111111;   /* 文字：黒 */
-    --accent: #0b6bff;
-
-    /* 歌詞位置（ステージ内） */
-    --lyrics-h: center;  --lyrics-v: center;     /* start|center|end */
-    --lyrics-x: 0px;     --lyrics-y: 0px;
+    /* 歌詞の配置 */
+    --lyrics-h: center; --lyrics-v: center;
+    --lyrics-x: 0px; --lyrics-y: 0px;
 
     /* タイトル（左上） */
-    --title-left: 16px;  --title-top: 16px;
+    --title-left: 16px;  --title-top: 50px;
   }
 
-  /* =========================
-     (固定) ビューポート全体
-     ========================= */
   *{box-sizing:border-box}
   html,body{height:100%}
   body{
     margin:0; display:grid; place-items:center;
-    background:#000; /* ステージ外は黒（レターボックス） */
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
-      "Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+    background:#000;
+    font-family:
+      "Hiragino Mincho ProN",
+      "Yu Mincho",
+      "MS PMincho",
+      "MS Mincho",
+      "Noto Serif JP",
+      serif;
   }
 
-  /* =========================
-     ステージ（常に 9:16）
-     ========================= */
   .stage{
     position:relative;
-    aspect-ratio: 9 / 16; /* ★ スマホ比 */
+    aspect-ratio: 9 / 16;
     width: min(100vw, calc(100vh * 9 / 16));
     height: min(100vh, calc(100vw * 16 / 9));
     overflow:hidden; border-radius: 12px; background:#000;
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* 画面セクション（切替） */
   .screen{
     position:absolute; inset:0; display:grid;
     justify-items:stretch; align-items:stretch;
@@ -81,8 +72,28 @@
   }
   .btn:focus{ outline:2px solid #60a5fa; outline-offset:3px }
 
-  /* 画面2（白背景・黒文字） */
-  #screen2{ background: var(--c-bg); color: var(--c-text); }
+  /* 画面2・3（白背景・黒文字） */
+  #screen2, #screen3{ background: var(--c-bg); color: var(--c-text); }
+
+  /* ▼▼▼ 追加：画面3の背景画像＆黒フィルター ▼▼▼ */
+  #screen3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #screen3::before{
+    content:"";
+    position:absolute; inset:0;
+    background: rgba(0,0,0,.7); /* 薄い黒フィルター（濃さ調整ここ） */
+    pointer-events:none;
+  }
+  /* 画面3の内容をフィルターより前面に */
+  #screen3 > *{ position:relative; z-index:1; }
+  /* 背景にすると文字が沈むので、画面3は白文字寄りに */
+  #screen3{ color:#f3f4f6; }
+  #screen3 .infoBlock{ color:#f3f4f6; }
+  #screen3 .linkList a{ color:#93c5fd; }
+  /* ▲▲▲ 追加ここまで ▲▲▲ */
 
   /* 歌詞（中央） */
   .lyricsWrap{
@@ -92,12 +103,18 @@
     width: 92%; max-width: 560px; padding: 4vh 2vw; text-align: center;
   }
   .lyrics{
-    white-space: pre-wrap; line-height: 1.9; font-size: var(--font-lyrics);
-    font-family: "MS Gothic","MS PGothic","ＭＳ ゴシック","ＭＳ Ｐゴシック",
-                 "Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+    white-space: pre-wrap;
+    line-height: 1.9;
+    font-size: var(--font-lyrics);
+    font-family:
+      "Hiragino Mincho ProN",
+      "Yu Mincho",
+      "MS PMincho",
+      "MS Mincho",
+      "Noto Serif JP",
+      serif;
   }
 
-  /* 行単位のアニメ（最初は非表示） */
   .lyrics .line{
     opacity:0; transform: translateY(10px);
     transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
@@ -130,7 +147,6 @@
   .linkList a{ color: var(--accent); text-decoration: underline; }
   .linkList{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
 
-  /* モバイル微調整 */
   @media (max-width: 420px) {
     :root{
       --font-lyrics: 18px; --font-info: 15px;
@@ -138,8 +154,6 @@
     }
     .stack{ transform: translateY(-28px); }
   }
-
-  /* 横持ち対策 */
   @media (max-aspect-ratio: 9/16) {
     .stage{ width: 100vw; height: calc(100vw * 16 / 9); }
   }
@@ -147,9 +161,8 @@
 </head>
 
 <body>
-  <!-- スマホ比 9:16 のステージ -->
   <div class="stage" role="application" aria-label="YourSong 9:16 Stage">
-    <!-- 画面1：スタート -->
+
     <section id="screen1" class="screen active" aria-label="Start">
       <div class="stack">
         <div class="startTitle">GIFT for you</div>
@@ -157,17 +170,17 @@
       </div>
     </section>
 
-    <!-- 画面2：白背景・黒文字 -->
+    <!-- 画面2：白背景・黒文字（歌詞だけ） -->
     <section id="screen2" class="screen" aria-live="polite" aria-atomic="true">
-      <!-- 歌詞（中央） -->
       <div class="lyricsWrap">
         <div id="lyrics" class="lyrics"></div>
       </div>
+    </section>
 
-      <!-- 左上：タイトル -->
+    <!-- 画面3：白背景・黒文字（タイトル＋アルバム情報） -->
+    <section id="screen3" class="screen" aria-live="polite" aria-atomic="true">
       <h1 id="songTitleFixed" class="titleFixed"></h1>
 
-      <!-- 中央：image / album / albumdetail / release / links -->
       <div id="infoBlock" class="infoBlock">
         <img id="infoImage" class="infoImage" alt="">
         <p id="infoAlbum" class="infoText"></p>
@@ -178,34 +191,54 @@
     </section>
   </div>
 
-<!-- =========================
-  (2) 動作設定：ここだけ触れば挙動を変えられる
-========================= -->
 <script>
   const CONFIG = {
-    DATA_FILE: 'songsinfo.json',    // JSON（同フォルダ）
-    IMAGE_BASE: 'images/',          // JSONの "image": "重力と呼吸.png" のベースパス
+    DATA_FILE: 'songsinfo.json',
+    IMAGE_BASE: 'Images/',
 
-    /* ===== フェード時間 ===== */
-    SCREEN_FADE_MS: 2000,           // 画面切替（screen1⇄screen2）
-    TEXT_FADE_MS:   3500,           // 文字（タイトル／歌詞行／情報）
+    SCREEN_FADE_MS: 2000,
+    TEXT_FADE_MS:   3500,
 
-    /* ===== 歌詞のタイミング ===== */
-    LYRICS_DELAY_MS:   2500,        // 画面2になってから「1行目」を出すまでの遅延
-    LINE_STAGGER_MS:   4000,        // 行ごとの表示開始“ずらし”
-    HOLD_AFTER_LAST_MS: 4000,       // ★ 最終行の表示開始から、全行フェードアウト開始まで 何ms 待つか
+    LYRICS_DELAY_MS:    2500,
+    LINE_STAGGER_MS:    4000,
+    HOLD_AFTER_LAST_MS: 4000,
 
-    /* ===== タイトル／情報（歌詞フェードアウト完了からの相対） =====
-       注: 歌詞フェードアウト「完了」は、フェードアウト開始 + TEXT_FADE_MS
-    */
-    TITLE_AFTER_FADEOUT_MS:  2000,   // 歌詞フェードアウト完了 → タイトル表示 まで
-    INFO_AFTER_TITLE_MS:     3000    // タイトル表示 → 情報表示 まで
+    TITLE_AFTER_FADEOUT_MS:  1800,
+    INFO_AFTER_TITLE_MS:     3000
   };
 
-  /* 内部状態 */
+  /* =========================
+     (3) アルバム情報（albumid → {image,album,albumdetail,release}）
+     - songsinfo.json には albumid だけ入っている前提
+     - ここをあなたの albumInfo に置き換え／追記すればOK
+  ========================= */
+  let albumInfo = {
+    "1": { albumid: 1, album: "EVERYTHING", albumdetail: "1stAlbum", release: "1992-05-10", image: "EVERYTHING.png" },
+    "2": { albumid: 2, album: "Kind of Love", albumdetail: "2ndAlbum", release: "1992-12-01", image: "Kind of Love.png" },
+    "3": { albumid: 3, album: "Versus", albumdetail: "3rdAlbum", release: "1993-09-01", image: "Versus.png" },
+    "4": { albumid: 4, album: "Atomic Heart", albumdetail: "4thAlbum", release: "1994-09-01", image: "Atomic Heart.png" },
+    "5": { albumid: 5, album: "深海", albumdetail: "5thAlbum", release: "1996-06-24", image: "深海.png" },
+    "6": { albumid: 6, album: "BOLERO", albumdetail: "6thAlbum", release: "1997-03-05", image: "BOLERO.png" },
+    "7": { albumid: 7, album: "DISCOVERY", albumdetail: "7thAlbum", release: "1999-02-03", image: "DISCOVERY.png" },
+    "9": { albumid: 9, album: "Q", albumdetail: "9thAlbum", release: "2000-09-27", image: "Q.png" },
+    "10": { albumid: 10, album: "IT'S A WONDERFUL WORLD", albumdetail: "10thAlbum", release: "2002-05-10", image: "IT'S A WONDERFUL WORLD.png" },
+    "11": { albumid: 11, album: "シフクノオト", albumdetail: "11thAlbum", release: "2004-04-07", image: "シフクノオト.png" },
+    "12": { albumid: 12, album: "I ♥ U", albumdetail: "12thAlbum", release: "2005-09-21", image: "IU.png" },
+    "13": { albumid: 13, album: "B-SIDE", albumdetail: "13thAlbum", release: "2007-05-10", image: "B-SIDE.png" },
+    "14": { albumid: 14, album: "HOME", albumdetail: "14thAlbum", release: "2007-03-14", image: "HOME.png" },
+    "15": { albumid: 15, album: "B-SIDE", albumdetail: "15thAlbum", release: "2007-05-10", image: "B-SIDE.png" },
+    "16": { albumid: 16, album: "SUPERMARKET FANTASY", albumdetail: "16thAlbum", release: "2008-12-10", image: "SUPERMARKET FANTASY.png" },
+    "17": { albumid: 17, album: "SENSE", albumdetail: "17thAlbum", release: "2010-12-01", image: "SENSE.png" },
+    "18": { albumid: 18, album: "[(an imitation) blood orange]", albumdetail: "18thAlbum", release: "2012-11-28", image: "[(an imitation) blood orange].png" },
+    "19": { albumid: 19, album: "REFLECTION", albumdetail: "19thAlbum", release: "2015-06-04", image: "REFLECTION.png" },
+    "20": { albumid: 20, album: "重力と呼吸", albumdetail: "20thAlbum", release: "2018-10-03", image: "重力と呼吸.png" },
+    "21": { albumid: 21, album: "SOUNDTRACKS", albumdetail: "21thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
+    "22": { albumid: 22, album: "miss you", albumdetail: "22stAlbum", release: "2023-10-04", image: "miss you.png" }
+};
+
+
   let songs = [], current = null, timers = [];
 
-  /* 便利：URL組み立て（日本語・空白OK） */
   function buildUrl(base, filename){
     if (!filename) return '';
     if (/^https?:\/\//i.test(filename)) return filename;
@@ -213,7 +246,6 @@
     return encodeURI(joined);
   }
 
-  /* JSONロード */
   async function loadSongs(){
     try{
       const url = new URL(CONFIG.DATA_FILE, location.href).toString();
@@ -230,7 +262,6 @@
     }
   }
 
-  /* JSON → 内部形式 */
   function normalizeSong(raw){
     const links=[]; const L=raw.link;
     if(L){
@@ -240,31 +271,37 @@
         : (x?.url && links.push({label:x.label||'Link',url:x.url})));
       else if(L?.url) links.push({label:L.label||'Link',url:L.url});
     }
+
+    const albumid = (raw.albumid ?? raw.albumId ?? raw.albumID);
+    const a = albumInfo[String(albumid)] || {};
+
     return {
-      id: raw.id,
-      title: raw.Title || '',
-      album: raw.album || '',
-      albumdetail: raw.albumdetail || '',
-      release: raw.release ?? '',
-      image: raw.image || '',
+      id: raw.songid ?? raw.id ?? null,
+      songid: raw.songid ?? raw.id ?? null,
+      albumid: albumid ?? null,
+
+      title: raw.Title || raw.title || '',
+
+      album: a.album || raw.album || '',
+      albumdetail: a.albumdetail || raw.albumdetail || '',
+      release: a.release ?? raw.release ?? '',
+      image: a.image || raw.image || '',
+
       lyrics: Array.isArray(raw.Lyrics) ? raw.Lyrics.join('\n') : String(raw.Lyrics || ''),
       links
     };
   }
 
-  /* 画面切替（CSS変数に反映） */
   function showScreen(id){
     document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
     document.getElementById(id).classList.add('active');
   }
 
-  /* タイマー管理 */
   function clearTimers(){ timers.forEach(t=>clearTimeout(t)); timers=[]; }
   const later = (ms, fn) => { const t=setTimeout(fn, ms); timers.push(t); };
 
-  /* 歌詞HTMLを行要素に分解して生成（行単位フェードイン／全行同時フェードアウト） */
   function setLyricLines(container, text){
-    container.innerHTML = ''; // クリア
+    container.innerHTML = '';
     const lines = String(text || '').split(/\r?\n/);
     const lineEls = [];
 
@@ -275,25 +312,21 @@
       container.appendChild(el);
       lineEls.push(el);
 
-      // 行ごとのフェードイン開始（ずらし）
       later(CONFIG.LYRICS_DELAY_MS + i * CONFIG.LINE_STAGGER_MS, ()=>{
         el.classList.add('show');
       });
     });
 
-    // ★ 全行フェードアウト：最終行の表示開始から HOLD_AFTER_LAST_MS 後に一斉に開始
     const lastStart = CONFIG.LYRICS_DELAY_MS + Math.max(0, (lines.length - 1)) * CONFIG.LINE_STAGGER_MS;
     const fadeOutStartAt = lastStart + CONFIG.HOLD_AFTER_LAST_MS;
 
     later(fadeOutStartAt, ()=>{
-      lineEls.forEach(el => el.classList.remove('show')); // 一斉にフェードアウト開始（所要 TEXT_FADE_MS）
+      lineEls.forEach(el => el.classList.remove('show'));
     });
 
-    // 「歌詞フェードアウト完了」時刻（＝開始 + TEXT_FADE_MS）を返す
     return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
   }
 
-  /* 描画初期化 */
   function resetUI(){
     document.getElementById('lyrics').innerHTML = '';
     const title = document.getElementById('songTitleFixed');
@@ -301,39 +334,61 @@
 
     const img = document.getElementById('infoImage');
     img.removeAttribute('src'); img.style.display='none';
+
     document.getElementById('infoAlbum').textContent = '';
     document.getElementById('infoDetail').textContent = '';
     document.getElementById('infoRelease').textContent = '';
     document.getElementById('infoLinks').innerHTML = '';
     document.getElementById('infoBlock').classList.remove('show');
+
+    // ▼▼▼ 追加：画面3背景をリセット ▼▼▼
+    const s3 = document.getElementById('screen3');
+    s3.style.backgroundImage = '';
+    // ▲▲▲
   }
 
   function renderAll(song){
-    // 歌詞（行に分解）
     const fadeoutDoneAt = setLyricLines(
       document.getElementById('lyrics'),
       (song.lyrics||'').trim()
     );
 
-    // タイトル文字
     document.getElementById('songTitleFixed').textContent = song.title || '—';
 
-    // 情報（中央）
+    // ▼▼▼ 追加：画面3の背景をアルバムpngにする（黒フィルターはCSSの::before） ▼▼▼
+    const s3 = document.getElementById('screen3');
+    if (song.image) {
+      const bg = buildUrl(CONFIG.IMAGE_BASE, song.image);
+      s3.style.backgroundImage = `url("${bg}")`;
+    } else {
+      s3.style.backgroundImage = '';
+    }
+    // ▲▲▲ 追加ここまで ▲▲▲
+
     const img = document.getElementById('infoImage');
     if (song.image) {
       const src = buildUrl(CONFIG.IMAGE_BASE, song.image);
       img.src = src;
-      img.alt = song.title ? `${song.title} image` : 'song image';
+      img.alt = song.title ? `${song.title} image` : 'album image';
       img.style.display = 'block';
       img.onerror = () => { img.style.display = 'none'; };
     } else {
       img.style.display = 'none';
     }
-    document.getElementById('infoAlbum').textContent  = song.album || '';
-    document.getElementById('infoDetail').textContent = song.albumdetail || '';
+
+    // 画面3の表示を albumdetail『album』収録 にする
+    const detail = String(song.albumdetail || '').trim();
+    const alb    = String(song.album || '').trim();
+    let albumLine = '';
+    if (detail && alb) albumLine = `${detail}『${alb}』収録`;
+    else if (alb)     albumLine = `『${alb}』収録`;
+    else if (detail)  albumLine = `${detail}収録`;
+
+    document.getElementById('infoAlbum').textContent  = albumLine;
+    document.getElementById('infoDetail').textContent = '';
+
     document.getElementById('infoRelease').textContent= String(song.release ?? '');
 
-    // Links
     const links=(song.links||[]);
     const html = Array.isArray(links)
       ? links.map(l=> (typeof l==='string')
@@ -346,25 +401,26 @@
     return { fadeoutDoneAt };
   }
 
-  /* フロー：Start → Screen2 → 歌詞（行ずらし→全行同時フェードアウト）→ タイトル → 情報 */
   async function startFlow(){
     if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
     clearTimers();
 
-    /* CSS変数に反映（画面/文字フェード） */
     document.documentElement.style.setProperty('--screen-fade-ms', `${CONFIG.SCREEN_FADE_MS}ms`);
     document.documentElement.style.setProperty('--text-fade-ms',   `${CONFIG.TEXT_FADE_MS}ms`);
 
+    // songid でランダム（= 配列からランダムに1曲）
     current = songs[Math.floor(Math.random()*songs.length)];
 
-    // 画面遷移（screen1 → screen2）
     showScreen('screen2');
 
-    // 内容準備
     resetUI();
     const { fadeoutDoneAt } = renderAll(current);
 
-    // ★ タイトル／情報は「歌詞フェードアウト完了」からの相対
+    // 歌詞フェードアウト完了 → 画面3へ
+    later(fadeoutDoneAt, ()=>{
+      showScreen('screen3');
+    });
+
     later(fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS, ()=>{
       document.getElementById('songTitleFixed').classList.add('show');
     });
@@ -373,7 +429,6 @@
     });
   }
 
-  /* 起動 */
   (async function init(){
     try{ await loadSongs(); }catch(e){ console.warn(e); }
     document.getElementById('startBtn').addEventListener('click', startFlow);
