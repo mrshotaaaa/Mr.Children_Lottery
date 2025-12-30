@@ -2425,7 +2425,7 @@
     "Title": "Another Story",
     "albumid": 13,
     "songid": 13.4,
-    "Lyrics": "君と生きる毎日がなんだかんだ言って嬉しい",
+    "Lyrics": "君と生きる毎日が\nなんだかんだ言って嬉しい",
     "link": [
       {
         "label": "Spotify",
@@ -2888,7 +2888,7 @@
     "Title": "I'm sorry",
     "albumid": 14,
     "songid": 14.14,
-    "Lyrics": "土下座でもなんでもするから\n笑って許して\nI'm Sorry",
+    "Lyrics": "土下座でもなんでもするから笑って許して\nI'm Sorry",
     "link": [
       {
         "label": "Spotify",

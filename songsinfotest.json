@@ -1,20 +1,28 @@
 [ 
    {
-    "Title": "靴ひも",
-    "albumid": 12,
-    "songid": 12.6,
-    "Lyrics": "あぁ一瞬でも早く君の待つ場所へ",
+    "Title": "HANABI",
+    "albumid": 15,
+    "songid": 15.2,
+    "Lyrics": "恋なんて言わばエゴとエゴのシーソーゲーム",
     "link": [
       {
         "label": "Spotify",
-        "url": "https://open.spotify.com/track/5nSdJRpyM8OkYOVGa5rlsw?si=xsbGxY2MQwu_gji3G2FqUg"
+        "url": "https://open.spotify.com/track/0AU7xhipAm9Saq0k8A9Iua?si=z_XKkG-hSmWWliI-725JwA"
       },
       {
         "label": "Apple Music",
-        "url": "https://music.apple.com/jp/album/%E9%9D%B4%E3%81%B2%E3%82%82/1531496480?i=1531497247"
+        "url": "https://music.apple.com/jp/album/hanabi/1531496623?i=1531496627"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/EXxaBXKjl6Q?si=CztDic02ExmxlpRe"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/2MNL2mU8pBE?si=tRCEFIP4HXGJBW9o"
       }
     ],
-    "Memo":""
+    "Memo":"33rdシングル。金魚"
   }
 ]
  
