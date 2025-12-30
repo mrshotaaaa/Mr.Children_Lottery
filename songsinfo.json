@@ -13,7 +13,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%AD%E3%83%BC%E3%83%89-%E3%82%A2%E3%82%A4-%E3%83%9F%E3%82%B9-%E3%83%A6%E3%83%BC/1532165138?i=1532165152"
       }
-    ]
+    ],
+    "Memo":"missyouツアーでちょっとだけ期待したけどねー"
   },
   {
     "Title": "Mr.Shining Moon",
@@ -29,7 +30,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/mr-shining-moon/1532165138?i=1532165165"
       }
-    ]
+    ],
+    "Memo":"Mr.✨🌙"
   },
   {
     "Title": "君がいた夏",
@@ -49,7 +51,8 @@
         "label": "MV",
         "url": "https://youtu.be/sGeI0R9i5MQ?si=LRIbEKERC4DAgNKT"
       }
-    ]
+    ],
+    "Memo":"1stシングル"
   },
   {
     "Title": "風〜The wind knows how I feel〜",
@@ -65,7 +68,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%A2%A8-the-wind-knows-how-i-feel/1532165138?i=1532165326"
       }
-    ]
+    ],
+    "Memo":"台風で一部中止されたap07の最終日に披露"
   },
   {
     "Title": "ためいきの日曜日",
@@ -81,7 +85,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%9F%E3%82%81%E3%81%84%E3%81%8D%E3%81%AE%E6%97%A5%E6%9B%9C%E6%97%A5/1532165138?i=1532165332"
       }
-    ]
+    ],
+    "Memo":"😮‍💨"
   },
   {
     "Title": "友達のままで",
@@ -97,13 +102,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%8F%8B%E9%81%94%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%A7/1532165138?i=1532165340"
       }
-    ]
+    ],
+    "Memo":"アマチュア時代から存在"
   },
   {
     "Title": "CHILDREN'S WORLD",
     "albumid": 1,
     "songid": 1.7,
-    "Lyrics": "今は思い通りにいかないことも\nいつかは叶えて\nここはCHILDREN’S WORLD",
+    "Lyrics": "ここは\nCHILDREN’S WORLD",
     "link": [
       {
         "label": "Spotify",
@@ -113,13 +119,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/childrens-world/1532165138?i=1532165345"
       }
-    ]
+    ],
+    "Memo":"🍊ツアーで20年ぶりの披露"
   },
   {
     "Title": "虹の彼方へ",
     "albumid": 2,
     "songid": 2.1,
-    "Lyrics": "I'm walkin' on the rainbow\n数えきれない夢が溢れて",
+    "Lyrics": "I'm walkin' on the rainbow",
     "link": [
       {
         "label": "Spotify",
@@ -129,13 +136,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%99%B9%E3%81%AE%E5%BD%BC%E6%96%B9%E3%81%B8/1531496223?i=1531496224"
       }
-    ]
+    ],
+    "Memo":"一夜限りのライブのアンコール一曲目で弾き語り"
   },
   {
     "Title": "All by myself",
     "albumid": 2,
     "songid": 2.2,
-    "Lyrics": "誰のためでも 誰のせいでもないから\n今はAll by myself",
+    "Lyrics": "傷つくたびに失うたびに問いかけてるよ\nBe calm , Be cool",
     "link": [
       {
         "label": "Spotify",
@@ -145,13 +153,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/all-by-myself/1531496223?i=1531496225"
       }
-    ]
+    ],
+    "Memo":"「Replay」のカップリング曲"
   },
   {
     "Title": "BLUE",
     "albumid": 2,
     "songid": 2.3,
-    "Lyrics": "そして今日もBLUE",
+    "Lyrics": "そして今日も |BLUE",
     "link": [
       {
         "label": "Spotify",
@@ -161,7 +170,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/blue/1531496223?i=1531496348"
       }
-    ]
+    ],
+    "Memo":"🟦"
   },
   {
     "Title": "抱きしめたい",
@@ -185,13 +195,14 @@
         "label": "MV",
         "url": "https://youtu.be/qiUgB0S-1Dc?si=tZ8hVws0wQp0kLqv"
       }
-    ]
+    ],
+    "Memo":"2ndシングル。クリスマスの夜に〜"
   },
   {
     "Title": "グッバイ・マイ・グルーミーデイズ",
     "albumid": 2,
     "songid": 2.5,
-    "Lyrics": "I want to be happy\nYou want to be happy",
+    "Lyrics": "I want to be happy\nYou want to be happy\n\n^Good-bye my gloomy days",
     "link": [
       {
         "label": "Spotify",
@@ -201,13 +212,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%B0%E3%83%83%E3%83%90%E3%82%A4-%E3%83%9E%E3%82%A4-%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%9F%E3%83%BC%E3%83%87%E3%82%A4%E3%82%BA/1531496223?i=1531496350"
       }
-    ]
+    ],
+    "Memo":"「君がいた夏」のカップリング曲"
   },
   {
     "Title": "Distance",
     "albumid": 2,
     "songid": 2.6,
-    "Lyrics": "それでもそばにいたのは 臆病だから？\nそれとも今でも\n愛しているから？",
+    "Lyrics": "それでもそばにいたのは臆病だから？\n^それとも今でも| 愛しているから？",
     "link": [
       {
         "label": "Spotify",
@@ -217,7 +229,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/distance/1531496223?i=1531496351"
       }
-    ]
+    ],
+    "Memo":"それとも今でも愛しているから？"
   },
   {
     "Title": "車の中でかくれてキスをしよう",
@@ -233,13 +246,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%BB%8A%E3%81%AE%E4%B8%AD%E3%81%A7%E3%81%8B%E3%81%8F%E3%82%8C%E3%81%A6%E3%82%AD%E3%82%B9%E3%82%92%E3%81%97%E3%82%88%E3%81%86/1531496223?i=1531496352"
       }
-    ]
+    ],
+    "Memo":"アマチュア時代から存在。RADとの対バンで演奏された"
   },
   {
     "Title": "思春期の夏〜君との恋が今も牧場に〜",
     "albumid": 2,
     "songid": 2.8,
-    "Lyrics": "明日になればきっと\n恋の果実 実るように",
+    "Lyrics": "君との恋が今も牧場に",
     "link": [
       {
         "label": "Spotify",
@@ -249,7 +263,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%80%9D%E6%98%A5%E6%9C%9F%E3%81%AE%E5%A4%8F-%E5%90%9B%E3%81%A8%E3%81%AE%E6%81%8B%E3%81%8C%E4%BB%8A%E3%82%82%E7%89%A7%E5%A0%B4%E3%81%AB/1531496223?i=1531496353"
       }
-    ]
+    ],
+    "Memo":"JENがボーカル。Thanksgiving25で披露"
   },
   {
     "Title": "星になれたら",
@@ -265,13 +280,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%98%9F%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%9F%E3%82%89/1531496223?i=1531496354"
       }
-    ]
+    ],
+    "Memo":"アマチュア時代から存在。寺岡呼人と共同制作"
   },
   {
     "Title": "ティーンエイジ・ドリーム（I～II）",
     "albumid": 2,
     "songid": 2.10,
-    "Lyrics": "置き忘れたままの\nteenage dream",
+    "Lyrics": "置き忘れたままの teenage dream",
     "link": [
       {
         "label": "Spotify",
@@ -281,13 +297,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%86%E3%82%A3%E3%83%BC%E3%83%B3%E3%82%A8%E3%82%A4%E3%82%B8-%E3%83%89%E3%83%AA%E3%83%BC%E3%83%A0-i-ii/1531496223?i=1531496355"
       }
-    ]
+    ],
+    "Memo":"〇〇××△△⬜︎!!??"
   },
   {
     "Title": "いつの日にか二人で",
     "albumid": 2,
     "songid": 2.11,
-    "Lyrics": "気がつけばいつもどんな時も\nあの人で溢れてる",
+    "Lyrics": "心の中はまた曇り空\n^いつの日にか二人で…",
     "link": [
       {
         "label": "Spotify",
@@ -297,14 +314,15 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%A4%E3%81%AE%E6%97%A5%E3%81%AB%E3%81%8B%E4%BA%8C%E4%BA%BA%E3%81%A7/1531496223?i=1531496357"
       }
-    ]
+    ],
+    "Memo":"年上おねえさんを好きになる歌😳"
   },
 
   {
     "Title": "Another Mind",
     "albumid": 3,
     "songid": 3.1,
-    "Lyrics": "誰かが定めた自分を演じてる\nAnother Mind",
+    "Lyrics": "誰かが定めた自分を演じてる\n^Another Mind",
     "link": [
       {
         "label": "Spotify",
@@ -314,13 +332,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/another-mind/1531495889?i=1531496409"
       }
-    ]
+    ],
+    "Memo":"Spirit The Differenceで披露。カッコヨイ"
   },
   {
     "Title": "メインストリートに行こう",
     "albumid": 3,
     "songid": 3.2,
-    "Lyrics": "My city of joy\n週末の天使",
+    "Lyrics": "My city of joy\n週末の天使\n^星降る街で君とランデブー\n夢みたい",
     "link": [
       {
         "label": "Spotify",
@@ -330,13 +349,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%88%E3%81%AB%E8%A1%8C%E3%81%93%E3%81%86/1531495889?i=1531496420"
       }
-    ]
+    ],
+    "Memo":"ヒカリノアトリエツアーで20年ぶりの披露"
   },
   {
     "Title": "and I close to you",
     "albumid": 3,
     "songid": 3.3,
-    "Lyrics": "Baby Baby Baby\nもう忘れなよ",
+    "Lyrics": "Baby Baby Baby\n^I wanna kiss you\n^Lady Lady Lady\n^and I close to you",
     "link": [
       {
         "label": "Spotify",
@@ -346,7 +366,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/and-i-close-to-you/1531495889?i=1531496423"
       }
-    ]
+    ],
+    "Memo":"「CROSS ROAD」のカップリング曲。ap11でスキマスイッチと共演"
   },
   {
     "Title": "Replay",
@@ -366,13 +387,14 @@
         "label": "MV",
         "url": "https://youtu.be/h5kKnPzh8gw?si=0Q8ZbP2dITmwKKL8"
       }
-    ]
+    ],
+    "Memo":"3rdシングル。CM狙いでサビが15秒"
   },
   {
     "Title": "マーマレード・キッス",
     "albumid": 3,
     "songid": 3.5,
-    "Lyrics": "くちづけを交わせば\nふっと漏れる吐息\n重なるHeart",
+    "Lyrics": "そして二人は| マーマレッド・キッス",
     "link": [
       {
         "label": "Spotify",
@@ -382,13 +404,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%9E%E3%83%BC%E3%83%9E%E3%83%AC%E3%83%BC%E3%83%89-%E3%82%AD%E3%83%83%E3%82%B9/1531495889?i=1531496431"
       }
-    ]
+    ],
+    "Memo":"マーマレード：柑橘系のほろ苦いジャム"
   },
   {
     "Title": "蜃気楼",
     "albumid": 3,
     "songid": 3.6,
-    "Lyrics": "心の何処かに今でも潜んでる\n”気狂いピエロ”が",
+    "Lyrics": "心の何処かに今でも潜んでる\n^”気狂いピエロ”が",
     "link": [
       {
         "label": "Spotify",
@@ -398,7 +421,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%9C%83%E6%B0%97%E6%A5%BC/1531495889?i=1531496434"
       }
-    ]
+    ],
+    "Memo":"🤡"
   },
   {
     "Title": "逃亡者",
@@ -415,13 +439,13 @@
         "url": "https://music.apple.com/jp/album/%E9%80%83%E4%BA%A1%E8%80%85/1531495889?i=1531496710"
       }
     ],
-    "Memo": "ボーカルJEN"
+    "Memo": "桜井さんが唯一作詞作曲に関わってない曲。ボーカルはJEN。"
   },
   {
     "Title": "LOVE",
     "albumid": 3,
     "songid": 3.8,
-    "Lyrics": "口さえなきゃ誰もが\n振り向くようなスタイルで\n人をその気にするのが上手い",
+    "Lyrics": "燃えるような恋じゃなくときめきでもない\n^でもいつまでも君だけの特別でいたい",
     "link": [
       {
         "label": "Spotify",
@@ -431,7 +455,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/love/1531495889?i=1531496714"
       }
-    ]
+    ],
+    "Memo":"この会場にでっかいL・O・V・Eをお届けします！"
   },
   {
     "Title": "さよならは夢の中へ",
@@ -447,7 +472,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%81%AF%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%B8/1531495889?i=1531496719"
       }
-    ]
+    ],
+    "Memo":"ピギャ！！（書く事なかった）"
   },
   {
     "Title": "my life",
@@ -463,14 +489,15 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/my-life/1531495889?i=1531496726"
       }
-    ]
+    ],
+    "Memo":"当時の郵便料金が62円"
   },
 
   {
     "Title": "Dance Dance Dance",
     "albumid": 4,
     "songid": 4.1,
-    "Lyrics": "満たされない夢と欲望の彼方に\n残された君と希望の橋を渡ろう",
+    "Lyrics": "満たされない夢と欲望の彼方に\n^残された君と希望の橋を渡ろう",
     "link": [
       {
         "label": "Spotify",
@@ -484,13 +511,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/00SIeJcj94s?si=evb_67Um-niNXGZU"
       }
-    ]
+    ],
+    "Memo":"ライブ定番曲。HOMEツアーのアレンジがたまらない"
   },
   {
     "Title": "ラヴ コネクション",
     "albumid": 4,
     "songid": 4.2,
-    "Lyrics": "What do tou want\nOh what do you think baby",
+    "Lyrics": "ワンタッチの関係ではエクスタシーはない\nトゥーマッチな愛情に触れてもつらい",
     "link": [
       {
         "label": "Spotify",
@@ -504,13 +532,14 @@
         "label": "MV",
         "url": "https://youtu.be/krVxkL6H538?si=BDPD0ClJ_4cyi22m"
       }
-    ]
+    ],
+    "Memo":"「Tomorrow never knows」のカップリング曲。ベイベッ!!"
   },
   {
     "Title": "innocent world",
     "albumid": 4,
     "songid": 4.3,
-    "Lyrics": "どこまでも歩き続けて行くよ\nいいだろう？\nmr.myself",
+    "Lyrics": "どこまでも歩き続けて行くよ\n^いいだろう？\n^mr.myself",
     "link": [
       {
         "label": "Spotify",
@@ -528,13 +557,14 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&t=5338s"
       }
-    ]
+    ],
+    "Memo":"5thシングル。一番歌わせがち"
   },
   {
     "Title": "クラスメイト",
     "albumid": 4,
     "songid": 4.4,
-    "Lyrics": "しばらくは彼の話はやめとこう",
+    "Lyrics": "「ただのクラスメイト」\n^そう呼び合えたあの頃は\na long time ago",
     "link": [
       {
         "label": "Spotify",
@@ -544,13 +574,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%A1%E3%82%A4%E3%83%88/1531501889?i=1531502470"
       }
-    ]
+    ],
+    "Memo":"「ドロップキック」のカップリング曲。しばらくは彼の（別れの）"
   },
   {
     "Title": "CROSS ROAD",
     "albumid": 4,
     "songid": 4.5,
-    "Lyrics": "立ち止まる cross road\nたたずむ winding road\n傷つけずには愛せない",
+    "Lyrics": "立ち止まる cross road\n^たたずむ winding road\n^傷つけずには愛せない",
     "link": [
       {
         "label": "Spotify",
@@ -564,7 +595,8 @@
         "label": "MV",
         "url": "https://youtu.be/C4zJfYA_ur8?si=uGEju2zU6DZwxxdf"
       }
-    ]
+    ],
+    "Memo":"4thシングル。ヒットの割にツアーで演奏されない。"
   },
   {
     "Title": "ジェラシー",
@@ -580,13 +612,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%B8%E3%82%A7%E3%83%A9%E3%82%B7%E3%83%BC/1531501889?i=1531502473"
       }
-    ]
+    ],
+    "Memo":"どんな人の心の中にも嫉妬の心が...!!"
   },
   {
     "Title": "Asia(エイジア)",
     "albumid": 4,
     "songid": 4.7,
-    "Lyrics": "守るべきものは\n愛という名の誇り",
+    "Lyrics": "守るべきものは愛という名の誇り",
     "link": [
       {
         "label": "Spotify",
@@ -596,7 +629,25 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/asia-%E3%82%A8%E3%82%A4%E3%82%B8%E3%82%A2/1531501889?i=1531502475"
       }
-    ]
+    ],
+    "Memo":"JENが作曲"
+  },
+  {
+    "Title": "Rain",
+    "albumid": 4,
+    "songid": 4.75,
+    "Lyrics": "☔️",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7w5KLlPaMWhxx8rWYWnqoZ?si=aae95957756745f0"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/rain/1374994303?i=1374994322"
+      }
+    ],
+    "Memo":"☔️のち☀️"
   },
   {
     "Title": "雨のち晴れ",
@@ -612,13 +663,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%9B%A8%E3%81%AE%E3%81%A1%E6%99%B4%E3%82%8C/1531501889?i=1531502485"
       }
-    ]
+    ],
+    "Memo":"ap23で久々に披露。95年の空(ku:)ではサラリーマン姿で演奏"
   },
   {
     "Title": "Round About～孤独の肖像～",
     "albumid": 4,
     "songid": 4.9,
-    "Lyrics": "誰かが泣いてる\n誰かが笑ってる\n浮き足立つ路上の夢に\noh God bless you",
+    "Lyrics": "誰かが泣いてる\n誰かが笑ってる\n^浮き足立つ路上の夢に\noh God bless you",
     "link": [
       {
         "label": "Spotify",
@@ -628,7 +680,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/round-about-%E5%AD%A4%E7%8B%AC%E3%81%AE%E8%82%96%E5%83%8F/1531501889?i=1531502487"
       }
-    ]
+    ],
+    "Memo":"POPSAURUSで2回とも披露された"
   },
   {
     "Title": "Over",
@@ -644,14 +697,31 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/over/1531501889?i=1531502489"
       }
-    ]
+    ],
+    "Memo":"「顔の割に小さな胸」について誰か議論しよう"
   },
-
+ {
+    "Title": "Dive",
+    "albumid": 5,
+    "songid": 5.0,
+    "Lyrics": "🌊",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/1FiHDTNg1ep6ghMO774kfH?si=f7aefe4c7d964938"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/dive/1375009919?i=1375009924"
+      }
+    ],
+    "Memo":"飛び込んじゃうよー"
+  },
   {
     "Title": "シーラカンス",
     "albumid": 5,
     "songid": 5.1,
-    "Lyrics": "どんな未来を目指すも\n何処に骨を埋めるも\n選択肢はいくつだってある\n言うなれば自由",
+    "Lyrics": "どんな未来を目指すも\n何処に骨を埋めるも\n^選択肢はいくつだってある\n言うなれば自由",
     "link": [
       {
         "label": "Spotify",
@@ -661,13 +731,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%B7%E3%83%BC%E3%83%A9%E3%82%AB%E3%83%B3%E3%82%B9/1531496360?i=1531496372"
       }
-    ]
+    ],
+    "Memo":"京都音楽博覧会2016でくるりとコラボ。個人的にはSENSEツアーの演奏が好き"
   },
   {
     "Title": "手紙",
     "albumid": 5,
     "songid": 5.2,
-    "Lyrics": "過ぎ去りしあなたへ\n想い出のあなたへ",
+    "Lyrics": "過ぎ去りしあなたへ\n^想い出のあなたへ",
     "link": [
       {
         "label": "Spotify",
@@ -677,13 +748,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%89%8B%E7%B4%99/1531496360?i=1531496374"
       }
-    ]
+    ],
+    "Memo":"「深海」というアルバムの結末"
   },
   {
     "Title": "ありふれたLove Story ～男女問題はいつも面倒だ～",
     "albumid": 5,
     "songid": 5.3,
-    "Lyrics": "愛は尽きる事ない\n想いは揺るがない\nそう信じてた",
+    "Lyrics": "愛は尽きる事ない 想いは揺るがない\nそう信じてた",
     "link": [
       {
         "label": "Spotify",
@@ -693,13 +765,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%82%E3%82%8A%E3%81%B5%E3%82%8C%E3%81%9Flove-story-%E7%94%B7%E5%A5%B3%E5%95%8F%E9%A1%8C%E3%81%AF%E3%81%84%E3%81%A4%E3%82%82%E9%9D%A2%E5%80%92%E3%81%A0/1531496360?i=1531496738"
       }
-    ]
+    ],
+    "Memo":"本当に面倒だ"
   },
   {
     "Title": "Mirror",
     "albumid": 5,
     "songid": 5.4,
-    "Lyrics": "鏡となり傍に立ち\nあなたを映し続けよう",
+    "Lyrics": "鏡となり傍に立ち あなたを映し続けよう",
     "link": [
       {
         "label": "Spotify",
@@ -709,13 +782,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/mirror/1531496360?i=1531496745"
       }
-    ]
+    ],
+    "Memo":"メロディーがかわいい。田原さんソロもかわいい"
   },
   {
     "Title": "名もなき詩",
     "albumid": 5,
     "songid": 5.5,
-    "Lyrics": "愛、自由、希望、夢\n足元をごらんよきっと転がってるさ",
+    "Lyrics": "愛、自由、希望、夢\n^足元をごらんよきっと転がってるさ",
     "link": [
       {
         "label": "Spotify",
@@ -730,13 +804,13 @@
         "url": "https://youtu.be/gj5Nu6feFTQ?si=HmqlcYx0uuv72LK-"
       }
     ],
-    "Memo": "MVが存在しないシングル"
+    "Memo": "10thシングル。MVが存在しない"
   },
   {
     "Title": "So Let's Get Truth",
     "albumid": 5,
     "songid": 5.6,
-    "Lyrics": "やがて矛盾を知り苦悩したり試行錯誤する\nSo Let's Get Truth…",
+    "Lyrics": "やがて矛盾を知り苦悩したり試行錯誤する\n^So Let's Get Truth…",
     "link": [
       {
         "label": "Spotify",
@@ -746,13 +820,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/so-lets-get-truth/1531496360?i=1531496758"
       }
-    ]
+    ],
+    "Memo":"ライブ演奏かなりいい"
   },
   {
     "Title": "マシンガンをぶっ放せ",
     "albumid": 5,
     "songid": 5.7,
-    "Lyrics": "愛せよ目の前の不条理を\n憎めよ都合のいい道徳を\nそして僕に才能をくれ",
+    "Lyrics": "愛せよ目の前の不条理を\n^憎めよ都合のいい道徳を\n^そして僕に才能をくれ",
     "link": [
       {
         "label": "Spotify",
@@ -762,13 +837,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%9E%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%B3%E3%82%92%E3%81%B6%E3%81%A3%E6%94%BE%E3%81%9B/1531496360?i=1531496918"
       }
-    ]
+    ],
+    "Memo":"のちにシングルカットされた。虹、ヒカリノアトリエツアーで15年ぶりの披露"
   },
   {
     "Title": "ゆりかごのある丘から",
     "albumid": 5,
     "songid": 5.8,
-    "Lyrics": "僕が戦場に行っているその間\n君はもう違う誰かの腕の中\nそして僕は一人",
+    "Lyrics": "僕が戦場に行っているその間\n君はもう違う誰かの腕の中\n^そして僕は一人",
     "link": [
       {
         "label": "Spotify",
@@ -778,13 +854,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%86%E3%82%8A%E3%81%8B%E3%81%94%E3%81%AE%E3%81%82%E3%82%8B%E4%B8%98%E3%81%8B%E3%82%89/1531496360?i=1531496924"
       }
-    ]
+    ],
+    "Memo":"アマチュア時代から存在する曲。ap23で26年ぶりの披露"
   },
   {
     "Title": "虜",
     "albumid": 5,
     "songid": 5.9,
-    "Lyrics": "不能になるまでずっと\n束縛されていたい",
+    "Lyrics": "不能になるまでずっと束縛されていたい",
     "link": [
       {
         "label": "Spotify",
@@ -794,13 +871,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%99%9C/1531496360?i=1531496931"
       }
-    ]
+    ],
+    "Memo":"天国へ連れてって"
   },
   {
     "Title": "花-Memento-Mori-",
     "albumid": 5,
     "songid": 5.10,
-    "Lyrics": "負けないように\n枯れないように\n笑って咲く花になろう",
+    "Lyrics": "負けないように 枯れないように\n^笑って咲く花になろう",
     "link": [
       {
         "label": "Spotify",
@@ -818,7 +896,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/giXe6hftGhg?si=zLdAPzLAETxJw3pL"
       }
-    ]
+    ],
+    "Memo":"11thシングル。死を想う"
   },
   {
     "Title": "深海",
@@ -834,13 +913,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%B7%B1%E6%B5%B7/1531496360?i=1531496941"
       }
-    ]
+    ],
+    "Memo":"アルバム「深海」の表題曲"
   },
  {
     "Title": "Everything(It's you)",
     "albumid": 6,
     "songid": 6.1,
-    "Lyrics": "STAY\n何を犠牲にしても\n手にしたい物があるとして",
+    "Lyrics": "STAY\n^何を犠牲にしても手にしたい物があるとして",
     "link": [
       {
         "label": "Spotify",
@@ -858,13 +938,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/EoQVLCwtBvI?si=KDhL4PsVqlWzOSq0"
       }
-    ]
+    ],
+    "Memo":"13thシングル。シフクノオトツアーのアレンジも良い"
   },
   {
     "Title": "タイムマシーンに乗って",
     "albumid": 6,
     "songid": 6.2,
-    "Lyrics": "How do you feel どうか教えておくれ\nこの地で死にゆく気分はどんなだい",
+    "Lyrics": "人生はアドベンチャーたとえ踏み外しても\n結局楽しんだもんが笑者です",
     "link": [
       {
         "label": "Spotify",
@@ -878,7 +959,8 @@
         "label": "MV",
         "url": "https://youtu.be/zosBzv-Lj-k?si=bit_TWzvwVtdH01n"
       }
-    ]
+    ],
+    "Memo":"時代の着せ替え人形です🎎"
   },
   {
     "Title": "Brandnew my lover",
@@ -894,13 +976,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/brandnew-my-lover/1531496539?i=1531496694"
       }
-    ]
+    ],
+    "Memo":"ライブではカプセルに入って演奏"
   },
   {
-    "Title": "〖es〗～Theme of es～",
+    "Title": "【es】～Theme of es～",
     "albumid": 6,
     "songid": 6.4,
-    "Lyrics": "よろこびに触れたくて明日へ\n僕を走らせる「es」",
+    "Lyrics": "よろこびに触れたくて明日へ\n^僕を走らせる|「es」",
     "link": [
       {
         "label": "Spotify",
@@ -914,13 +997,14 @@
         "label": "MV",
         "url": "https://youtu.be/BbSrrsuOWJk?si=AOVT4saea2UJXluV"
       }
-    ]
+    ],
+    "Memo":"8thシングル。頼む！！ライブでやってくれ！！！！"
   },
   {
     "Title": "シーソーゲーム～勇敢な恋の歌～",
     "albumid": 6,
     "songid": 6.5,
-    "Lyrics": "恋なんて言わばエゴとエゴの\nシーソーゲーム",
+    "Lyrics": "恋なんて言わばエゴとエゴのシーソーゲーム",
     "link": [
       {
         "label": "Spotify",
@@ -938,13 +1022,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/ACt_DfVjqIY?si=fz2tWjEQQKGEYg-c"
       }
-    ]
+    ],
+    "Memo":"9thシングル。昔は滅多に演奏されてなかった。"
   },
   {
     "Title": "傘の下の君に告ぐ",
     "albumid": 6,
     "songid": 6.6,
-    "Lyrics": "資本主義にのっとり\n心をほっぽり\n虚栄の我が日本です",
+    "Lyrics": "資本主義にのっとり心をほっぽり\n虚栄の我が日本です",
     "link": [
       {
         "label": "Spotify",
@@ -954,13 +1039,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%82%98%E3%81%AE%E4%B8%8B%E3%81%AE%E5%90%9B%E3%81%AB%E5%91%8A%E3%81%90/1531496539?i=1531496830"
       }
-    ]
+    ],
+    "Memo":"リグプロのリハで桜井さんがドラム叩いてる"
   },
   {
     "Title": "ALIVE",
     "albumid": 6,
     "songid": 6.7,
-    "Lyrics": "夢は無くとも\n希望は無くとも\n目の前の遥かな道を",
+    "Lyrics": "夢は無くとも 希望は無くとも\n目の前の遥かな道を",
     "link": [
       {
         "label": "Spotify",
@@ -974,7 +1060,8 @@
         "label": "MV",
         "url": "https://youtu.be/zkMZs-v0Wb0?si=Oo5S_GW3sj2RwgeL"
       }
-    ]
+    ],
+    "Memo":"僕らはスーパーマン🦸‍♂️"
   },
   {
     "Title": "幸せのカテゴリー",
@@ -990,13 +1077,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%B9%B8%E3%81%9B%E3%81%AE%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC/1531496539?i=1531496842"
       }
-    ]
+    ],
+    "Memo":"ライブで披露されたのは数回のみ。映像化なし"
   },
   {
-    "Title": "everybody goes－秩序のない現代にドロップキック－",
+    "Title": "everybody goes〜秩序のない現代にドロップキック〜",
     "albumid": 6,
     "songid": 6.9,
-    "Lyrics": "Everybody goes\nEverybody fights\n秩序のない現代にドロップキック",
+    "Lyrics": "Everybody goes Everybody fights\n^秩序のない現代にドロップキック",
     "link": [
       {
         "label": "Spotify",
@@ -1010,13 +1098,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/YbxKD1AOW9U?si=SJCHCP6y689tJtSV"
       }
-    ]
+    ],
+    "Memo":"7thシングル。MVがない"
   },
   {
     "Title": "ボレロ",
     "albumid": 6,
     "songid": 6.1,
-    "Lyrics": "七転八倒の人生も笑い飛ばしてゆく",
+    "Lyrics": "まるで病 もう神も仏もない",
     "link": [
       {
         "label": "Spotify",
@@ -1030,7 +1119,8 @@
         "label": "MV",
         "url": "https://youtu.be/eKWUkhELo20?si=rOESmNVhcYJJhHOb"
       }
-    ]
+    ],
+    "Memo":"ライブで披露されたのは数回のみ"
   },
   {
     "Title": "Tomorrow never knows",
@@ -1054,13 +1144,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/AfjteCMzYUo?si=-OheRWEFJ-CV6jag"
       }
-    ]
+    ],
+    "Memo":"6thシングル。ミリオンセラー。CDシングル売り上げ歴代8位。とんでもねえ。"
   },
   {
     "Title": "DISCOVERY",
     "albumid": 7,
     "songid": 7.1,
-    "Lyrics": "振り向かずに\nDiscovery",
+    "Lyrics": "空き缶を蹴り飛ばして\n^悲しみをポケットにしまって\n^振り向かずに| DISCOVERY",
     "link": [
       {
         "label": "Spotify",
@@ -1070,13 +1161,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/discovery/1532215659?i=1532215682"
       }
-    ]
+    ],
+    "Memo":"アルバム表題曲"
   },
   {
     "Title": "光の射す方へ",
     "albumid": 7,
     "songid": 7.2,
-    "Lyrics": "心につけたプロペラ\n時空を超えて\n光の射す方へ",
+    "Lyrics": "心につけたプロペラ\n^時空を超えて| 光の射す方へ",
     "link": [
       {
         "label": "Spotify",
@@ -1094,7 +1186,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/datXpA5tja0?si=88n9klrXDztm5Rjp"
       }
-    ]
+    ],
+    "Memo":"16thシングル。爆発💥"
   },
   {
     "Title": "Prism",
@@ -1110,7 +1203,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/prism/1532215659?i=1532216125"
       }
-    ]
+    ],
+    "Memo":"「終わりなき旅」のカップリング曲。生で聴きたい、、、、"
   },
   {
     "Title": "アンダーシャツ",
@@ -1126,7 +1220,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%84/1532215659?i=1532216203"
       }
-    ]
+    ],
+    "Memo":"ツアーでは25年ぶりにmissyouで披露。桜井さんはギターソロがお気に入りらしい"
   },
   {
     "Title": "ニシエヒガシエ",
@@ -1150,13 +1245,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/RqEcYIqy-nE?si=xCsbqAC1M75ymW88"
       }
-    ]
+    ],
+    "Memo":"14thシングル。いつかのロッキンでの演奏が伝説らしい"
   },
   {
     "Title": "Simple",
     "albumid": 7,
     "songid": 7.6,
-    "Lyrics": "10年先も 20年先も\n君と生きれたらいいな",
+    "Lyrics": "10年先も 20年先も\n^君と生きれたらいいな",
     "link": [
       {
         "label": "Spotify",
@@ -1170,7 +1266,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=AOySfMfNMSA&list=RDAOySfMfNMSA&index=1&t=4382s"
       }
-    ]
+    ],
+    "Memo":"”Simple” is the best"
   },
   {
     "Title": "I'll be",
@@ -1186,13 +1283,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/ill-be/1532215659?i=1532216210"
       }
-    ]
+    ],
+    "Memo":"のちにシングルカットされる。一発どりで収録された"
   },
   {
-    "Title": "＃2601",
+    "Title": "#2601",
     "albumid": 7,
     "songid": 7.8,
-    "Lyrics": "ミッシェルファイファーの唇が好き",
+    "Lyrics": "ミッシェルファイファーの唇が好き\nドレスから覗く鎖骨も好き",
     "link": [
       {
         "label": "Spotify",
@@ -1202,13 +1300,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/2601/1532215659?i=1532216213"
       }
-    ]
+    ],
+    "Memo":"作曲JEN。ライブでの披露は数回のみ"
   },
   {
     "Title": "ラララ",
     "albumid": 7,
     "songid": 7.9,
-    "Lyrics": "簡単そうに見えてややこしく\n困難そうに思えて容易い\nそんなLalaLa探してる",
+    "Lyrics": "簡単そうに見えてややこしく\n^困難そうに思えて容易い\n^そんなLalaLa探してる",
     "link": [
       {
         "label": "Spotify",
@@ -1218,7 +1317,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%A9%E3%83%A9%E3%83%A9/1532215659?i=1532216214"
       }
-    ]
+    ],
+    "Memo":"ホニャララ"
   },
   {
     "Title": "終わりなき旅",
@@ -1242,7 +1342,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&list=RDCxasK4veEu8&index=1&t=4628s"
       }
-    ]
+    ],
+    "Memo":"15thシングル。「どこかに”あなた”を必要としてる人がいる」"
   },
   {
     "Title": "Image",
@@ -1258,7 +1359,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/image/1532215659?i=1532216219"
       }
-    ]
+    ],
+    "Memo":"ap12で披露。死と再生を繰り返す命 愛"
   },
   {
     "Title": "CENTER OF UNIVERSE",
@@ -1278,13 +1380,14 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=AOySfMfNMSA&list=RDAOySfMfNMSA&index=1&t=423s"
       }
-    ]
+    ],
+    "Memo":"Thanksgiving25では一曲目に披露"
   },
   {
     "Title": "その向こうへ行こう",
     "albumid": 9,
     "songid": 9.2,
-    "Lyrics": "さぁ一発でクリアして\nその向こうへ行こう",
+    "Lyrics": "さぁ一発でクリアして\n^その向こうへ行こう",
     "link": [
       {
         "label": "Spotify",
@@ -1294,7 +1397,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%9D%E3%81%AE%E5%90%91%E3%81%93%E3%81%86%E3%81%B8%E8%A1%8C%E3%81%93%E3%81%86/1531496681?i=1531496826"
       }
-    ]
+    ],
+    "Memo":"一発でクリアしよう"
   },
   {
     "Title": "NOT FOUND",
@@ -1318,13 +1422,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/EvBDa4TX3Bo?si=G4ZtRayonZl1Whdn"
       }
-    ]
+    ],
+    "Memo":"19thシングル。密・空・ない"
   },
   {
     "Title": "スロースターター",
     "albumid": 9,
     "songid": 9.4,
-    "Lyrics": "出発の鐘はなった\nスロースターター今発車",
+    "Lyrics": "出発の鐘はなった\n^スロースターター今発車",
     "link": [
       {
         "label": "Spotify",
@@ -1334,13 +1439,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%B9%E3%83%AD%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC/1531496681?i=1531496832"
       }
-    ]
+    ],
+    "Memo":"フライングスターター"
   },
   {
     "Title": "Surrender",
     "albumid": 9,
     "songid": 9.5,
-    "Lyrics": "I Surrender",
+    "Lyrics": "Coffeeぐらいで火傷したのが\n動揺してる証拠なんだけど",
     "link": [
       {
         "label": "Spotify",
@@ -1350,13 +1456,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/surrender/1531496681?i=1531496839"
       }
-    ]
+    ],
+    "Memo":"ブラオレツアーで田原さんがコーラス"
   },
   {
     "Title": "つよがり",
     "albumid": 9,
     "songid": 9.6,
-    "Lyrics": "蚊の鳴くような頼りない声で\n君の名前を呼んでみた",
+    "Lyrics": "たまにはちょっと自信に満ちた声で\n君の名を叫んでみんだ",
     "link": [
       {
         "label": "Spotify",
@@ -1366,13 +1473,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%A4%E3%82%88%E3%81%8C%E3%82%8A/1531496681?i=1531496844"
       }
-    ]
+    ],
+    "Memo":"話す相手も自ずと狭まって（花咲いても自ずとせば舞って）"
   },
   {
     "Title": "十二月のセントラルパークブルース",
     "albumid": 9,
     "songid": 9.7,
-    "Lyrics": "いっそ凍りそうさ\nこりゃなんの修行だ\n十二月",
+    "Lyrics": "グラスに注いで独り寂しくチヤーズ\n^十二月のセントラルパークブルース",
     "link": [
       {
         "label": "Spotify",
@@ -1382,13 +1490,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%8D%81%E4%BA%8C%E6%9C%88%E3%81%AE%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/1531496681?i=1531496849"
       }
-    ]
+    ],
+    "Memo":"NYでのレコーディング風景から"
   },
-  {
+ {
     "Title": "友とコーヒーと嘘と胃袋",
     "albumid": 9,
     "songid": 9.8,
-    "Lyrics": "悲しみも 憎しみも 愛しさも 優しさも いやらしさも\n食べるよ",
+    "Lyrics": "悲しみも 憎しみも 愛しさも\n優しさも いやらしさも\n^食べるよ",
     "link": [
       {
         "label": "Spotify",
@@ -1398,7 +1507,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%8F%8B%E3%81%A8%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%81%A8%E5%98%98%E3%81%A8%E8%83%83%E8%A2%8B/1531496681?i=1531497037"
       }
-    ]
+    ],
+    "Memo":"間奏の語りは酔った状態で録られた"
   },
   {
     "Title": "ロードムービー",
@@ -1414,7 +1524,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A0%E3%83%BC%E3%83%93%E3%83%BC/1531496681?i=1531497043"
       }
-    ]
+    ],
+    "Memo":"桜井さん自身のお気に入りソング。2000年元日に作詞"
   },
   {
     "Title": "Everything is made from a dream",
@@ -1425,12 +1536,13 @@
       {
         "label": "Spotify",
         "url": "https://open.spotify.com/track/4bDAsrqVq7QiKLIk3Fmjya?si=DYJq29_bTqqCD58YS481ug"
-      },
+       },
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/everything-is-made-from-a-dream/1531496681?i=1531497046"
       }
-    ]
+    ],
+    "Memo":"手塚治虫、ブルースりー、ジョンレノン"
   },
   {
     "Title": "口笛",
@@ -1454,13 +1566,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/rbqnrYy4nk0?si=Fk7J--4xqJIYbfNH"
       }
-    ]
+    ],
+    "Memo":"18thシングル。ライブでは複数のバージョンがある"
   },
   {
     "Title": "Hallelujah",
     "albumid": 9,
     "songid": 9.12,
-    "Lyrics": "無限の希望を 愛を 夢を\n奪いに行こう\n捕らえに行こう",
+    "Lyrics": "無限の希望を 愛を 夢を\n^奪いに行こう\n^捕らえに行こう",
     "link": [
       {
         "label": "Spotify",
@@ -1470,13 +1583,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/hallelujah/1531496681?i=1531497055"
       }
-    ]
+    ],
+    "Memo":"神を賛美せよ"
   },
   {
     "Title": "安らげる場所",
     "albumid": 9,
     "songid": 9.13,
-    "Lyrics": "人はなぜ幸せを\n闇雲に求めてしまうんだろう",
+    "Lyrics": "人はなぜ幸せを闇雲に求めてしまうんだろう?\n^何より大事な物も守れずに",
     "link": [
       {
         "label": "Spotify",
@@ -1486,13 +1600,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%AE%89%E3%82%89%E3%81%92%E3%82%8B%E5%A0%B4%E6%89%80/1531496681?i=1531497060"
       }
-    ]
+    ],
+    "Memo":"ライブでは未演奏"
   },
   {
     "Title": "蘇生",
     "albumid": 10,
     "songid": 10.1,
-    "Lyrics": "叶いもしない夢を見るのはもう\n止めにすることにしたんだから\n今度はこのさえない現実を\n夢みたいに塗り替えればいいさ",
+    "Lyrics": "叶いもしない夢を見るのはもう\n^止めにすることにしたんだから\n^今度はこのさえない現実を\n^夢みたいに塗り替えればいいさ",
     "link": [
       {
         "label": "Spotify",
@@ -1506,7 +1621,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/v58Gidyv55U?si=1GU5ADPK8BI000-q"
       }
-    ]
+    ],
+    "Memo":"まだ”やりかけの未来”がある"
   },
   {
     "Title": "Dear wonderful world",
@@ -1522,13 +1638,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/dear-wonderful-world/1531496356?i=1531496373"
       }
-    ]
+    ],
+    "Memo":"カプチーノのお客様、お待たせしました"
   },
   {
     "Title": "one two three",
     "albumid": 10,
     "songid": 10.3,
-    "Lyrics": "前人未到の未来へ1.2.3",
+    "Lyrics": "前人未到の未来へ| 1.2.3",
     "link": [
       {
         "label": "Spotify",
@@ -1538,7 +1655,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/one-two-three/1531496356?i=1531496375"
       }
-    ]
+    ],
+    "Memo":"2015年の2マンLIVEで初披露。ダーーー！"
   },
   {
     "Title": "渇いたkiss",
@@ -1554,13 +1672,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%B8%87%E3%81%84%E3%81%9Fkiss/1531496356?i=1531496739"
       }
-    ]
+    ],
+    "Memo":"隠れ人気曲だが、アルバムツアー以降披露されてない"
   },
   {
     "Title": "youthful days",
     "albumid": 10,
     "songid": 10.5,
-    "Lyrics": "胸の鐘の音を鳴らしてよ\n壊れるほどの抱擁とキスで",
+    "Lyrics": "胸の鐘の音を鳴らしてよ\n^壊れるほどの抱擁とキスで",
     "link": [
       {
         "label": "Spotify",
@@ -1578,7 +1697,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/1Y3Ya47jMKQ?si=9sBVgW8wNzdF88n3"
       }
-    ]
+    ],
+    "Memo":"21stシングル。かんぱーい！"
   },
   {
     "Title": "ファスナー",
@@ -1594,13 +1714,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%95%E3%82%A1%E3%82%B9%E3%83%8A%E3%83%BC/1531496356?i=1531496751"
       }
-    ]
+    ],
+    "Memo":"スガシカオ"
   },
   {
     "Title": "Bird Cage",
     "albumid": 10,
     "songid": 10.7,
-    "Lyrics": "胸の 奥に 響く\n重く 重く 重く",
+    "Lyrics": "胸の奥に響く\n重く重く重く",
     "link": [
       {
         "label": "Spotify",
@@ -1610,13 +1731,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/bird-cage/1531496356?i=1531496753"
       }
-    ]
+    ],
+    "Memo":"その日、人類は思い出した…鳥籠の中に囚われていた屈辱を"
   },
   {
     "Title": "LOVE はじめました",
     "albumid": 10,
     "songid": 10.8,
-    "Lyrics": "LOVEはじめました\nあぁ お口に合いましたか？",
+    "Lyrics": "LOVEよく冷えております\n^あぁ イッキに飲み干せたらな",
     "link": [
       {
         "label": "Spotify",
@@ -1626,7 +1748,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/love-%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F/1531496356?i=1531496759"
       }
-    ]
+    ],
+    "Memo":"スポーツ選手でアレンジ。「会いたい会いたい」っていう捻りのない歌を歌おう"
   },
   {
     "Title": "UFO",
@@ -1642,7 +1765,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/ufo/1531496356?i=1531496765"
       }
-    ]
+    ],
+    "Memo":"ライブ未演奏"
   },
   {
     "Title": "Drawing",
@@ -1658,13 +1782,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/drawing/1531496356?i=1531496919"
       }
-    ]
+    ],
+    "Memo":"「youthful days」のカップリング曲。"
   },
   {
     "Title": "君が好き",
     "albumid": 10,
     "songid": 10.11,
-    "Lyrics": "君が好き\n僕が生きるうえで\nこれ以上の意味はなくたっていい",
+    "Lyrics": "君が好き 君が好き\n^煮え切らない\n^メロディに添って思いを焦がして",
     "link": [
       {
         "label": "Spotify",
@@ -1678,7 +1803,8 @@
         "label": "MV",
         "url": "https://youtu.be/8KRYmKWchCo?si=rOlxN_Ay3S86bdRK"
       }
-    ]
+    ],
+    "Memo":"22ndシングル。雨に濡れる大阪の夜だ〜"
   },
   {
     "Title": "いつでも微笑みを",
@@ -1694,13 +1820,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E5%BE%AE%E7%AC%91%E3%81%BF%E3%82%92/1531496356?i=1531496932"
       }
-    ]
+    ],
+    "Memo":"不満を”探してしまう”"
   },
   {
     "Title": "優しい歌",
     "albumid": 10,
     "songid": 10.13,
-    "Lyrics": "愛する喜びに満ち溢れた歌",
+    "Lyrics": "誰かの為に小さな火をくべるよな\n^愛する喜びに満ち溢れた歌",
     "link": [
       {
         "label": "Spotify",
@@ -1714,7 +1841,8 @@
         "label": "MV",
         "url": "https://youtu.be/96P0YFo3pIk?si=aA2grqVKVe5hoOXG"
       }
-    ]
+    ],
+    "Memo":"20thシングル。"
   },
   {
     "Title": "It's a wonderful world",
@@ -1730,13 +1858,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/its-a-wonderful-world/1531496356?i=1531496940"
       }
-    ]
+    ],
+    "Memo":"醜くも美しい世界"
   },
   {
     "Title": "言わせてみてぇもんだ",
     "albumid": 11,
     "songid": 11.1,
-    "Lyrics": "意味ある遠回りを",
+    "Lyrics": "どうしようもなく「必要」って\n言わせてみてぇもんだ",
     "link": [
       {
         "label": "Spotify",
@@ -1746,13 +1875,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%A8%80%E3%82%8F%E3%81%9B%E3%81%A6%E3%81%BF%E3%81%A6%E3%81%87%E3%82%82%E3%82%93%E3%81%A0/1531496933?i=1531496936"
       }
-    ]
+    ],
+    "Memo":"意味ある遠回りを"
   },
   {
     "Title": "PADDLE",
     "albumid": 11,
     "songid": 11.2,
-    "Lyrics": "良い事があってこその笑顔じゃなくて\n笑顔でいりゃ良い事あると思えたら\nそれが良い事の序章です",
+    "Lyrics": "良い事があってこその笑顔じゃなくて\n^笑顔でいりゃ良い事あると思えたら\n^それが良い事の序章です",
     "link": [
       {
         "label": "Spotify",
@@ -1762,13 +1892,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/paddle/1531496933?i=1531496938"
       }
-    ]
+    ],
+    "Memo":"フラスコの中飛び込んで"
   },
   {
     "Title": "掌",
     "albumid": 11,
     "songid": 11.3,
-    "Lyrics": "キスしながら唾を吐いて\n舐めるつもりが噛みついて\n着せたつもりが引き裂いて\nまた愛求める",
+    "Lyrics": "キスしながら唾を吐いて\n^舐めるつもりが噛みついて\n^着せたつもりが引き裂いて\n^また愛求める",
     "link": [
       {
         "label": "Spotify",
@@ -1786,7 +1917,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&t=2535s"
       }
-    ]
+    ],
+    "Memo":"ライブで原曲通りに披露されたことはない"
   },
   {
     "Title": "くるみ",
@@ -1806,7 +1938,8 @@
         "label": "MV",
         "url": "https://youtu.be/3Um_xMmE8OA?si=_q6WlvIC_79PhZqu"
       }
-    ]
+    ],
+    "Memo":"くるみらい"
   },
   {
     "Title": "花言葉",
@@ -1822,7 +1955,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%8A%B1%E8%A8%80%E8%91%89/1531496933?i=1531497097"
       }
-    ]
+    ],
+    "Memo":"乙女の純潔"
   },
   {
     "Title": "Pink～奇妙な夢",
@@ -1838,13 +1972,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/pink-%E5%A5%87%E5%A6%99%E3%81%AA%E5%A4%A2/1531496933?i=1531497106"
       }
-    ]
+    ],
+    "Memo":"ライブではピンクの演出が"
   },
   {
     "Title": "血の管",
     "albumid": 11,
     "songid": 11.7,
-    "Lyrics": "そっと目を閉じてみる\nあなたを感じる",
+    "Lyrics": "血の管にくちづけた\nあの夜を想いだす",
     "link": [
       {
         "label": "Spotify",
@@ -1854,7 +1989,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%A1%80%E3%81%AE%E7%AE%A1/1531496933?i=1531497113"
       }
-    ]
+    ],
+    "Memo":"missyouツアーではアルバム曲が続く中演奏された"
   },
   {
     "Title": "空風の帰り道",
@@ -1870,13 +2006,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E7%A9%BA%E9%A2%A8%E3%81%AE%E5%B8%B0%E3%82%8A%E9%81%93/1531496933?i=1531497114"
       }
-    ]
+    ],
+    "Memo":"「HERO」のカップリング曲。映像化はap07のみ"
   },
   {
     "Title": "Any",
     "albumid": 11,
     "songid": 11.9,
-    "Lyrics": "今僕のいる場所が探してたのと違っても\n間違いじゃない\nいつも答えは一つじゃない",
+    "Lyrics": "今僕のいる場所が探してたのと違っても\n^間違いじゃない\n^いつも答えは一つじゃない",
     "link": [
       {
         "label": "Spotify",
@@ -1890,7 +2027,8 @@
         "label": "MV",
         "url": "https://youtu.be/l1AlDdC95l4?si=PEKG2lHXjXAxI38g"
       }
-    ]
+    ],
+    "Memo":"23rdシングル"
   },
   {
     "Title": "天頂バス",
@@ -1910,13 +2048,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/Y75smndGzUs?si=iPEaCTwHaRhlazhI"
       }
-    ]
+    ],
+    "Memo":"天頂、転調、店長"
   },
   {
     "Title": "タガタメ",
     "albumid": 11,
     "songid": 11.11,
-    "Lyrics": "左の人右の人\nふとした場所できっと繋がってるから\n片一方を捌けないよな\n僕らは連鎖する生き物だよ",
+    "Lyrics": "左の人右の人\nふとした場所できっと繋がってるから\n^片一方を捌けないよな\n^僕らは連鎖する生き物だよ",
     "link": [
       {
         "label": "Spotify",
@@ -1930,13 +2069,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/bjhahucrOHM?si=NYwGaoO6VBOCZxrV"
       }
-    ]
+    ],
+    "Memo":"小田和正とデュエット"
   },
   {
     "Title": "HERO",
     "albumid": 11,
     "songid": 11.12,
-    "Lyrics": "ヒーローになりたい\nただ一人君にとっての",
+    "Lyrics": "ずっとヒーローでありたい\nただ一人君にとっての",
     "link": [
       {
         "label": "Spotify",
@@ -1954,7 +2094,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/Ic3rQpzXXqo?si=5Eh7dSlvps3vkN-7"
       }
-    ]
+    ],
+    "Memo":"24thシングル。涙のap05"
   },
   {
     "Title": "Worlds end",
@@ -1978,7 +2119,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/iChN-rnCEqE?si=JdGpaRQ5wYPidYrf"
       }
-    ]
+    ],
+    "Memo":"ライブ定番曲。自動販売機"
   },
   {
     "Title": "Monster",
@@ -1998,7 +2140,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&t=373s"
       }
-    ]
+    ],
+    "Memo":"ステージに這う桜井さん"
   },
   {
     "Title": "未来",
@@ -2022,13 +2165,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/-7P1eN8HvKM?si=B7rV3iKxeevstUj_"
       }
-    ]
+    ],
+    "Memo":"27thシングル「四次元」の一曲。綾瀬はるか"
   },
   {
     "Title": "僕らの音",
     "albumid": 12,
     "songid": 12.4,
-    "Lyrics": "Ilike… ILove… ILove…\n落ち葉 噴水 自転車 犬\n耳をすませば聞こえる\nすべてが愛を歌ってる",
+    "Lyrics": "耳をすませば聞こえる\nすべてが愛を歌ってる",
     "link": [
       {
         "label": "Spotify",
@@ -2038,13 +2182,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%83%95%E3%82%89%E3%81%AE%E9%9F%B3/1531496480?i=1531496491"
       }
-    ]
+    ],
+    "Memo":"I like… I love… I love…"
   },
   {
     "Title": "and I love you",
     "albumid": 12,
     "songid": 12.5,
-    "Lyrics": "未来がまた一つ ほらまた一つ\n僕らに近いてる\nI love you\nand I love you",
+    "Lyrics": "未来がまた一つ ほらまた一つ\n僕らに近いてる\n^I love you\n^and I love you",
     "link": [
       {
         "label": "Spotify",
@@ -2062,7 +2207,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&index=1&t=4106s"
       }
-    ]
+    ],
+    "Memo":"27thシングル「四次元」の一曲。大サビアレンジがたまらない"
   },
   {
     "Title": "靴ひも",
@@ -2078,13 +2224,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%9D%B4%E3%81%B2%E3%82%82/1531496480?i=1531497247"
       }
-    ]
+    ],
+    "Memo":"君の色で濁っている"
   },
   {
     "Title": "CANDY",
     "albumid": 12,
     "songid": 12.7,
-    "Lyrics": "柄でもないけど\n会えると嬉しいよ",
+    "Lyrics": "柄でもないけど\n^会えると嬉しいよ",
     "link": [
       {
         "label": "Spotify",
@@ -2094,7 +2241,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/candy/1531496480?i=1531497253"
       }
-    ]
+    ],
+    "Memo":"🍬"
   },
   {
     "Title": "ランニングハイ",
@@ -2114,7 +2262,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&list=RDCxasK4veEu8&index=1&t=1137s"
       }
-    ]
+    ],
+    "Memo":"27thシングル「四次元」の一曲。時代とか社会とか”でっちあげてでも”"
   },
   {
     "Title": "Sign",
@@ -2138,7 +2287,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/7aJmUeLMZi4?si=vFdUzAW8mLNT70GX"
       }
-    ]
+    ],
+    "Memo":"26thシングル。身体でも心でもなく…🧐"
   },
   {
     "Title": "Door",
@@ -2154,7 +2304,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/door/1531496480?i=1531497259"
       }
-    ]
+    ],
+    "Memo":"事務所の屋上でレコーディング"
   },
   {
     "Title": "跳べ",
@@ -2170,7 +2321,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%B7%B3%E3%81%B9/1531496480?i=1531497265"
       }
-    ]
+    ],
+    "Memo":"みのもんた"
   },
   {
     "Title": "隔たり",
@@ -2186,7 +2338,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%9A%94%E3%81%9F%E3%82%8A/1531496480?i=1531497267"
       }
-    ]
+    ],
+    "Memo":"避妊具"
   },
   {
     "Title": "潜水",
@@ -2202,13 +2355,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%BD%9C%E6%B0%B4/1531496480?i=1531497269"
       }
-    ]
+    ],
+    "Memo":"ピアノ叩いても”音しか出ない”"
   },
   {
     "Title": "Wake me up!",
     "albumid": 13,
     "songid": 13.1,
-    "Lyrics": "明日になる前に今日が終わる前に\n見出せるかな\n生まれては消える命の意味を",
+    "Lyrics": "見出せるかな\n生まれては消える命の意味を",
     "link": [
       {
         "label": "Spotify",
@@ -2218,13 +2372,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/wake-me-up/1531496886?i=1531496889"
       }
-    ]
+    ],
+    "Memo":"Good Morning!!"
   },
   {
     "Title": "彩り",
     "albumid": 13,
     "songid": 13.2,
-    "Lyrics": "なんてことのない作業が\n回り回り回り回って\n今僕の目の前の人の\n笑い顔を作ってゆく",
+    "Lyrics": "なんてことのない作業が\n^回り回り回り回って\n^今僕の目の前の人の\n^笑い顔を作ってゆく",
     "link": [
       {
         "label": "Spotify",
@@ -2242,13 +2397,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/PFLT4PFDMoo?si=O5UOf8ZISBlubCKY"
       }
-    ]
+    ],
+    "Memo":"🔄"
   },
   {
     "Title": "箒星",
     "albumid": 13,
     "songid": 13.3,
-    "Lyrics": "でもね僕らは未来の担い手\n人の形した光\n暗闇と戯れ合っては\n眩しく煌めく「箒星」",
+    "Lyrics": "でもね僕らは未来の担い手\n人の形した光\n^暗闇と戯れ合っては\n^眩しく煌めく|「箒星」",
     "link": [
       {
         "label": "Spotify",
@@ -2262,13 +2418,14 @@
         "label": "MV",
         "url": "https://youtu.be/sRJxHz__EH0?si=xNVIEgjBY150IcMA"
       }
-    ]
+    ],
+    "Memo":"28thシングル。人の形した光"
   },
   {
     "Title": "Another Story",
     "albumid": 13,
     "songid": 13.4,
-    "Lyrics": "君と生きる毎日がなんだかんだ言って嬉しい\nそう君の笑顔と共に",
+    "Lyrics": "君と生きる毎日がなんだかんだ言って嬉しい",
     "link": [
       {
         "label": "Spotify",
@@ -2278,13 +2435,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/another-story/1531496886?i=1531496893"
       }
-    ]
+    ],
+    "Memo":"靴ひもとは別の物語"
   },
   {
     "Title": "PIANO MAN",
     "albumid": 13,
     "songid": 13.5,
-    "Lyrics": "無限大にある\nきっと可能性は果てしない\n転んだなら\n這いつくばったって進もう",
+    "Lyrics": "無限大にある\nきっと可能性は果てしない\n^転んだなら\n這いつくばったって進もう",
     "link": [
       {
         "label": "Spotify",
@@ -2294,13 +2452,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/piano-man/1531496886?i=1531496894"
       }
-    ]
+    ],
+    "Memo":"コバタケのピアノ全開の演奏"
   },
   {
     "Title": "もっと",
     "albumid": 13,
     "songid": 13.6,
-    "Lyrics": "どんな理不尽もコメディーに見えてくるまで\n大きいハート持てるといいな\nもっともっともっと",
+    "Lyrics": "大きいハート持てるといいな\n^もっともっともっと",
     "link": [
       {
         "label": "Spotify",
@@ -2310,13 +2469,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%82%E3%81%A3%E3%81%A8/1531496886?i=1531496896"
       }
-    ]
+    ],
+    "Memo":"「It’s A Wonderful World」時代から存在"
   },
   {
     "Title": "やわらかい風",
     "albumid": 13,
     "songid": 13.7,
-    "Lyrics": "君と過ごした時間があるから\n僕は恵まれてるって言える",
+    "Lyrics": "もっと大きな器でもっと優しくて\nそういう僕なら君を救えたろうな",
     "link": [
       {
         "label": "Spotify",
@@ -2326,13 +2486,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%84%E3%82%8F%E3%82%89%E3%81%8B%E3%81%84%E9%A2%A8/1531496886?i=1531496898"
       }
-    ]
+    ],
+    "Memo":"ブラオレツアーで初披露"
   },
   {
     "Title": "フェイク",
     "albumid": 13,
     "songid": 13.8,
-    "Lyrics": "すべてはフェイク\nそれすら",
+    "Lyrics": "すべてはフェイク\n^それすら",
     "link": [
       {
         "label": "Spotify",
@@ -2350,7 +2511,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/NS7EQ02hbQU?si=a-_atYplRWy39hhM"
       }
-    ]
+    ],
+    "Memo":"30thシングル。Any〜フェイク"
   },
   {
     "Title": "ポケット カスタネット",
@@ -2370,7 +2532,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&t=1783s"
       }
-    ]
+    ],
+    "Memo":"後半にかけて壮大に"
   },
   {
     "Title": "SUNRISE",
@@ -2386,7 +2549,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/sunrise/1531496886?i=1531496904"
       }
-    ]
+    ],
+    "Memo":"ツアーでは2019年の「All Against Gravity」で初披露。"
   },
   {
     "Title": "しるし",
@@ -2410,7 +2574,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&index=1&t=4513s"
       }
-    ]
+    ],
+    "Memo":"29thシングル。”どんな言葉を選んでもどこか嘘っぽいんだ”"
   },
   {
     "Title": "通り雨",
@@ -2426,13 +2591,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%80%9A%E3%82%8A%E9%9B%A8/1531496886?i=1531496909"
       }
-    ]
+    ],
+    "Memo":"ap07でのみ披露されていたが、虹ツアーでツアー初披露"
   },
   {
     "Title": "あんまり覚えてないや",
     "albumid": 13,
     "songid": 13.13,
-    "Lyrics": "たまに口喧嘩したり\nすぐに仲直りしたり\nちゃんと覚えてるんだ\nちゃんと覚えてるんだこんなに",
+    "Lyrics": "ちゃんと覚えてるんだこんなに",
     "link": [
       {
         "label": "Spotify",
@@ -2442,13 +2608,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%82%E3%82%93%E3%81%BE%E3%82%8A%E8%A6%9A%E3%81%88%E3%81%A6%E3%81%AA%E3%81%84%E3%82%84/1531496886?i=1531496910"
       }
-    ]
+    ],
+    "Memo":"メンバーも泣いてしまう歌詞。ちゃんと覚えてるんだ"
   },
   {
     "Title": "君の事以外は何も考えられない",
     "albumid": 14,
     "songid": 14.1,
-    "Lyrics": "",
+    "Lyrics": "君のこと以外は何も考えられない",
     "link": [
       {
         "label": "Spotify",
@@ -2462,13 +2629,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「抱きしめたい」のカップリング曲"
   },
   {
     "Title": "my confidence song",
     "albumid": 14,
     "songid": 14.2,
-    "Lyrics": "",
+    "Lyrics": "さぁどこまでも流れて行くよ\neverywhere I'll go",
     "link": [
       {
         "label": "Spotify",
@@ -2482,13 +2650,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「innocent world」のカップリング曲"
   },
   {
     "Title": "雨のち晴れ Remix Version",
     "albumid": 14,
     "songid": 14.3,
-    "Lyrics": "",
+    "Lyrics": "もうちょっともうちょっと\n頑張ってみるから\nねぇもっとねぇもっと\nいい事があるかな？",
     "link": [
       {
         "label": "Spotify",
@@ -2502,13 +2671,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「【es】〜Theme of es〜」のカップリング曲。日記の朗読が間奏に追加"
   },
   {
     "Title": "フラジャイル",
     "albumid": 14,
     "songid": 14.4,
-    "Lyrics": "",
+    "Lyrics": "メディアは数字より事実をさぁ追いかけろ！",
     "link": [
       {
         "label": "Spotify",
@@ -2522,13 +2692,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「シーソーゲーム」のカップリング曲。ゲリラライブが音源化"
   },
   {
     "Title": "また会えるかな",
     "albumid": 14,
     "songid": 14.5,
-    "Lyrics": "",
+    "Lyrics": "また会えたなら次会う時は\n君が悩み持ってたりすりゃいいな",
     "link": [
       {
         "label": "Spotify",
@@ -2542,13 +2713,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「名もなき詩」のカップリング曲。HeyHeyHey!"
   },
   {
     "Title": "Love is Blindness",
     "albumid": 14,
     "songid": 14.6,
-    "Lyrics": "",
+    "Lyrics": "Love is Blindness\n君以外は欲しくない",
     "link": [
       {
         "label": "Spotify",
@@ -2562,13 +2734,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「マシンガンをぶっ放せ」のカップリング曲。2005年に寺岡呼人のイベントにて披露。恋は盲目"
   },
   {
     "Title": "旅人",
     "albumid": 14,
     "songid": 14.7,
-    "Lyrics": "",
+    "Lyrics": "数え切れぬ絶望を味わった\n^夢を追う旅人",
     "link": [
       {
         "label": "Spotify",
@@ -2582,13 +2755,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「マシンガンをぶっ放せ」のカップリング曲。「会員が最もライブで聴きたい曲」3位"
   },
   {
     "Title": "デルモ",
     "albumid": 14,
     "songid": 14.8,
-    "Lyrics": "",
+    "Lyrics": "嬉しいよな悲しいよな\nちょっぴり涙モデル",
     "link": [
       {
         "label": "Spotify",
@@ -2602,13 +2776,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「Everything(It's you)」のカップリング曲。POPSAURUS2012にてツアー初披露"
   },
   {
     "Title": "独り言",
     "albumid": 14,
     "songid": 14.9,
-    "Lyrics": "",
+    "Lyrics": "もう少し前へあと一歩前へ\nおいでよ おいでよ",
     "link": [
       {
         "label": "Spotify",
@@ -2622,13 +2797,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「光の射す方へ」のカップリング曲。独り言をみんなで歌うという矛盾（リフレクションのライブフィルム）"
   },
   {
     "Title": "Heavenly kiss",
     "albumid": 14,
     "songid": 14.1,
-    "Lyrics": "",
+    "Lyrics": "もう一杯ビール飲むか？\n赤くなったっていいじゃない\nたまにゃ理性を捨てんのもいいぞ",
     "link": [
       {
         "label": "Spotify",
@@ -2642,13 +2818,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「口笛」のカップリング曲。"
   },
   {
     "Title": "1999年、夏、沖縄",
     "albumid": 14,
     "songid": 14.11,
-    "Lyrics": "",
+    "Lyrics": "いろんな街を歩きいろんな人に出会い\n口にしたさよならは数知れず",
     "link": [
       {
         "label": "Spotify",
@@ -2662,13 +2839,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「NOTFOUND」のカップリング曲。Thanksgiving25のMC、、涙"
   },
   {
     "Title": "花",
     "albumid": 14,
     "songid": 14.12,
-    "Lyrics": "",
+    "Lyrics": "ふと自分に迷うときは\n風を集めて空に放つよ今",
     "link": [
       {
         "label": "Spotify",
@@ -2682,13 +2860,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「優しい歌」のカップリング曲。原曲とは違い、ピアノ主体"
   },
   {
     "Title": "さよなら2001年",
     "albumid": 14,
     "songid": 14.13,
-    "Lyrics": "",
+    "Lyrics": "今年こそはきっとあなたに\nたくさんのいいことがありますように",
     "link": [
       {
         "label": "Spotify",
@@ -2702,13 +2881,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「君が好き」のカップリング曲。ライブ未演奏"
   },
   {
     "Title": "I'm sorry",
     "albumid": 14,
     "songid": 14.14,
-    "Lyrics": "",
+    "Lyrics": "土下座でもなんでもするから\n笑って許して\nI'm Sorry",
     "link": [
       {
         "label": "Spotify",
@@ -2722,13 +2902,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「Any」のカップリング曲。ライブ未演奏"
   },
   {
     "Title": "妄想満月",
     "albumid": 14,
     "songid": 14.15,
-    "Lyrics": "",
+    "Lyrics": "君が飼ってる大型犬が\n俺に吠えてる",
     "link": [
       {
         "label": "Spotify",
@@ -2742,13 +2923,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「Sign」のカップリング曲。寺岡呼人との共作。"
   },
   {
     "Title": "こんな風にひどく蒸し暑い日",
     "albumid": 14,
     "songid": 14.16,
-    "Lyrics": "",
+    "Lyrics": "こんな風にひどく蒸し暑い日は\n思い出してしまうんだ",
     "link": [
       {
         "label": "Spotify",
@@ -2762,13 +2944,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「Sign」のカップリング曲。Thanksgiving25で初披露。映像化はなし"
   },
   {
     "Title": "ほころび",
     "albumid": 14,
     "songid": 14.17,
-    "Lyrics": "",
+    "Lyrics": "ほころびはまた広がって\n何かが顔を出した",
     "link": [
       {
         "label": "Spotify",
@@ -2782,13 +2965,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「箒星」のカップリング曲。apなどのフェスで披露されたがツアーでの披露はない。"
   },
   {
     "Title": "my sweet heart",
     "albumid": 14,
     "songid": 14.18,
-    "Lyrics": "",
+    "Lyrics": "恋に落ちそうだよ\n君はかわいい my sweet heart",
     "link": [
       {
         "label": "Spotify",
@@ -2802,13 +2986,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「箒星」のカップリング曲。ライブで披露されたのは「Spilit the Difference」で一度のみ。"
   },
   {
     "Title": "ひびき",
     "albumid": 14,
     "songid": 14.19,
-    "Lyrics": "",
+    "Lyrics": "この声だ その響きだ\n一番好きな音は",
     "link": [
       {
         "label": "Spotify",
@@ -2822,13 +3007,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「しるし」のカップリング曲。B-SIDEのプロモーション用にMVを作成。"
   },
   {
     "Title": "くるみ -for the Film- 幸福な食卓",
     "albumid": 14,
     "songid": 14.2,
-    "Lyrics": "",
+    "Lyrics": "今以上をいつも欲しがるくせに\n変わらない愛を求め歌う",
     "link": [
       {
         "label": "Spotify",
@@ -2842,7 +3028,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"「しるし」のカップリング曲。原曲と違い、ピアノが主体"
   },
   {
     "Title": "終末のコンフィデンスソング",
@@ -2862,13 +3049,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/～"
       }
-    ]
+    ],
+    "Memo":"曲名は”コンフィデンスソング”、ツアー名は”コンフィデンスソングス”"
   },
   {
     "Title": "HANABI",
     "albumid": 15,
     "songid": 15.2,
-    "Lyrics": "もう一回もう一回\n僕はこの手を伸ばしたい",
+    "Lyrics": "もう一回もう一回\n^もう一回もう一回\n^僕はこの手を伸ばしたい",
     "link": [
       {
         "label": "Spotify",
@@ -2886,7 +3074,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/2MNL2mU8pBE?si=tRCEFIP4HXGJBW9o"
       }
-    ]
+    ],
+    "Memo":"33rdシングル。金魚"
   },
   {
     "Title": "エソラ",
@@ -2910,13 +3099,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/s8eLpnWweTU?si=rJoUBgLQaatCT4rb"
       }
-    ]
+    ],
+    "Memo":"POPSAURUS2012のOP曲。神イントロ。"
   },
   {
     "Title": "声",
     "albumid": 15,
     "songid": 15.4,
-    "Lyrics": "別に巧くなくていい\n声が枯れてたっていい\n受け止めてくれる誰かが\nその声を待っている",
+    "Lyrics": "別に巧くなくていい\n^声が枯れてたっていい\n^受け止めてくれる誰かが\n^その声を待っている",
     "link": [
       {
         "label": "Spotify",
@@ -2930,7 +3120,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/NhqqKETgBO0?si=93LHNqi-zb1bPttq"
       }
-    ]
+    ],
+    "Memo":"アルバム曲ながら、演奏されたツアー2回のどちらもYoutubeに上がっている。"
   },
   {
     "Title": "少年",
@@ -2946,7 +3137,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%B0%91%E5%B9%B4/1531496623?i=1531496630"
       }
-    ]
+    ],
+    "Memo":"熱いのお届けします！"
   },
   {
     "Title": "旅立ちの唄",
@@ -2966,13 +3158,14 @@
         "label": "MV",
         "url": "https://youtu.be/sPyWyBjM-3E?si=0VT7Y9KVarOx_3WS"
       }
-    ]
+    ],
+    "Memo":"31thシングル。HOMEツアーのラストに演奏されたが、同アルバムツアーでは演奏されなかった"
   },
   {
     "Title": "口がすべって",
     "albumid": 15,
     "songid": 15.7,
-    "Lyrics": "「他人の気持ちになって考えろ」と言われてはきたけど\n想像を超えて心は理解しがたいもの",
+    "Lyrics": "「他人の気持ちになって考えろ」\nと言われてはきたけど\n想像を超えて心は理解しがたいもの",
     "link": [
       {
         "label": "Spotify",
@@ -2982,7 +3175,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%8F%A3%E3%81%8C%E3%81%99%E3%81%B9%E3%81%A3%E3%81%A6/1531496623?i=1531496632"
       }
-    ]
+    ],
+    "Memo":"トゥットゥットゥー"
   },
   {
     "Title": "水上バス",
@@ -2998,13 +3192,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%B0%B4%E4%B8%8A%E3%83%90%E3%82%B9/1531496623?i=1531496633"
       }
-    ]
+    ],
+    "Memo":"「さよなら」を選んだ君はおそらく正しい"
   },
   {
     "Title": "東京",
     "albumid": 15,
     "songid": 15.9,
-    "Lyrics": "甘い匂いがこの胸に溢れ出す\nあの人に手紙でも書こうかな",
+    "Lyrics": "あの人に手紙でも書こうかな",
     "link": [
       {
         "label": "Spotify",
@@ -3014,13 +3209,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%9D%B1%E4%BA%AC/1531496623?i=1531496635"
       }
-    ]
+    ],
+    "Memo":"俺が歌いたいの"
   },
   {
     "Title": "ロックンロール",
     "albumid": 15,
     "songid": 15.10,
-    "Lyrics": "わかってるよ わかってるよ\nだけどたまらなくそいつに憧れるや",
+    "Lyrics": "だけどたまらなくそいつに憧れるや",
     "link": [
       {
         "label": "Spotify",
@@ -3030,7 +3226,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%AD%E3%83%83%E3%82%AF%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%AB/1531496623?i=1531496636"
       }
-    ]
+    ],
+    "Memo":"JENをモチーフにした曲。店長からのおすすめの一曲"
   },
   {
     "Title": "羊、吠える",
@@ -3046,13 +3243,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E7%BE%8A-%E5%90%A0%E3%81%88%E3%82%8B/1531496623?i=1531496638"
       }
-    ]
+    ],
+    "Memo":"「旅立ちの唄」のカップリング曲。ライブ未披露"
   },
   {
     "Title": "風と星とメビウスの輪",
     "albumid": 15,
     "songid": 15.12,
-    "Lyrics": "愛されて\n優しくなれて\nその優しさ故に愛されて",
+    "Lyrics": "愛されて\n^優しくなれて\n^その優しさ故に愛されて",
     "link": [
       {
         "label": "Spotify",
@@ -3066,13 +3264,14 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&t=7239s"
       }
-    ]
+    ],
+    "Memo":"「GIFT」のカップリング曲。アルバムバージョンは壮大"
   },
   {
     "Title": "GIFT",
     "albumid": 15,
     "songid": 15.13,
-    "Lyrics": "君とだから探せたよ\n僕の方こそありがとう",
+    "Lyrics": "君とだから探せたよ\n^僕の方こそありがとう",
     "link": [
       {
         "label": "Spotify",
@@ -3090,7 +3289,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/PndExyZsuYA?si=fC3ZDteptyUhU_m9"
       }
-    ]
+    ],
+    "Memo":"32ndシングル。シングルとアウトロが少し違う"
   },
   {
     "Title": "花の匂い",
@@ -3110,7 +3310,8 @@
         "label": "MV",
         "url": "https://youtu.be/6BsZ1d9UE5I?si=mHNGpm4_DXGbNrK3"
       }
-    ]
+    ],
+    "Memo":"1st配信限定シングル。誰かの心の中で生き続ける"
   },
   {
     "Title": "I",
@@ -3130,13 +3331,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/I1XT29DoA_8?si=AObeyvZeBH3D_5es"
       }
-    ]
+    ],
+    "Memo":"アルバム一曲目。SENSE＋I＝先制"
   },
   {
     "Title": "擬態",
     "albumid": 16,
     "songid": 16.2,
-    "Lyrics": "目じゃないとこ耳じゃないどこかを使って見聞きをしなければ\n見落としてしまう\n何かに擬態したものばかり",
+    "Lyrics": "目じゃないとこ耳じゃないどこかを使って\n^見聞きをしなければ\n^見落としてしまう\n^何かに擬態したものばかり",
     "link": [
       {
         "label": "Spotify",
@@ -3150,7 +3352,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/pS8cl5hAGAQ?si=4THyRj9zcUTiFc2P"
       }
-    ]
+    ],
+    "Memo":"大切なことは目には見えない"
   },
   {
     "Title": "HOWL",
@@ -3166,7 +3369,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/howl/1531495894?i=1531496407"
       }
-    ]
+    ],
+    "Memo":"ap23にてアルバムツアー以来に披露された"
   },
   {
     "Title": "I'm talking about Lovin'",
@@ -3182,13 +3386,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/im-talking-about-lovin/1531495894?i=1531496410"
       }
-    ]
+    ],
+    "Memo":"PKど真ん中は勇気いるのよ"
   },
   {
     "Title": "365日",
     "albumid": 16,
     "songid": 16.5,
-    "Lyrics": "聞こえてくる\n流れてくる\n君を巡る想いのすべてよ\nどうか君に届け",
+    "Lyrics": "365日の\n君に捧げる愛の詩",
     "link": [
       {
         "label": "Spotify",
@@ -3202,13 +3407,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/43D_nBGfuGY?si=w-iOIME6znBgDJ8N"
       }
-    ]
+    ],
+    "Memo":"人々が1年間で愛し合える日数"
   },
   {
     "Title": "ロックンロールは生きている",
     "albumid": 16,
     "songid": 16.6,
-    "Lyrics": "ほら1、2の３のきっかけで飛ぶんだ清水の舞台",
+    "Lyrics": "慌てないで ほら1、2の3の\nきっかけで飛ぶんだ清水の舞台",
     "link": [
       {
         "label": "Spotify",
@@ -3222,13 +3428,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/UFgF37eJUuY?si=ow8c1bVaeMA1FWeE"
       }
-    ]
+    ],
+    "Memo":"ライブアレンジがカッコ良すぎる。「お前だけのステップ Oh〜」"
   },
   {
     "Title": "ロザリータ",
     "albumid": 16,
     "songid": 16.7,
-    "Lyrics": "甘い言葉 完璧な微笑み\nそばかす 唇\n下品に濡れる果実",
+    "Lyrics": "甘い言葉 完璧な微笑み\n^そばかす 唇\n^下品に濡れる果実",
     "link": [
       {
         "label": "Spotify",
@@ -3238,7 +3445,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%AD%E3%82%B6%E3%83%AA%E3%83%BC%E3%82%BF/1531495894?i=1531496413"
       }
-    ]
+    ],
+    "Memo":"コバタケワールド全開のバラード"
   },
   {
     "Title": "蒼",
@@ -3254,7 +3462,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%92%BC/1531495894?i=1531496416"
       }
-    ]
+    ],
+    "Memo":"「それでも心は手を伸ばし続ける」"
   },
   {
     "Title": "fanfare",
@@ -3274,7 +3483,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&t=3255s"
       }
-    ]
+    ],
+    "Memo":"2nd配信限定シングル。ストロングワールド"
   },
   {
     "Title": "ハル",
@@ -3294,7 +3504,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&t=3696s"
       }
-    ]
+    ],
+    "Memo":"歌詞は”春”、曲名は”ハル”、、なんでだ"
   },
   {
     "Title": "Prelude",
@@ -3310,7 +3521,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/prelude/1531495894?i=1531496421"
       }
-    ]
+    ],
+    "Memo":"過去作いっぱい"
   },
   {
     "Title": "Forever",
@@ -3326,7 +3538,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/forever/1531495894?i=1531496422"
       }
-    ]
+    ],
+    "Memo":"「君の好きな僕」"
   },
   {
     "Title": "hypnosis",
@@ -3346,7 +3559,8 @@
         "label": "MV",
         "url": "https://youtu.be/4Zj9PE3Vcc0?si=zJZ_Wm-qXGvgBu3M"
       }
-    ]
+    ],
+    "Memo":"4th配信限定シングル。hypnosis:催眠状態"
   },
   {
     "Title": "Marshmallow day",
@@ -3370,13 +3584,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/oYWaZcqVnbM?si=pTE11gklHeY7llOM"
       }
-    ]
+    ],
+    "Memo":"マシュマロの日"
   },
   {
     "Title": "End of the day",
     "albumid": 17,
     "songid": 17.3,
-    "Lyrics": "もっともっと羽ばたける日は来る きっと来る\nとりあえずそう信じて\nあと少しそう信じて",
+    "Lyrics": "もっともっと羽ばたける日は来る きっと来る\n^とりあえずそう信じて\n^あと少しそう信じて",
     "link": [
       {
         "label": "Spotify",
@@ -3386,7 +3601,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/end-of-the-day/1531496874?i=1531497023"
       }
-    ]
+    ],
+    "Memo":"34thシングルの一曲。ブラオレツアーではサビ弾き語りから始まるアレンジ"
   },
   {
     "Title": "常套句",
@@ -3406,13 +3622,14 @@
         "label": "MV",
         "url": "https://youtu.be/2iKRxczFkOI?si=grLpEAK5H73Snwv9"
       }
-    ]
+    ],
+    "Memo":"POPSAURUS2012で制作途中ながら初披露。"
   },
   {
     "Title": "pieces",
     "albumid": 17,
     "songid": 17.5,
-    "Lyrics": "今日まで僕等が共に夢を追った軌跡\nまた次の一歩を踏み出してみよう",
+    "Lyrics": "今日まで僕等が共に夢を追った軌跡",
     "link": [
       {
         "label": "Spotify",
@@ -3422,13 +3639,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/pieces/1531496874?i=1531497031"
       }
-    ]
+    ],
+    "Memo":"34thシングルの一曲。"
   },
   {
     "Title": "イミテーションの木",
     "albumid": 17,
     "songid": 17.6,
-    "Lyrics": "張りぼての命でも人を癒せるなら\n本物じゃなくても君を癒せるなら",
+    "Lyrics": "本物じゃなくても君を癒せるなら",
     "link": [
       {
         "label": "Spotify",
@@ -3438,7 +3656,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%A4%E3%83%9F%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E6%9C%A8/1531496874?i=1531497035"
       }
-    ]
+    ],
+    "Memo":"”本物”とは？"
   },
   {
     "Title": "かぞえうた",
@@ -3454,7 +3673,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%8B%E3%81%9E%E3%81%88%E3%81%86%E3%81%9F/1531496874?i=1531497218"
       }
-    ]
+    ],
+    "Memo":"3rd配信限定シングル。Cメロ以外の歌詞がひらがな"
   },
   {
     "Title": "インマイタウン",
@@ -3470,7 +3690,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%A4%E3%83%B3%E3%83%9E%E3%82%A4%E3%82%BF%E3%82%A6%E3%83%B3/1531496874?i=1531497223"
       }
-    ]
+    ],
+    "Memo":"ライブ未演奏"
   },
   {
     "Title": "過去と未来と交信する男",
@@ -3486,7 +3707,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%81%8E%E5%8E%BB%E3%81%A8%E6%9C%AA%E6%9D%A5%E3%81%A8%E4%BA%A4%E4%BF%A1%E3%81%99%E3%82%8B%E7%94%B7/1531496874?i=1531497227"
       }
-    ]
+    ],
+    "Memo":"ブラオレツアーの一曲目。フードを被って不気味な演出"
   },
   {
     "Title": "Happy Song",
@@ -3506,7 +3728,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/31GVSIK93V4?si=kwfeDbZkhUCKomNd"
       }
-    ]
+    ],
+    "Memo":"めざましテレビのテーマソング"
   },
   {
     "Title": "祈り ～涙の軌道",
@@ -3526,13 +3749,14 @@
         "label": "MV",
         "url": "https://youtu.be/g3J8LBnYq4E?si=PkXmsH9627HPNDT2"
       }
-    ]
+    ],
+    "Memo":"34thシングルの一曲"
   },
   {
     "Title": "fantasy",
     "albumid": 18,
     "songid": 18.1,
-    "Lyrics": "「想像を超えた猟奇殺人さえ今や日常 ドキュメンタリー」",
+    "Lyrics": "日常の中のファンタジーへと",
     "link": [
       {
         "label": "Spotify",
@@ -3542,7 +3766,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/fantasy/1531496939?i=1531497115"
       }
-    ]
+    ],
+    "Memo":"REFLECTIONツアーの一曲目"
   },
   {
     "Title": "FIGHT CLUB",
@@ -3558,7 +3783,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/fight-club/1531496939?i=1531497119"
       }
-    ]
+    ],
+    "Memo":"映画の「ファイト・クラブ」から"
   },
   {
     "Title": "斜陽",
@@ -3574,13 +3800,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%96%9C%E9%99%BD/1531496939?i=1531497306"
       }
-    ]
+    ],
+    "Memo":"太宰治の小説「斜陽」から"
   },
   {
     "Title": "Melody",
     "albumid": 18,
     "songid": 18.4,
-    "Lyrics": "見飽きたこの街がクリスマスみたいに光る\nそんな瞬間 今日も僕は探してる",
+    "Lyrics": "見飽きたこの街がクリスマスみたいに光る",
     "link": [
       {
         "label": "Spotify",
@@ -3590,7 +3817,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/melody/1531496939?i=1531497308"
       }
-    ]
+    ],
+    "Memo":"「足音」のカップリング曲。🎄"
   },
   {
     "Title": "蜘蛛の糸",
@@ -3606,13 +3834,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%9C%98%E8%9B%9B%E3%81%AE%E7%B3%B8/1531496939?i=1531497310"
       }
-    ]
+    ],
+    "Memo":"芥川龍之介の小説「蜘蛛の糸」から"
   },
   {
     "Title": "I Can Make It",
     "albumid": 18,
     "songid": 18.6,
-    "Lyrics": "「追いかけてるはずが追われてる」\nここんとこはそんな日々だ",
+    "Lyrics": "前編を通し暗いタッチで描かれた\nモノクロの映画を観た",
     "link": [
       {
         "label": "Spotify",
@@ -3622,7 +3851,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/i-can-make-it/1531496939?i=1531497311"
       }
-    ]
+    ],
+    "Memo":"ライブ映像はモノクロの暗いタッチで描かれた"
   },
   {
     "Title": "ROLLIN' ROLLING ～一見は百聞に如かず",
@@ -3638,13 +3868,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/rollin-rolling-%E4%B8%80%E8%A6%8B%E3%81%AF%E7%99%BE%E8%81%9E%E3%81%AB%E5%A6%82%E3%81%8B%E3%81%9A/1531496939?i=1531497313"
       }
-    ]
+    ],
+    "Memo":"百聞は一見に如かず"
   },
   {
     "Title": "放たれる",
     "albumid": 18,
     "songid": 18.8,
-    "Lyrics": "誰もが「生きる奇跡」\n生まれてきた ただそれだけで\n愛されてる証",
+    "Lyrics": "生まれてきた ただそれだけで\n愛されてる証",
     "link": [
       {
         "label": "Spotify",
@@ -3654,7 +3885,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%94%BE%E3%81%9F%E3%82%8C%E3%82%8B/1531496939?i=1531497316"
       }
-    ]
+    ],
+    "Memo":"6th配信限定シングル。「足音」のカップリング曲でもある"
   },
   {
     "Title": "街の風景",
@@ -3670,7 +3902,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%A1%97%E3%81%AE%E9%A2%A8%E6%99%AF/1531496939?i=1531497320"
       }
-    ]
+    ],
+    "Memo":"小田和正との共作「パノラマの街」が原曲。ap25で初披露"
   },
   {
     "Title": "運命",
@@ -3686,13 +3919,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%81%8B%E5%91%BD/1531496939?i=1531497322"
       }
-    ]
+    ],
+    "Memo":"ベートーベン「運命」"
   },
   {
     "Title": "足音～Be Strong",
     "albumid": 18,
     "songid": 18.11,
-    "Lyrics": "時には灯りのない孤独な夜が来たって\nこの足音を聞いてる\n誰かがきっといる",
+    "Lyrics": "この足音を聞いてる\n誰かがきっといる",
     "link": [
       {
         "label": "Spotify",
@@ -3710,13 +3944,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/_B09-nM3knE?si=LaWGv7llUZT2WTQt"
       }
-    ]
+    ],
+    "Memo":"35thシングル。ミスチル初のセルフプロデュース楽曲"
   },
   {
     "Title": "忘れ得ぬ人",
     "albumid": 18,
     "songid": 18.12,
-    "Lyrics": "忘れn人が心に生きていて\n優しさで 厳しさで\n僕を抱きしめ立ち止まらせる",
+    "Lyrics": "忘れぬ人が心に生きていて\n優しさで 厳しさで\n僕を抱きしめ立ち止まらせる",
     "link": [
       {
         "label": "Spotify",
@@ -3726,13 +3961,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%BF%98%E3%82%8C%E5%BE%97%E3%81%AC%E4%BA%BA/1531496939?i=1531497331"
       }
-    ]
+    ],
+    "Memo":"その日が来るのをどこかで願ってる"
   },
   {
     "Title": "You make me happy",
     "albumid": 18,
     "songid": 18.13,
-    "Lyrics": "きみといるこの時間が好き\nきみのいるこの街が好き\nYou are the one. We are the one\nきみが好き",
+    "Lyrics": "You are the one. We are the one\nきみが好き",
     "link": [
       {
         "label": "Spotify",
@@ -3742,7 +3978,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/you-make-me-happy/1531496939?i=1531497333"
       }
-    ]
+    ],
+    "Memo":"虹ツアーで演奏された"
   },
   {
     "Title": "Jewelry",
@@ -3758,13 +3995,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/jewelry/1531496939?i=1531497666"
       }
-    ]
+    ],
+    "Memo":"ライブ未披露"
   },
   {
     "Title": "REM",
     "albumid": 18,
     "songid": 18.15,
-    "Lyrics": "こんな自由を奪うような夢のない夢なら見たくはない\n要らない要らない",
+    "Lyrics": "こんな自由を奪うような夢のない夢なら\n見たくはない要らない要らない",
     "link": [
       {
         "label": "Spotify",
@@ -3782,7 +4020,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/_WrC9qLcaEw?si=dAezu49ZFQQ3kqTY"
       }
-    ]
+    ],
+    "Memo":"5th配信限定シングル。ライブのスクリーンアートがスゴイっ"
   },
   {
     "Title": "WALTZ",
@@ -3798,7 +4037,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/waltz/1531496939?i=1531497674"
       }
-    ]
+    ],
+    "Memo":""
   },
   {
     "Title": "進化論",
@@ -3818,7 +4058,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/4fs7QoPnRNE?si=d1oXv3xzIOvGGq65"
       }
-    ]
+    ],
+    "Memo":"世代を越えて"
   },
   {
     "Title": "幻聴",
@@ -3838,7 +4079,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/kvlEWUpIl2Y?si=Rd7JDt0l9lsITXld"
       }
-    ]
+    ],
+    "Memo":"ライブ定番曲になりつつある。サビを話すように歌うアレンジがイイ"
   },
   {
     "Title": "Reflection",
@@ -3854,13 +4096,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/reflection/1531496939?i=1531497737"
       }
-    ]
+    ],
+    "Memo":"桜井さんがピアノを弾いてる"
   },
   {
     "Title": "遠くへと",
     "albumid": 18,
     "songid": 18.20,
-    "Lyrics": "遠くへと遠くへと 自由を浴び走る",
+    "Lyrics": "遠くへと遠くへと\n自由を浴び走る",
     "link": [
       {
         "label": "Spotify",
@@ -3870,13 +4113,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%81%A0%E3%81%8F%E3%81%B8%E3%81%A8/1531496939?i=1531497740"
       }
-    ]
+    ],
+    "Memo":"2マンLIVEでのみ披露"
   },
   {
     "Title": "I wanna be there",
     "albumid": 18,
     "songid": 18.21,
-    "Lyrics": "いちばんタフな靴を選んで また\n装飾のない服を着て\n音楽は俺の頭の中で鳴らしてく",
+    "Lyrics": "「生きていること」にもっと\n感謝して生きていたい",
     "link": [
       {
         "label": "Spotify",
@@ -3886,7 +4130,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/i-wanna-be-there/1531496939?i=1531497745"
       }
-    ]
+    ],
+    "Memo":"🍊ツアーのアンコール一曲目。ステキ"
   },
   {
     "Title": "Starting Over",
@@ -3906,7 +4151,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/3PnCgAlmK3Q?si=hALo3kc7QXiRXn8P"
       }
-    ]
+    ],
+    "Memo":"ノブナガ"
   },
   {
     "Title": "未完",
@@ -3922,13 +4168,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%9C%AA%E5%AE%8C/1531496939?i=1531497752"
       }
-    ]
+    ],
+    "Memo":"🍊🪶"
   },
   {
     "Title": "Your Song",
     "albumid": 19,
     "songid": 19.1,
-    "Lyrics": "そう君じゃなきゃ\n君じゃなきゃ",
+    "Lyrics": "そう君じゃなきゃ\n^君じゃなきゃ",
     "link": [
       {
         "label": "Spotify",
@@ -3946,13 +4193,14 @@
         "label": "YouTube",
         "url": "https://youtu.be/FU-Y-H0E8xw?si=iBN-lUJa1xfgWy0u"
       }
-    ]
+    ],
+    "Memo":"ふとした瞬間に同じこと考えてたりして"
   },
   {
     "Title": "海にて、心は裸になりたがる",
     "albumid": 19,
     "songid": 19.2,
-    "Lyrics": "対照的と思っていても\n実はあちこちが似ているよ\n今心は裸になりたがってるよ",
+    "Lyrics": "今心は裸になりたがってるよ",
     "link": [
       {
         "label": "Spotify",
@@ -3966,7 +4214,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/I-GEkUtWchM?si=BpaSW8qlGI8U5xDD"
       }
-    ]
+    ],
+    "Memo":"「ナカケーと一緒に！！」"
   },
   {
     "Title": "SINGLES",
@@ -3986,13 +4235,14 @@
         "label": "MV",
         "url": "https://youtu.be/yIvXuXOTEPA?si=hmMpZqwUvWdgG0xJ"
       }
-    ]
+    ],
+    "Memo":"複数形"
   },
   {
     "Title": "here comes my love",
     "albumid": 19,
     "songid": 19.4,
-    "Lyrics": "祈るように\n叫ぶように\nこの想いがはぐれないように",
+    "Lyrics": "祈るように 叫ぶように\nこの想いがはぐれないように",
     "link": [
       {
         "label": "Spotify",
@@ -4010,7 +4260,8 @@
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&t=6806s"
       }
-    ]
+    ],
+    "Memo":"7th配信限定シングル"
   },
   {
     "Title": "箱庭",
@@ -4026,13 +4277,14 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E7%AE%B1%E5%BA%AD/1531496177?i=1531496183"
       }
-    ]
+    ],
+    "Memo":"ライブ未披露"
   },
   {
     "Title": "addiction",
     "albumid": 19,
     "songid": 19.6,
-    "Lyrics": "さぁ内なる声に\nほら耳を澄ましてごらん",
+    "Lyrics": "欲しくてたまらないよ\nmore more more!",
     "link": [
       {
         "label": "Spotify",
@@ -4046,7 +4298,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/eibyCRaM05g?si=-WZ_cIw7JmyO1qrZ"
       }
-    ]
+    ],
+    "Memo":"ライブでは特殊な舞台演出"
   },
   {
     "Title": "day by day（愛犬クルの物語）",
@@ -4062,7 +4315,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/day-by-day-%E6%84%9B%E7%8A%AC%E3%82%AF%E3%83%AB%E3%81%AE%E7%89%A9%E8%AA%9E/1531496177?i=1531496187"
       }
-    ]
+    ],
+    "Memo":"ライブ未発表"
   },
   {
     "Title": "秋がくれた切符",
@@ -4078,7 +4332,8 @@
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E7%A7%8B%E3%81%8C%E3%81%8F%E3%82%8C%E3%81%9F%E5%88%87%E7%AC%A6/1531496177?i=1531496188"
       }
-    ]
+    ],
+    "Memo":"🍁"
   },
   {
     "Title": "himawari",
@@ -4102,7 +4357,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/-W0IEVetBaQ?si=QZlTSNTe3Fd_Zim0"
       }
-    ]
+    ],
+    "Memo":"37thシングル。「君の膵臓をたべたい」主題歌"
   },
   {
     "Title": "皮膚呼吸",
@@ -4122,7 +4378,8 @@
         "label": "YouTube",
         "url": "https://youtu.be/y6AF3yPDtQA?si=7CQrgSOvf4UAOFDH"
       }
-    ]
+    ],
+    "Memo":"無意識にやってることが無駄なようで実は重要"
   },
   {
     "Title": "DANCING SHOES",
@@ -4232,7 +4489,7 @@
     "Title": "Birthday",
     "albumid": 20,
     "songid": 20.7,
-    "Lyrics": "そういつだってIt's your birthday",
+    "Lyrics": "そういつだって\nIt's your birthday",
     "link": [
       {
         "label": "Spotify",
@@ -4248,7 +4505,7 @@
     "Title": "others",
     "albumid": 20,
     "songid": 20.8,
-    "Lyrics": "君の指に触れ\nくちびるに触れ\n時間が止まった",
+    "Lyrics": "君の指に触れ くちびるに触れ\n時間が止まった",
     "link": [
       {
         "label": "Spotify",
@@ -4320,7 +4577,7 @@
     "Title": "Fifty’s map 〜おとなの地図",
     "albumid": 21,
     "songid": 21.2,
-    "Lyrics": "自由ってやつはティーンエイジャーにだけかかる魔法じゃないはずだろう？",
+    "Lyrics": "自由ってやつはティーンエイジャーにだけ\nかかる魔法じゃないはずだろう？",
     "link": [
       {
         "label": "Spotify",
@@ -4356,7 +4613,7 @@
     "Title": "Are you sleeping well without me?",
     "albumid": 21,
     "songid": 21.4,
-    "Lyrics": "答えて欲しい\nAre you sleeping well without me?",
+    "Lyrics": "答えて欲しい\n^Are you sleeping well without me?",
     "link": [
       {
         "label": "Spotify",
@@ -4436,7 +4693,7 @@
     "Title": "We have no time",
     "albumid": 21,
     "songid": 21.9,
-    "Lyrics": "やり直すにはWe have no time",
+    "Lyrics": "やり直すには\nWe have no time",
     "link": [
       {
         "label": "Spotify",
@@ -4508,7 +4765,7 @@
     "Title": "おはよう",
     "albumid": 21,
     "songid": 21.13,
-    "Lyrics": "おはよう おはよう\nおはよう おはよう\n今日もきっと良い日だ",
+    "Lyrics": "おはよう おはよう\n^おはよう おはよう\n^今日もきっと良い日だ",
     "link": [
       {
         "label": "Spotify",

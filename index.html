@@ -14,7 +14,7 @@
 
     /* フォント */
     --font-title: 40px;
-    --font-lyrics: 18px;
+    --font-lyrics: 16px;
     --font-info: 16px;
 
     /* 歌詞の配置 */
@@ -23,6 +23,23 @@
 
     /* タイトル（左上） */
     --title-left: 16px;  --title-top: 50px;
+
+    /* ===============================
+       画面3：情報ブロック位置（ここを触る）
+       =============================== */
+    --info-left: 50%;
+    --info-top: 45%;
+    --info-translate-x: -50%;
+    --info-translate-y: -50%;
+
+    --info-gap: 12px;
+    --info-align: center; /* left / center / right */
+
+    --info-image-max: 420px;
+
+    /* ▼ 追加：間隔（必要ならここを調整） */
+    --gap-img-to-release: 28px;    /* 画像→Release の追加間隔 */
+    --gap-album-to-links: 22px;    /* Albuminfo→リンク の追加間隔 */
   }
 
   *{box-sizing:border-box}
@@ -84,12 +101,10 @@
   #screen3::before{
     content:"";
     position:absolute; inset:0;
-    background: rgba(0,0,0,.75); /* 薄い黒フィルター（濃さ調整ここ） */
+    background: rgba(0,0,0,.75);
     pointer-events:none;
   }
-  /* 画面3の内容をフィルターより前面に */
   #screen3 > *{ position:relative; z-index:1; }
-  /* 背景にすると文字が沈むので、画面3は白文字寄りに */
   #screen3{ color:#f3f4f6; }
   #screen3 .infoBlock{ color:#f3f4f6; }
   #screen3 .linkList a{ color:#93c5fd; }
@@ -115,6 +130,7 @@
       serif;
   }
 
+  /* 行（ブロック内の1行） */
   .lyrics .line{
     opacity:0; transform: translateY(10px);
     transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
@@ -122,30 +138,90 @@
   }
   .lyrics .line.show{ opacity:1; transform:none; }
 
+  /* 同一行内セグメント（| で遅延） */
+  .lyrics .seg{
+    display:inline-block;
+    opacity:0; transform: translateY(10px);
+    transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+    will-change: opacity, transform;
+  }
+  .lyrics .seg.show{ opacity:1; transform:none; }
+
   /* タイトル（左上・テキスト用フェード） */
   .titleFixed{
-    position: absolute; left: var(--title-left); top: var(--title-top);
-    margin:0; font-size: var(--font-title); font-weight: 800; letter-spacing: .02em;
+    position: absolute;
+    left: var(--title-left);
+    right: var(--title-left);
+    top: var(--title-top);
+    margin:0;
+    font-size: var(--font-title);
+    font-weight: 800;
+    letter-spacing: .02em;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+
     opacity:0; transform: translateY(-6px);
     transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
   }
   .titleFixed.show{ opacity:1; transform:none; }
 
-  /* 情報（中央・テキスト用フェード） */
+  /* ===============================
+     画面3：情報（順番：画像→release→Albuminfo→リンク）
+     =============================== */
   .infoBlock{
-    position:absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-    width: min(92%, 560px);
-    display:grid; grid-template-columns: 1fr; gap: 10px;
-    opacity:0; transition: opacity var(--text-fade-ms) ease;
-    text-align:center; color: var(--c-text);
+    position:absolute;
+    left: var(--info-left);
+    top:  var(--info-top);
+    transform: translate(var(--info-translate-x), var(--info-translate-y));
+
+    width: min(82%, 560px);
+
+    display:flex;
+    flex-direction: column;
+    gap: var(--info-gap);
+
+    align-items: var(--info-align);
+    text-align: var(--info-align);
+
+    color: var(--c-text);
   }
-  .infoBlock.show{ opacity:1; }
+
   .infoImage{
-    width:100%; height:auto; object-fit:contain; display:none; border-radius: 6px;
+    width: min(92%, var(--info-image-max));
+    height:auto;
+    object-fit:contain;
+    display:none;
+    border-radius: 6px;
   }
+
   .infoText{ font-size: var(--font-info); margin:0; }
+
   .linkList a{ color: var(--accent); text-decoration: underline; }
-  .linkList{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+
+  .linkList{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  /* ▼ 段階表示（ここが今回のキモ） */
+  .infoStep{
+    opacity:0;
+    transform: translateY(10px);
+    transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+    will-change: opacity, transform;
+  }
+  .infoStep.show{
+    opacity:1;
+    transform:none;
+  }
+
+  /* ▼ 追加の間隔（画像→Release、Albuminfo→Links） */
+  #infoRelease{ margin-top: var(--gap-img-to-release); }
+  #infoLinks{ margin-top: var(--gap-album-to-links); }
 
   @media (max-width: 420px) {
     :root{
@@ -177,16 +253,16 @@
       </div>
     </section>
 
-    <!-- 画面3：白背景・黒文字（タイトル＋アルバム情報） -->
+    <!-- 画面3：背景画像 + 黒フィルター（タイトル＋情報） -->
     <section id="screen3" class="screen" aria-live="polite" aria-atomic="true">
       <h1 id="songTitleFixed" class="titleFixed"></h1>
 
+      <!-- 上から順に：画像 → release → Albuminfo → リンク（時間差で表示） -->
       <div id="infoBlock" class="infoBlock">
-        <img id="infoImage" class="infoImage" alt="">
-        <p id="infoAlbum" class="infoText"></p>
-        <p id="infoDetail" class="infoText"></p>
-        <p id="infoRelease" class="infoText"></p>
-        <div id="infoLinks" class="linkList"></div>
+        <img id="infoImage" class="infoImage infoStep" alt="">
+        <p id="infoRelease" class="infoText infoStep"></p>
+        <p id="infoAlbumInfo" class="infoText infoStep"></p>
+        <div id="infoLinks" class="linkList infoStep"></div>
       </div>
     </section>
   </div>
@@ -199,19 +275,27 @@
     SCREEN_FADE_MS: 2000,
     TEXT_FADE_MS:   3500,
 
-    LYRICS_DELAY_MS:    2500,
-    LINE_STAGGER_MS:    4000,
-    HOLD_AFTER_LAST_MS: 4000,
+    // 歌詞が最初に出るまで
+    LYRICS_DELAY_MS: 2500,
+
+    // \n^ がある場合：ブロック（次のタイミング）までの間隔
+    STAGGER_BLOCK_MS: 5000,
+
+    // | がある場合：同一行内で次セグメントを遅らせる間隔（1本ごと）
+    STAGGER_INLINE_MS: 4000,
+
+    // 表示を保つ時間（最後に出てから消えるまで）
+    HOLD_AFTER_LAST_WITH_CARET_MS: 5700, // \n^ あり
+    HOLD_AFTER_LAST_NO_CARET_MS:   8000, // \n^ なし（= 全行同時に出る）
 
     TITLE_AFTER_FADEOUT_MS:  1800,
-    INFO_AFTER_TITLE_MS:     3000
+
+    /* ▼ 追加：画面3での段階表示タイミング */
+    IMG_AFTER_TITLE_MS:   1000,   // タイトル表示後 → 画像
+    TEXT_AFTER_IMG_MS:    2000,   // 画像後 → release + albuminfo
+    LINKS_AFTER_TEXT_MS:  2000    // release+albuminfo後 → links
   };
 
-  /* =========================
-     (3) アルバム情報（albumid → {image,album,albumdetail,release}）
-     - songsinfo.json には albumid だけ入っている前提
-     - ここをあなたの albumInfo に置き換え／追記すればOK
-  ========================= */
   let albumInfo = {
     "1": { albumid: 1, album: "EVERYTHING", albumdetail: "1stAlbum", release: "1992-05-10", image: "EVERYTHING.png" },
     "2": { albumid: 2, album: "Kind of Love", albumdetail: "2ndAlbum", release: "1992-12-01", image: "Kind of Love.png" },
@@ -222,7 +306,7 @@
     "7": { albumid: 7, album: "DISCOVERY", albumdetail: "7thAlbum", release: "1999-02-03", image: "DISCOVERY.png" },
     "9": { albumid: 9, album: "Q", albumdetail: "9thAlbum", release: "2000-09-27", image: "Q.png" },
     "10": { albumid: 10, album: "IT'S A WONDERFUL WORLD", albumdetail: "10thAlbum", release: "2002-05-10", image: "IT'S A WONDERFUL WORLD.png" },
-    "11": { albumid: 11, album: "シフクノオト", albumdetail: "11thAlbum", release: "2004-04-07", image: "シフクノオト.png" },
+    "11": { albumid: 11, album: "シフクノオト", albumdetail: "11stAlbum", release: "2004-04-07", image: "シフクノオト.png" },
     "12": { albumid: 12, album: "I ♥ U", albumdetail: "12thAlbum", release: "2005-09-21", image: "IU.png" },
     "13": { albumid: 13, album: "HOME", albumdetail: "13thAlbum", release: "2007-03-14", image: "HOME.png" },
     "14": { albumid: 14, album: "B-SIDE", albumdetail: "14thAlbum", release: "2007-05-10", image: "B-SIDE.png" },
@@ -233,8 +317,7 @@
     "19": { albumid: 19, album: "重力と呼吸", albumdetail: "19thAlbum", release: "2018-10-03", image: "重力と呼吸.png" },
     "20": { albumid: 20, album: "SOUNDTRACKS", albumdetail: "20thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
     "21": { albumid: 21, album: "miss you", albumdetail: "21stAlbum", release: "2023-10-04", image: "miss you.png" }
-};
-
+  };
 
   let songs = [], current = null, timers = [];
 
@@ -299,51 +382,161 @@
   function clearTimers(){ timers.forEach(t=>clearTimeout(t)); timers=[]; }
   const later = (ms, fn) => { const t=setTimeout(fn, ms); timers.push(t); };
 
+  function fitTitleOneLine(el, { minPx = 14 } = {}){
+    el.style.fontSize = '';
+    requestAnimationFrame(() => {
+      const cs = getComputedStyle(el);
+      let size = parseFloat(cs.fontSize);
+      const min = minPx;
+      if (!el.clientWidth) return;
+
+      let guard = 0;
+      while (el.scrollWidth > el.clientWidth && size > min && guard < 200){
+        size -= 1;
+        el.style.fontSize = `${size}px`;
+        guard++;
+      }
+    });
+  }
+
+  function buildLineWithInlineDelay(lineText){
+    const lineEl = document.createElement('div');
+    lineEl.className = 'line';
+
+    const parts = String(lineText ?? '').split('|');
+    const safeParts = parts.length ? parts : [''];
+
+    safeParts.forEach((p)=>{
+      const seg = document.createElement('span');
+      seg.className = 'seg';
+      seg.textContent = p.length ? p : (safeParts.length === 1 ? ' ' : '');
+      lineEl.appendChild(seg);
+    });
+
+    return lineEl;
+  }
+
   function setLyricLines(container, text){
     container.innerHTML = '';
-    const lines = String(text || '').split(/\r?\n/);
-    const lineEls = [];
 
-    lines.forEach((lineText, i)=>{
-      const el = document.createElement('div');
-      el.className = 'line';
-      el.textContent = lineText.length ? lineText : ' ';
-      container.appendChild(el);
-      lineEls.push(el);
+    const normalized = String(text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+    const hasCaretSep = /\n\^\s*/.test(normalized);
 
-      later(CONFIG.LYRICS_DELAY_MS + i * CONFIG.LINE_STAGGER_MS, ()=>{
-        el.classList.add('show');
+    const allLineEls = [];
+    const allSegEls = [];
+
+    if (hasCaretSep){
+      const blocks = normalized.split(/\n\^\s*/);
+
+      blocks.forEach((blockText, blockIndex)=>{
+        const lines = String(blockText || '').split('\n');
+
+        lines.forEach((lineText)=>{
+          const lineEl = buildLineWithInlineDelay(lineText);
+          container.appendChild(lineEl);
+          allLineEls.push(lineEl);
+
+          const segs = Array.from(lineEl.querySelectorAll('.seg'));
+          segs.forEach((segEl, segIndex)=>{
+            const showAt =
+              CONFIG.LYRICS_DELAY_MS
+              + blockIndex * CONFIG.STAGGER_BLOCK_MS
+              + segIndex * CONFIG.STAGGER_INLINE_MS;
+
+            allSegEls.push({ el: segEl, showAtMs: showAt });
+          });
+
+          later(CONFIG.LYRICS_DELAY_MS + blockIndex * CONFIG.STAGGER_BLOCK_MS, ()=>{
+            lineEl.classList.add('show');
+          });
+        });
       });
+
+      allSegEls.forEach(({el, showAtMs})=>{
+        later(showAtMs, ()=> el.classList.add('show'));
+      });
+
+      const lastShow = allSegEls.length
+        ? Math.max(...allSegEls.map(x => x.showAtMs))
+        : CONFIG.LYRICS_DELAY_MS;
+
+      const fadeOutStartAt = lastShow + CONFIG.HOLD_AFTER_LAST_WITH_CARET_MS;
+
+      later(fadeOutStartAt, ()=>{
+        allSegEls.forEach(x => x.el.classList.remove('show'));
+        allLineEls.forEach(x => x.classList.remove('show'));
+      });
+
+      return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
+
+    } else {
+      const lines = normalized.split('\n');
+
+      lines.forEach((lineText)=>{
+        const lineEl = buildLineWithInlineDelay(lineText);
+        container.appendChild(lineEl);
+        allLineEls.push(lineEl);
+
+        const segs = Array.from(lineEl.querySelectorAll('.seg'));
+        segs.forEach((segEl, segIndex)=>{
+          const showAt =
+            CONFIG.LYRICS_DELAY_MS
+            + segIndex * CONFIG.STAGGER_INLINE_MS;
+
+          allSegEls.push({ el: segEl, showAtMs: showAt });
+        });
+      });
+
+      later(CONFIG.LYRICS_DELAY_MS, ()=>{
+        allLineEls.forEach(el => el.classList.add('show'));
+      });
+
+      allSegEls.forEach(({el, showAtMs})=>{
+        later(showAtMs, ()=> el.classList.add('show'));
+      });
+
+      const lastShow = allSegEls.length
+        ? Math.max(...allSegEls.map(x => x.showAtMs))
+        : CONFIG.LYRICS_DELAY_MS;
+
+      const fadeOutStartAt = lastShow + CONFIG.HOLD_AFTER_LAST_NO_CARET_MS;
+
+      later(fadeOutStartAt, ()=>{
+        allSegEls.forEach(x => x.el.classList.remove('show'));
+        allLineEls.forEach(x => x.classList.remove('show'));
+      });
+
+      return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
+    }
+  }
+
+  function hideInfoSteps(){
+    ['infoImage','infoRelease','infoAlbumInfo','infoLinks'].forEach(id=>{
+      const el = document.getElementById(id);
+      if(el) el.classList.remove('show');
     });
-
-    const lastStart = CONFIG.LYRICS_DELAY_MS + Math.max(0, (lines.length - 1)) * CONFIG.LINE_STAGGER_MS;
-    const fadeOutStartAt = lastStart + CONFIG.HOLD_AFTER_LAST_MS;
-
-    later(fadeOutStartAt, ()=>{
-      lineEls.forEach(el => el.classList.remove('show'));
-    });
-
-    return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
   }
 
   function resetUI(){
     document.getElementById('lyrics').innerHTML = '';
+
     const title = document.getElementById('songTitleFixed');
-    title.textContent = ''; title.classList.remove('show');
+    title.textContent = '';
+    title.classList.remove('show');
+    title.style.fontSize = '';
 
     const img = document.getElementById('infoImage');
-    img.removeAttribute('src'); img.style.display='none';
+    img.removeAttribute('src');
+    img.style.display='none';
 
-    document.getElementById('infoAlbum').textContent = '';
-    document.getElementById('infoDetail').textContent = '';
     document.getElementById('infoRelease').textContent = '';
+    document.getElementById('infoAlbumInfo').textContent = '';
     document.getElementById('infoLinks').innerHTML = '';
-    document.getElementById('infoBlock').classList.remove('show');
 
-    // ▼▼▼ 追加：画面3背景をリセット ▼▼▼
+    hideInfoSteps();
+
     const s3 = document.getElementById('screen3');
     s3.style.backgroundImage = '';
-    // ▲▲▲
   }
 
   function renderAll(song){
@@ -352,9 +545,10 @@
       (song.lyrics||'').trim()
     );
 
-    document.getElementById('songTitleFixed').textContent = song.title || '—';
+    const titleEl = document.getElementById('songTitleFixed');
+    titleEl.textContent = song.title || '—';
+    fitTitleOneLine(titleEl, { minPx: 14 });
 
-    // ▼▼▼ 追加：画面3の背景をアルバムpngにする（黒フィルターはCSSの::before） ▼▼▼
     const s3 = document.getElementById('screen3');
     if (song.image) {
       const bg = buildUrl(CONFIG.IMAGE_BASE, song.image);
@@ -362,7 +556,6 @@
     } else {
       s3.style.backgroundImage = '';
     }
-    // ▲▲▲ 追加ここまで ▲▲▲
 
     const img = document.getElementById('infoImage');
     if (song.image) {
@@ -375,19 +568,20 @@
       img.style.display = 'none';
     }
 
-    // 画面3の表示を albumdetail『album』収録 にする
+    // release
+    const rel = String(song.release || '').trim();
+    document.getElementById('infoRelease').textContent = rel ? `Release：${rel}` : '';
+
+    // Albuminfo（albumdetail + album）
     const detail = String(song.albumdetail || '').trim();
     const alb    = String(song.album || '').trim();
     let albumLine = '';
     if (detail && alb) albumLine = `${detail}『${alb}』収録`;
     else if (alb)     albumLine = `『${alb}』収録`;
     else if (detail)  albumLine = `${detail}収録`;
+    document.getElementById('infoAlbumInfo').textContent = albumLine;
 
-    document.getElementById('infoAlbum').textContent  = albumLine;
-    document.getElementById('infoDetail').textContent = '';
-
-    document.getElementById('infoRelease').textContent= String(song.release ?? '');
-
+    // links
     const links=(song.links||[]);
     const html = Array.isArray(links)
       ? links.map(l=> (typeof l==='string')
@@ -400,6 +594,40 @@
     return { fadeoutDoneAt };
   }
 
+  function showInfoSequential(song){
+    hideInfoSteps();
+
+    const imgEl   = document.getElementById('infoImage');
+    const relEl   = document.getElementById('infoRelease');
+    const albEl   = document.getElementById('infoAlbumInfo');
+    const linksEl = document.getElementById('infoLinks');
+
+    const hasImg   = (imgEl && imgEl.style.display !== 'none');
+    const hasRel   = !!(relEl && relEl.textContent.trim());
+    const hasAlb   = !!(albEl && albEl.textContent.trim());
+    const hasLinks = !!(linksEl && linksEl.innerHTML.trim());
+
+    // タイトルの後に「画像 → release+album → links」
+    const base = CONFIG.TITLE_AFTER_FADEOUT_MS;
+
+    // 画像
+    later(base + CONFIG.IMG_AFTER_TITLE_MS, ()=>{
+      if (hasImg) imgEl.classList.add('show');
+      // 画像がない場合でも次に進む（何もしない）
+    });
+
+    // release + albuminfo
+    later(base + CONFIG.IMG_AFTER_TITLE_MS + CONFIG.TEXT_AFTER_IMG_MS, ()=>{
+      if (hasRel) relEl.classList.add('show');
+      if (hasAlb) albEl.classList.add('show');
+    });
+
+    // links
+    later(base + CONFIG.IMG_AFTER_TITLE_MS + CONFIG.TEXT_AFTER_IMG_MS + CONFIG.LINKS_AFTER_TEXT_MS, ()=>{
+      if (hasLinks) linksEl.classList.add('show');
+    });
+  }
+
   async function startFlow(){
     if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
     clearTimers();
@@ -407,7 +635,6 @@
     document.documentElement.style.setProperty('--screen-fade-ms', `${CONFIG.SCREEN_FADE_MS}ms`);
     document.documentElement.style.setProperty('--text-fade-ms',   `${CONFIG.TEXT_FADE_MS}ms`);
 
-    // songid でランダム（= 配列からランダムに1曲）
     current = songs[Math.floor(Math.random()*songs.length)];
 
     showScreen('screen2');
@@ -415,16 +642,16 @@
     resetUI();
     const { fadeoutDoneAt } = renderAll(current);
 
-    // 歌詞フェードアウト完了 → 画面3へ
     later(fadeoutDoneAt, ()=>{
       showScreen('screen3');
+      fitTitleOneLine(document.getElementById('songTitleFixed'), { minPx: 14 });
     });
 
+    // タイトル表示
     later(fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS, ()=>{
       document.getElementById('songTitleFixed').classList.add('show');
-    });
-    later(fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS + CONFIG.INFO_AFTER_TITLE_MS, ()=>{
-      document.getElementById('infoBlock').classList.add('show');
+      // タイトルが出たタイミングを基準に段階表示を開始
+      showInfoSequential(current);
     });
   }
 
