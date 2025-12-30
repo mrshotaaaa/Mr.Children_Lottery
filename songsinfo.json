@@ -12,6 +12,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%AD%E3%83%BC%E3%83%89-%E3%82%A2%E3%82%A4-%E3%83%9F%E3%82%B9-%E3%83%A6%E3%83%BC/1532165138?i=1532165152"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1223/page%3A2?option=0"
       }
     ],
     "Memo":"missyouツアーでちょっとだけ期待したけどねー"
@@ -29,6 +33,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/mr-shining-moon/1532165138?i=1532165165"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1220"
       }
     ],
     "Memo":"Mr.✨🌙"
@@ -50,6 +58,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/sGeI0R9i5MQ?si=LRIbEKERC4DAgNKT"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1230"
       }
     ],
     "Memo":"1stシングル"
@@ -67,6 +79,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%A2%A8-the-wind-knows-how-i-feel/1532165138?i=1532165326"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1238"
       }
     ],
     "Memo":"台風で一部中止されたap07の最終日に披露"
@@ -84,6 +100,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%9F%E3%82%81%E3%81%84%E3%81%8D%E3%81%AE%E6%97%A5%E6%9B%9C%E6%97%A5/1532165138?i=1532165332"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/83022"
       }
     ],
     "Memo":"😮‍💨"
@@ -101,6 +121,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%8F%8B%E9%81%94%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%A7/1532165138?i=1532165340"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1241"
       }
     ],
     "Memo":"アマチュア時代から存在"
@@ -109,7 +133,7 @@
     "Title": "CHILDREN'S WORLD",
     "albumid": 1,
     "songid": 1.7,
-    "Lyrics": "ここは\nCHILDREN’S WORLD",
+    "Lyrics": "今は思い通りにいかないことも\nいつかは叶えて\nここは CHILDREN’S WORLD",
     "link": [
       {
         "label": "Spotify",
@@ -118,6 +142,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/childrens-world/1532165138?i=1532165345"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1240/page%3A7"
       }
     ],
     "Memo":"🍊ツアーで20年ぶりの披露"
@@ -126,7 +154,7 @@
     "Title": "虹の彼方へ",
     "albumid": 2,
     "songid": 2.1,
-    "Lyrics": "I'm walkin' on the rainbow",
+    "Lyrics": "I'm walkin' on the rainbow\n数えきれない夢が溢れて",
     "link": [
       {
         "label": "Spotify",
@@ -135,6 +163,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%99%B9%E3%81%AE%E5%BD%BC%E6%96%B9%E3%81%B8/1531496223?i=1531496224"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1234"
       }
     ],
     "Memo":"一夜限りのライブのアンコール一曲目で弾き語り"
@@ -152,6 +184,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/all-by-myself/1531496223?i=1531496225"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1261"
       }
     ],
     "Memo":"「Replay」のカップリング曲"
@@ -169,6 +205,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/blue/1531496223?i=1531496348"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1229"
       }
     ],
     "Memo":"🟦"
@@ -194,6 +234,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/qiUgB0S-1Dc?si=tZ8hVws0wQp0kLqv"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1231"
       }
     ],
     "Memo":"2ndシングル。クリスマスの夜に〜"
@@ -202,7 +246,7 @@
     "Title": "グッバイ・マイ・グルーミーデイズ",
     "albumid": 2,
     "songid": 2.5,
-    "Lyrics": "I want to be happy\nYou want to be happy\n\n^Good-bye my gloomy days",
+    "Lyrics": "Good-bye my gloomy days",
     "link": [
       {
         "label": "Spotify",
@@ -211,6 +255,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%B0%E3%83%83%E3%83%90%E3%82%A4-%E3%83%9E%E3%82%A4-%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%9F%E3%83%BC%E3%83%87%E3%82%A4%E3%82%BA/1531496223?i=1531496350"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9908"
       }
     ],
     "Memo":"「君がいた夏」のカップリング曲"
@@ -228,6 +276,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/distance/1531496223?i=1531496351"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1222"
       }
     ],
     "Memo":"それとも今でも愛しているから？"
@@ -245,6 +297,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%BB%8A%E3%81%AE%E4%B8%AD%E3%81%A7%E3%81%8B%E3%81%8F%E3%82%8C%E3%81%A6%E3%82%AD%E3%82%B9%E3%82%92%E3%81%97%E3%82%88%E3%81%86/1531496223?i=1531496352"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1244"
       }
     ],
     "Memo":"アマチュア時代から存在。RADとの対バンで演奏された"
@@ -262,6 +318,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%80%9D%E6%98%A5%E6%9C%9F%E3%81%AE%E5%A4%8F-%E5%90%9B%E3%81%A8%E3%81%AE%E6%81%8B%E3%81%8C%E4%BB%8A%E3%82%82%E7%89%A7%E5%A0%B4%E3%81%AB/1531496223?i=1531496353"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1245"
       }
     ],
     "Memo":"JENがボーカル。Thanksgiving25で披露"
@@ -279,6 +339,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%98%9F%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%9F%E3%82%89/1531496223?i=1531496354"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1219"
       }
     ],
     "Memo":"アマチュア時代から存在。寺岡呼人と共同制作"
@@ -296,6 +360,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%86%E3%82%A3%E3%83%BC%E3%83%B3%E3%82%A8%E3%82%A4%E3%82%B8-%E3%83%89%E3%83%AA%E3%83%BC%E3%83%A0-i-ii/1531496223?i=1531496355"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1246"
       }
     ],
     "Memo":"〇〇××△△⬜︎!!??"
@@ -313,6 +381,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%A4%E3%81%AE%E6%97%A5%E3%81%AB%E3%81%8B%E4%BA%8C%E4%BA%BA%E3%81%A7/1531496223?i=1531496357"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"年上おねえさんを好きになる歌😳"
@@ -322,7 +394,7 @@
     "Title": "Another Mind",
     "albumid": 3,
     "songid": 3.1,
-    "Lyrics": "誰かが定めた自分を演じてる\n^Another Mind",
+    "Lyrics": "誰かが定めた自分を演じてる\nAnother Mind",
     "link": [
       {
         "label": "Spotify",
@@ -331,6 +403,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/another-mind/1531495889?i=1531496409"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1228"
       }
     ],
     "Memo":"Spirit The Differenceで披露。カッコヨイ"
@@ -339,7 +415,7 @@
     "Title": "メインストリートに行こう",
     "albumid": 3,
     "songid": 3.2,
-    "Lyrics": "My city of joy\n週末の天使\n^星降る街で君とランデブー\n夢みたい",
+    "Lyrics": "My city of joy\n週末の天使",
     "link": [
       {
         "label": "Spotify",
@@ -348,6 +424,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%88%E3%81%AB%E8%A1%8C%E3%81%93%E3%81%86/1531495889?i=1531496420"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1233"
       }
     ],
     "Memo":"ヒカリノアトリエツアーで20年ぶりの披露"
@@ -365,6 +445,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/and-i-close-to-you/1531495889?i=1531496423"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1221"
       }
     ],
     "Memo":"「CROSS ROAD」のカップリング曲。ap11でスキマスイッチと共演"
@@ -386,6 +470,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/h5kKnPzh8gw?si=0Q8ZbP2dITmwKKL8"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1225"
       }
     ],
     "Memo":"3rdシングル。CM狙いでサビが15秒"
@@ -403,6 +491,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%9E%E3%83%BC%E3%83%9E%E3%83%AC%E3%83%BC%E3%83%89-%E3%82%AD%E3%83%83%E3%82%B9/1531495889?i=1531496431"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1224"
       }
     ],
     "Memo":"マーマレード：柑橘系のほろ苦いジャム"
@@ -411,7 +503,7 @@
     "Title": "蜃気楼",
     "albumid": 3,
     "songid": 3.6,
-    "Lyrics": "心の何処かに今でも潜んでる\n^”気狂いピエロ”が",
+    "Lyrics": "心の何処かに今でも潜んでる\n”気狂いピエロ”が",
     "link": [
       {
         "label": "Spotify",
@@ -420,6 +512,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%9C%83%E6%B0%97%E6%A5%BC/1531495889?i=1531496434"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1226"
       }
     ],
     "Memo":"🤡"
@@ -437,6 +533,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%80%83%E4%BA%A1%E8%80%85/1531495889?i=1531496710"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1235"
       }
     ],
     "Memo": "桜井さんが唯一作詞作曲に関わってない曲。ボーカルはJEN。"
@@ -454,6 +554,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/love/1531495889?i=1531496714"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1232"
       }
     ],
     "Memo":"この会場にでっかいL・O・V・Eをお届けします！"
@@ -471,6 +575,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%81%AF%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%B8/1531495889?i=1531496719"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1236"
       }
     ],
     "Memo":"ピギャ！！（書く事なかった）"
@@ -488,6 +596,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/my-life/1531495889?i=1531496726"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1237"
       }
     ],
     "Memo":"当時の郵便料金が62円"
@@ -497,7 +609,7 @@
     "Title": "Dance Dance Dance",
     "albumid": 4,
     "songid": 4.1,
-    "Lyrics": "満たされない夢と欲望の彼方に\n^残された君と希望の橋を渡ろう",
+    "Lyrics": "満たされない夢と欲望の彼方に\n残された君と希望の橋を渡ろう",
     "link": [
       {
         "label": "Spotify",
@@ -510,6 +622,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/00SIeJcj94s?si=evb_67Um-niNXGZU"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1259"
       }
     ],
     "Memo":"ライブ定番曲。HOMEツアーのアレンジがたまらない"
@@ -531,6 +647,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/krVxkL6H538?si=BDPD0ClJ_4cyi22m"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1256"
       }
     ],
     "Memo":"「Tomorrow never knows」のカップリング曲。ベイベッ!!"
@@ -556,6 +676,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&t=5338s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1252"
       }
     ],
     "Memo":"5thシングル。一番歌わせがち"
@@ -573,6 +697,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%A1%E3%82%A4%E3%83%88/1531501889?i=1531502470"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1253"
       }
     ],
     "Memo":"「ドロップキック」のカップリング曲。しばらくは彼の（別れの）"
@@ -594,6 +722,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/C4zJfYA_ur8?si=uGEju2zU6DZwxxdf"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1239"
       }
     ],
     "Memo":"4thシングル。ヒットの割にツアーで演奏されない。"
@@ -611,6 +743,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%B8%E3%82%A7%E3%83%A9%E3%82%B7%E3%83%BC/1531501889?i=1531502473"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1254"
       }
     ],
     "Memo":"どんな人の心の中にも嫉妬の心が...!!"
@@ -628,6 +764,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/asia-%E3%82%A8%E3%82%A4%E3%82%B8%E3%82%A2/1531501889?i=1531502475"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1262"
       }
     ],
     "Memo":"JENが作曲"
@@ -662,6 +802,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%9B%A8%E3%81%AE%E3%81%A1%E6%99%B4%E3%82%8C/1531501889?i=1531502485"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1257"
       }
     ],
     "Memo":"ap23で久々に披露。95年の空(ku:)ではサラリーマン姿で演奏"
@@ -670,7 +814,7 @@
     "Title": "Round About～孤独の肖像～",
     "albumid": 4,
     "songid": 4.9,
-    "Lyrics": "誰かが泣いてる\n誰かが笑ってる\n^浮き足立つ路上の夢に\noh God bless you",
+    "Lyrics": "感情の通わない\n口先だけのコミュニケーション",
     "link": [
       {
         "label": "Spotify",
@@ -679,6 +823,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/round-about-%E5%AD%A4%E7%8B%AC%E3%81%AE%E8%82%96%E5%83%8F/1531501889?i=1531502487"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1255"
       }
     ],
     "Memo":"POPSAURUSで2回とも披露された"
@@ -696,6 +844,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/over/1531501889?i=1531502489"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1258"
       }
     ],
     "Memo":"「顔の割に小さな胸」について誰か議論しよう"
@@ -713,6 +865,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/dive/1375009919?i=1375009924"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9920"
       }
     ],
     "Memo":"飛び込んじゃうよー"
@@ -721,7 +877,7 @@
     "Title": "シーラカンス",
     "albumid": 5,
     "songid": 5.1,
-    "Lyrics": "どんな未来を目指すも\n何処に骨を埋めるも\n^選択肢はいくつだってある\n言うなれば自由",
+    "Lyrics": "どんな未来を目指すも\n何処に骨を埋めるも\n^選択肢はいくつだってある\n^言うなれば自由",
     "link": [
       {
         "label": "Spotify",
@@ -730,6 +886,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%B7%E3%83%BC%E3%83%A9%E3%82%AB%E3%83%B3%E3%82%B9/1531496360?i=1531496372"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9921"
       }
     ],
     "Memo":"京都音楽博覧会2016でくるりとコラボ。個人的にはSENSEツアーの演奏が好き"
@@ -747,6 +907,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%89%8B%E7%B4%99/1531496360?i=1531496374"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9922"
       }
     ],
     "Memo":"「深海」というアルバムの結末"
@@ -764,6 +928,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%82%E3%82%8A%E3%81%B5%E3%82%8C%E3%81%9Flove-story-%E7%94%B7%E5%A5%B3%E5%95%8F%E9%A1%8C%E3%81%AF%E3%81%84%E3%81%A4%E3%82%82%E9%9D%A2%E5%80%92%E3%81%A0/1531496360?i=1531496738"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9923"
       }
     ],
     "Memo":"本当に面倒だ"
@@ -781,6 +949,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/mirror/1531496360?i=1531496745"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9924"
       }
     ],
     "Memo":"メロディーがかわいい。田原さんソロもかわいい"
@@ -802,6 +974,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/gj5Nu6feFTQ?si=HmqlcYx0uuv72LK-"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1523"
       }
     ],
     "Memo": "10thシングル。MVが存在しない"
@@ -819,6 +995,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/so-lets-get-truth/1531496360?i=1531496758"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9926"
       }
     ],
     "Memo":"ライブ演奏かなりいい"
@@ -827,7 +1007,7 @@
     "Title": "マシンガンをぶっ放せ",
     "albumid": 5,
     "songid": 5.7,
-    "Lyrics": "愛せよ目の前の不条理を\n^憎めよ都合のいい道徳を\n^そして僕に才能をくれ",
+    "Lyrics": "愛せよ目の前の不条理を\n憎めよ都合のいい道徳を\nそして僕に才能をくれ",
     "link": [
       {
         "label": "Spotify",
@@ -836,6 +1016,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%9E%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%B3%E3%82%92%E3%81%B6%E3%81%A3%E6%94%BE%E3%81%9B/1531496360?i=1531496918"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9928"
       }
     ],
     "Memo":"のちにシングルカットされた。虹、ヒカリノアトリエツアーで15年ぶりの披露"
@@ -844,7 +1028,7 @@
     "Title": "ゆりかごのある丘から",
     "albumid": 5,
     "songid": 5.8,
-    "Lyrics": "僕が戦場に行っているその間\n君はもう違う誰かの腕の中\n^そして僕は一人",
+    "Lyrics": "僕が戦場に行っているその間\n^君はもう違う誰かの腕の中\n^そして僕は一人",
     "link": [
       {
         "label": "Spotify",
@@ -853,6 +1037,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%86%E3%82%8A%E3%81%8B%E3%81%94%E3%81%AE%E3%81%82%E3%82%8B%E4%B8%98%E3%81%8B%E3%82%89/1531496360?i=1531496924"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/7795"
       }
     ],
     "Memo":"アマチュア時代から存在する曲。ap23で26年ぶりの披露"
@@ -870,6 +1058,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%99%9C/1531496360?i=1531496931"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9929"
       }
     ],
     "Memo":"天国へ連れてって"
@@ -895,6 +1087,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/giXe6hftGhg?si=zLdAPzLAETxJw3pL"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2821"
       }
     ],
     "Memo":"11thシングル。死を想う"
@@ -912,6 +1108,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%B7%B1%E6%B5%B7/1531496360?i=1531496941"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9930"
       }
     ],
     "Memo":"アルバム「深海」の表題曲"
@@ -937,6 +1137,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/EoQVLCwtBvI?si=KDhL4PsVqlWzOSq0"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2819"
       }
     ],
     "Memo":"13thシングル。シフクノオトツアーのアレンジも良い"
@@ -958,6 +1162,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/zosBzv-Lj-k?si=bit_TWzvwVtdH01n"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1262"
       }
     ],
     "Memo":"時代の着せ替え人形です🎎"
@@ -975,6 +1183,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/brandnew-my-lover/1531496539?i=1531496694"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1259"
       }
     ],
     "Memo":"ライブではカプセルに入って演奏"
@@ -996,6 +1208,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/BbSrrsuOWJk?si=AOVT4saea2UJXluV"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/55391"
       }
     ],
     "Memo":"8thシングル。頼む！！ライブでやってくれ！！！！"
@@ -1021,6 +1237,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/ACt_DfVjqIY?si=fz2tWjEQQKGEYg-c"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1311"
       }
     ],
     "Memo":"9thシングル。昔は滅多に演奏されてなかった。"
@@ -1038,6 +1258,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%82%98%E3%81%AE%E4%B8%8B%E3%81%AE%E5%90%9B%E3%81%AB%E5%91%8A%E3%81%90/1531496539?i=1531496830"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1264"
       }
     ],
     "Memo":"リグプロのリハで桜井さんがドラム叩いてる"
@@ -1059,6 +1283,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/zkMZs-v0Wb0?si=Oo5S_GW3sj2RwgeL"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1258"
       }
     ],
     "Memo":"僕らはスーパーマン🦸‍♂️"
@@ -1076,6 +1304,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%B9%B8%E3%81%9B%E3%81%AE%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC/1531496539?i=1531496842"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1265"
       }
     ],
     "Memo":"ライブで披露されたのは数回のみ。映像化なし"
@@ -1096,7 +1328,11 @@
       },
       {
         "label": "YouTube",
-        "url": "https://youtu.be/YbxKD1AOW9U?si=SJCHCP6y689tJtSV"
+        "url": "https://www.livefans.jp/songs/1263"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"7thシングル。MVがない"
@@ -1118,6 +1354,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/eKWUkhELo20?si=rOESmNVhcYJJhHOb"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1267"
       }
     ],
     "Memo":"ライブで披露されたのは数回のみ"
@@ -1143,6 +1383,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/AfjteCMzYUo?si=-OheRWEFJ-CV6jag"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1260"
       }
     ],
     "Memo":"6thシングル。ミリオンセラー。CDシングル売り上げ歴代8位。とんでもねえ。"
@@ -1160,6 +1404,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/discovery/1532215659?i=1532215682"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2816"
       }
     ],
     "Memo":"アルバム表題曲"
@@ -1185,6 +1433,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/datXpA5tja0?si=88n9klrXDztm5Rjp"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2819"
       }
     ],
     "Memo":"16thシングル。爆発💥"
@@ -1202,6 +1454,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/prism/1532215659?i=1532216125"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2818"
       }
     ],
     "Memo":"「終わりなき旅」のカップリング曲。生で聴きたい、、、、"
@@ -1219,6 +1475,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%84/1532215659?i=1532216203"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2817"
       }
     ],
     "Memo":"ツアーでは25年ぶりにmissyouで披露。桜井さんはギターソロがお気に入りらしい"
@@ -1244,6 +1504,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/RqEcYIqy-nE?si=xCsbqAC1M75ymW88"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2822"
       }
     ],
     "Memo":"14thシングル。いつかのロッキンでの演奏が伝説らしい"
@@ -1252,7 +1516,7 @@
     "Title": "Simple",
     "albumid": 7,
     "songid": 7.6,
-    "Lyrics": "10年先も 20年先も\n^君と生きれたらいいな",
+    "Lyrics": "10年先も 20年先も\n君と生きれたらいいな",
     "link": [
       {
         "label": "Spotify",
@@ -1265,6 +1529,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=AOySfMfNMSA&list=RDAOySfMfNMSA&index=1&t=4382s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1652"
       }
     ],
     "Memo":"”Simple” is the best"
@@ -1282,6 +1550,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/ill-be/1532215659?i=1532216210"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2820"
       }
     ],
     "Memo":"のちにシングルカットされる。一発どりで収録された"
@@ -1299,6 +1571,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/2601/1532215659?i=1532216213"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2827"
       }
     ],
     "Memo":"作曲JEN。ライブでの披露は数回のみ"
@@ -1316,6 +1592,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%A9%E3%83%A9%E3%83%A9/1532215659?i=1532216214"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1558"
       }
     ],
     "Memo":"ホニャララ"
@@ -1341,6 +1621,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&list=RDCxasK4veEu8&index=1&t=4628s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1651"
       }
     ],
     "Memo":"15thシングル。「どこかに”あなた”を必要としてる人がいる」"
@@ -1358,6 +1642,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/image/1532215659?i=1532216219"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2824"
       }
     ],
     "Memo":"ap12で披露。死と再生を繰り返す命 愛"
@@ -1379,6 +1667,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=AOySfMfNMSA&list=RDAOySfMfNMSA&index=1&t=423s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/123248"
       }
     ],
     "Memo":"Thanksgiving25では一曲目に披露"
@@ -1396,6 +1688,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%9D%E3%81%AE%E5%90%91%E3%81%93%E3%81%86%E3%81%B8%E8%A1%8C%E3%81%93%E3%81%86/1531496681?i=1531496826"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/84351"
       }
     ],
     "Memo":"一発でクリアしよう"
@@ -1421,6 +1717,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/EvBDa4TX3Bo?si=G4ZtRayonZl1Whdn"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1310"
       }
     ],
     "Memo":"19thシングル。密・空・ない"
@@ -1438,6 +1738,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%B9%E3%83%AD%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC/1531496681?i=1531496832"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/84352"
       }
     ],
     "Memo":"フライングスターター"
@@ -1455,6 +1759,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/surrender/1531496681?i=1531496839"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/84353"
       }
     ],
     "Memo":"ブラオレツアーで田原さんがコーラス"
@@ -1472,6 +1780,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%A4%E3%82%88%E3%81%8C%E3%82%8A/1531496681?i=1531496844"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1554"
       }
     ],
     "Memo":"話す相手も自ずと狭まって（花咲いても自ずとせば舞って）"
@@ -1480,7 +1792,7 @@
     "Title": "十二月のセントラルパークブルース",
     "albumid": 9,
     "songid": 9.7,
-    "Lyrics": "グラスに注いで独り寂しくチヤーズ\n^十二月のセントラルパークブルース",
+    "Lyrics": "グラスに注いで独り寂しくチヤーズ\n十二月のセントラルパークブルース",
     "link": [
       {
         "label": "Spotify",
@@ -1489,6 +1801,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%8D%81%E4%BA%8C%E6%9C%88%E3%81%AE%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/1531496681?i=1531496849"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1721"
       }
     ],
     "Memo":"NYでのレコーディング風景から"
@@ -1506,6 +1822,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%8F%8B%E3%81%A8%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%81%A8%E5%98%98%E3%81%A8%E8%83%83%E8%A2%8B/1531496681?i=1531497037"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/84354"
       }
     ],
     "Memo":"間奏の語りは酔った状態で録られた"
@@ -1523,6 +1843,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A0%E3%83%BC%E3%83%93%E3%83%BC/1531496681?i=1531497043"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/84355"
       }
     ],
     "Memo":"桜井さん自身のお気に入りソング。2000年元日に作詞"
@@ -1540,6 +1864,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/everything-is-made-from-a-dream/1531496681?i=1531497046"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/84356"
       }
     ],
     "Memo":"手塚治虫、ブルースりー、ジョンレノン"
@@ -1565,6 +1893,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/rbqnrYy4nk0?si=Fk7J--4xqJIYbfNH"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1556"
       }
     ],
     "Memo":"18thシングル。ライブでは複数のバージョンがある"
@@ -1582,6 +1914,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/hallelujah/1531496681?i=1531497055"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1457"
       }
     ],
     "Memo":"神を賛美せよ"
@@ -1590,7 +1926,7 @@
     "Title": "安らげる場所",
     "albumid": 9,
     "songid": 9.13,
-    "Lyrics": "人はなぜ幸せを闇雲に求めてしまうんだろう?\n^何より大事な物も守れずに",
+    "Lyrics": "人はなぜ幸せを闇雲に求めてしまうんだろう?\n何より大事な物も守れずに",
     "link": [
       {
         "label": "Spotify",
@@ -1599,6 +1935,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%AE%89%E3%82%89%E3%81%92%E3%82%8B%E5%A0%B4%E6%89%80/1531496681?i=1531497060"
+      },
+      {
+        "label": "ライブ未披露",
+        "url": ""
       }
     ],
     "Memo":"ライブでは未演奏"
@@ -1620,6 +1960,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/v58Gidyv55U?si=1GU5ADPK8BI000-q"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1656"
       }
     ],
     "Memo":"まだ”やりかけの未来”がある"
@@ -1637,6 +1981,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/dear-wonderful-world/1531496356?i=1531496373"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9967"
       }
     ],
     "Memo":"カプチーノのお客様、お待たせしました"
@@ -1654,6 +2002,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/one-two-three/1531496356?i=1531496375"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/365695"
       }
     ],
     "Memo":"2015年の2マンLIVEで初披露。ダーーー！"
@@ -1671,6 +2023,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%B8%87%E3%81%84%E3%81%9Fkiss/1531496356?i=1531496739"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9968"
       }
     ],
     "Memo":"隠れ人気曲だが、アルバムツアー以降披露されてない"
@@ -1696,6 +2052,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/1Y3Ya47jMKQ?si=9sBVgW8wNzdF88n3"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4015"
       }
     ],
     "Memo":"21stシングル。かんぱーい！"
@@ -1713,6 +2073,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%95%E3%82%A1%E3%82%B9%E3%83%8A%E3%83%BC/1531496356?i=1531496751"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4038"
       }
     ],
     "Memo":"スガシカオ"
@@ -1730,6 +2094,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/bird-cage/1531496356?i=1531496753"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9970"
       }
     ],
     "Memo":"その日、人類は思い出した…鳥籠の中に囚われていた屈辱を"
@@ -1747,6 +2115,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/love-%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F/1531496356?i=1531496759"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4044"
       }
     ],
     "Memo":"スポーツ選手でアレンジ。「会いたい会いたい」っていう捻りのない歌を歌おう"
@@ -1764,6 +2136,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/ufo/1531496356?i=1531496765"
+      },
+      {
+        "label": "ライブ未披露",
+        "url": ""
       }
     ],
     "Memo":"ライブ未演奏"
@@ -1781,6 +2157,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/drawing/1531496356?i=1531496919"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4047"
       }
     ],
     "Memo":"「youthful days」のカップリング曲。"
@@ -1802,6 +2182,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/8KRYmKWchCo?si=rOlxN_Ay3S86bdRK"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9969"
       }
     ],
     "Memo":"22ndシングル。雨に濡れる大阪の夜だ〜"
@@ -1819,6 +2203,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82%E5%BE%AE%E7%AC%91%E3%81%BF%E3%82%92/1531496356?i=1531496932"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4018"
       }
     ],
     "Memo":"不満を”探してしまう”"
@@ -1840,6 +2228,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/96P0YFo3pIk?si=aA2grqVKVe5hoOXG"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4042"
       }
     ],
     "Memo":"20thシングル。"
@@ -1857,6 +2249,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/its-a-wonderful-world/1531496356?i=1531496940"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9971"
       }
     ],
     "Memo":"醜くも美しい世界"
@@ -1874,6 +2270,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%A8%80%E3%82%8F%E3%81%9B%E3%81%A6%E3%81%BF%E3%81%A6%E3%81%87%E3%82%82%E3%82%93%E3%81%A0/1531496933?i=1531496936"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"意味ある遠回りを"
@@ -1891,6 +2291,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/paddle/1531496933?i=1531496938"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"フラスコの中飛び込んで"
@@ -1916,6 +2320,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&t=2535s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ライブで原曲通りに披露されたことはない"
@@ -1937,6 +2345,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/3Um_xMmE8OA?si=_q6WlvIC_79PhZqu"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"くるみらい"
@@ -1954,6 +2366,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%8A%B1%E8%A8%80%E8%91%89/1531496933?i=1531497097"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"乙女の純潔"
@@ -1971,6 +2387,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/pink-%E5%A5%87%E5%A6%99%E3%81%AA%E5%A4%A2/1531496933?i=1531497106"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ライブではピンクの演出が"
@@ -1988,6 +2408,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%A1%80%E3%81%AE%E7%AE%A1/1531496933?i=1531497113"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"missyouツアーではアルバム曲が続く中演奏された"
@@ -2005,6 +2429,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E7%A9%BA%E9%A2%A8%E3%81%AE%E5%B8%B0%E3%82%8A%E9%81%93/1531496933?i=1531497114"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「HERO」のカップリング曲。映像化はap07のみ"
@@ -2026,6 +2454,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/l1AlDdC95l4?si=PEKG2lHXjXAxI38g"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"23rdシングル"
@@ -2047,6 +2479,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/Y75smndGzUs?si=iPEaCTwHaRhlazhI"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"天頂、転調、店長"
@@ -2068,6 +2504,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/bjhahucrOHM?si=NYwGaoO6VBOCZxrV"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"小田和正とデュエット"
@@ -2093,6 +2533,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/Ic3rQpzXXqo?si=5Eh7dSlvps3vkN-7"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"24thシングル。涙のap05"
@@ -2118,6 +2562,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/iChN-rnCEqE?si=JdGpaRQ5wYPidYrf"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ライブ定番曲。自動販売機"
@@ -2139,6 +2587,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&t=373s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ステージに這う桜井さん"
@@ -2164,6 +2616,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/-7P1eN8HvKM?si=B7rV3iKxeevstUj_"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"27thシングル「四次元」の一曲。綾瀬はるか"
@@ -2181,6 +2637,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%83%95%E3%82%89%E3%81%AE%E9%9F%B3/1531496480?i=1531496491"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"I like… I love… I love…"
@@ -2206,6 +2666,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&index=1&t=4106s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"27thシングル「四次元」の一曲。大サビアレンジがたまらない"
@@ -2223,6 +2687,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%9D%B4%E3%81%B2%E3%82%82/1531496480?i=1531497247"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"君の色で濁っている"
@@ -2240,6 +2708,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/candy/1531496480?i=1531497253"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"🍬"
@@ -2261,6 +2733,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&list=RDCxasK4veEu8&index=1&t=1137s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"27thシングル「四次元」の一曲。時代とか社会とか”でっちあげてでも”"
@@ -2286,6 +2762,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/7aJmUeLMZi4?si=vFdUzAW8mLNT70GX"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"26thシングル。身体でも心でもなく…🧐"
@@ -2303,6 +2783,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/door/1531496480?i=1531497259"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"事務所の屋上でレコーディング"
@@ -2320,6 +2804,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%B7%B3%E3%81%B9/1531496480?i=1531497265"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"みのもんた"
@@ -2337,6 +2825,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%9A%94%E3%81%9F%E3%82%8A/1531496480?i=1531497267"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"避妊具"
@@ -2354,6 +2846,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%BD%9C%E6%B0%B4/1531496480?i=1531497269"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ピアノ叩いても”音しか出ない”"
@@ -2371,6 +2867,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/wake-me-up/1531496886?i=1531496889"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"Good Morning!!"
@@ -2396,6 +2896,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/PFLT4PFDMoo?si=O5UOf8ZISBlubCKY"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"🔄"
@@ -2417,6 +2921,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/sRJxHz__EH0?si=xNVIEgjBY150IcMA"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"28thシングル。人の形した光"
@@ -2434,6 +2942,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/another-story/1531496886?i=1531496893"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"靴ひもとは別の物語"
@@ -2451,6 +2963,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/piano-man/1531496886?i=1531496894"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"コバタケのピアノ全開の演奏"
@@ -2468,6 +2984,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%82%E3%81%A3%E3%81%A8/1531496886?i=1531496896"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「It’s A Wonderful World」時代から存在"
@@ -2485,6 +3005,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%84%E3%82%8F%E3%82%89%E3%81%8B%E3%81%84%E9%A2%A8/1531496886?i=1531496898"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ブラオレツアーで初披露"
@@ -2510,6 +3034,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/NS7EQ02hbQU?si=a-_atYplRWy39hhM"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"30thシングル。Any〜フェイク"
@@ -2531,6 +3059,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&t=1783s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"後半にかけて壮大に"
@@ -2548,6 +3080,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/sunrise/1531496886?i=1531496904"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ツアーでは2019年の「All Against Gravity」で初披露。"
@@ -2573,6 +3109,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&index=1&t=4513s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"29thシングル。”どんな言葉を選んでもどこか嘘っぽいんだ”"
@@ -2590,6 +3130,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%80%9A%E3%82%8A%E9%9B%A8/1531496886?i=1531496909"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ap07でのみ披露されていたが、虹ツアーでツアー初披露"
@@ -2607,6 +3151,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%82%E3%82%93%E3%81%BE%E3%82%8A%E8%A6%9A%E3%81%88%E3%81%A6%E3%81%AA%E3%81%84%E3%82%84/1531496886?i=1531496910"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"メンバーも泣いてしまう歌詞。ちゃんと覚えてるんだ"
@@ -2628,6 +3176,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「抱きしめたい」のカップリング曲"
@@ -2649,6 +3201,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「innocent world」のカップリング曲"
@@ -2670,6 +3226,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「【es】〜Theme of es〜」のカップリング曲。日記の朗読が間奏に追加"
@@ -2691,6 +3251,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「シーソーゲーム」のカップリング曲。ゲリラライブが音源化"
@@ -2712,6 +3276,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「名もなき詩」のカップリング曲。HeyHeyHey!"
@@ -2733,6 +3301,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「マシンガンをぶっ放せ」のカップリング曲。2005年に寺岡呼人のイベントにて披露。恋は盲目"
@@ -2754,6 +3326,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「マシンガンをぶっ放せ」のカップリング曲。「会員が最もライブで聴きたい曲」3位"
@@ -2775,6 +3351,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「Everything(It's you)」のカップリング曲。POPSAURUS2012にてツアー初披露"
@@ -2796,6 +3376,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「光の射す方へ」のカップリング曲。独り言をみんなで歌うという矛盾（リフレクションのライブフィルム）"
@@ -2817,6 +3401,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「口笛」のカップリング曲。"
@@ -2838,6 +3426,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「NOTFOUND」のカップリング曲。Thanksgiving25のMC、、涙"
@@ -2859,6 +3451,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「優しい歌」のカップリング曲。原曲とは違い、ピアノ主体"
@@ -2880,6 +3476,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「君が好き」のカップリング曲。ライブ未演奏"
@@ -2901,6 +3501,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「Any」のカップリング曲。ライブ未演奏"
@@ -2922,6 +3526,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「Sign」のカップリング曲。寺岡呼人との共作。"
@@ -2943,6 +3551,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「Sign」のカップリング曲。Thanksgiving25で初披露。映像化はなし"
@@ -2964,6 +3576,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「箒星」のカップリング曲。apなどのフェスで披露されたがツアーでの披露はない。"
@@ -2985,6 +3601,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「箒星」のカップリング曲。ライブで披露されたのは「Spilit the Difference」で一度のみ。"
@@ -3006,6 +3626,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「しるし」のカップリング曲。B-SIDEのプロモーション用にMVを作成。"
@@ -3027,6 +3651,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「しるし」のカップリング曲。原曲と違い、ピアノが主体"
@@ -3048,6 +3676,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/～"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"曲名は”コンフィデンスソング”、ツアー名は”コンフィデンスソングス”"
@@ -3073,6 +3705,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/2MNL2mU8pBE?si=tRCEFIP4HXGJBW9o"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"33rdシングル。金魚"
@@ -3098,6 +3734,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/s8eLpnWweTU?si=rJoUBgLQaatCT4rb"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"POPSAURUS2012のOP曲。神イントロ。"
@@ -3119,6 +3759,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/NhqqKETgBO0?si=93LHNqi-zb1bPttq"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"アルバム曲ながら、演奏されたツアー2回のどちらもYoutubeに上がっている。"
@@ -3136,6 +3780,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%B0%91%E5%B9%B4/1531496623?i=1531496630"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"熱いのお届けします！"
@@ -3157,6 +3805,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/sPyWyBjM-3E?si=0VT7Y9KVarOx_3WS"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"31thシングル。HOMEツアーのラストに演奏されたが、同アルバムツアーでは演奏されなかった"
@@ -3174,6 +3826,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%8F%A3%E3%81%8C%E3%81%99%E3%81%B9%E3%81%A3%E3%81%A6/1531496623?i=1531496632"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"トゥットゥットゥー"
@@ -3191,6 +3847,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%B0%B4%E4%B8%8A%E3%83%90%E3%82%B9/1531496623?i=1531496633"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「さよなら」を選んだ君はおそらく正しい"
@@ -3208,6 +3868,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%9D%B1%E4%BA%AC/1531496623?i=1531496635"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"俺が歌いたいの"
@@ -3225,6 +3889,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%AD%E3%83%83%E3%82%AF%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%AB/1531496623?i=1531496636"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"JENをモチーフにした曲。店長からのおすすめの一曲"
@@ -3242,6 +3910,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E7%BE%8A-%E5%90%A0%E3%81%88%E3%82%8B/1531496623?i=1531496638"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「旅立ちの唄」のカップリング曲。ライブ未披露"
@@ -3263,6 +3935,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&t=7239s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「GIFT」のカップリング曲。アルバムバージョンは壮大"
@@ -3288,6 +3964,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/PndExyZsuYA?si=fC3ZDteptyUhU_m9"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"32ndシングル。シングルとアウトロが少し違う"
@@ -3309,6 +3989,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/6BsZ1d9UE5I?si=mHNGpm4_DXGbNrK3"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"1st配信限定シングル。誰かの心の中で生き続ける"
@@ -3330,6 +4014,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/I1XT29DoA_8?si=AObeyvZeBH3D_5es"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"アルバム一曲目。SENSE＋I＝先制"
@@ -3351,6 +4039,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/pS8cl5hAGAQ?si=4THyRj9zcUTiFc2P"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"大切なことは目には見えない"
@@ -3368,6 +4060,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/howl/1531495894?i=1531496407"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ap23にてアルバムツアー以来に披露された"
@@ -3385,6 +4081,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/im-talking-about-lovin/1531495894?i=1531496410"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"PKど真ん中は勇気いるのよ"
@@ -3406,6 +4106,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/43D_nBGfuGY?si=w-iOIME6znBgDJ8N"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"人々が1年間で愛し合える日数"
@@ -3427,6 +4131,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/UFgF37eJUuY?si=ow8c1bVaeMA1FWeE"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ライブアレンジがカッコ良すぎる。「お前だけのステップ Oh〜」"
@@ -3444,6 +4152,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%83%AD%E3%82%B6%E3%83%AA%E3%83%BC%E3%82%BF/1531495894?i=1531496413"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"コバタケワールド全開のバラード"
@@ -3461,6 +4173,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%92%BC/1531495894?i=1531496416"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「それでも心は手を伸ばし続ける」"
@@ -3482,6 +4198,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=CxasK4veEu8&t=3255s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"2nd配信限定シングル。ストロングワールド"
@@ -3503,6 +4223,10 @@
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&t=3696s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"歌詞は”春”、曲名は”ハル”、、なんでだ"
@@ -3520,6 +4244,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/prelude/1531495894?i=1531496421"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"過去作いっぱい"
@@ -3537,6 +4265,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/forever/1531495894?i=1531496422"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「君の好きな僕」"
@@ -3558,6 +4290,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/4Zj9PE3Vcc0?si=zJZ_Wm-qXGvgBu3M"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"4th配信限定シングル。hypnosis:催眠状態"
@@ -3583,6 +4319,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/oYWaZcqVnbM?si=pTE11gklHeY7llOM"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"マシュマロの日"
@@ -3600,6 +4340,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/end-of-the-day/1531496874?i=1531497023"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"34thシングルの一曲。ブラオレツアーではサビ弾き語りから始まるアレンジ"
@@ -3621,6 +4365,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/2iKRxczFkOI?si=grLpEAK5H73Snwv9"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"POPSAURUS2012で制作途中ながら初披露。"
@@ -3638,6 +4386,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/pieces/1531496874?i=1531497031"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"34thシングルの一曲。"
@@ -3655,6 +4407,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%A4%E3%83%9F%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E6%9C%A8/1531496874?i=1531497035"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"”本物”とは？"
@@ -3672,6 +4428,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%81%8B%E3%81%9E%E3%81%88%E3%81%86%E3%81%9F/1531496874?i=1531497218"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"3rd配信限定シングル。Cメロ以外の歌詞がひらがな"
@@ -3689,6 +4449,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E3%82%A4%E3%83%B3%E3%83%9E%E3%82%A4%E3%82%BF%E3%82%A6%E3%83%B3/1531496874?i=1531497223"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ライブ未演奏"
@@ -3706,6 +4470,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%81%8E%E5%8E%BB%E3%81%A8%E6%9C%AA%E6%9D%A5%E3%81%A8%E4%BA%A4%E4%BF%A1%E3%81%99%E3%82%8B%E7%94%B7/1531496874?i=1531497227"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ブラオレツアーの一曲目。フードを被って不気味な演出"
@@ -3727,6 +4495,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/31GVSIK93V4?si=kwfeDbZkhUCKomNd"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"めざましテレビのテーマソング"
@@ -3748,6 +4520,10 @@
       {
         "label": "MV",
         "url": "https://youtu.be/g3J8LBnYq4E?si=PkXmsH9627HPNDT2"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"34thシングルの一曲"
@@ -3765,6 +4541,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/fantasy/1531496939?i=1531497115"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"REFLECTIONツアーの一曲目"
@@ -3782,6 +4562,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/fight-club/1531496939?i=1531497119"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"映画の「ファイト・クラブ」から"
@@ -3799,6 +4583,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%96%9C%E9%99%BD/1531496939?i=1531497306"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"太宰治の小説「斜陽」から"
@@ -3816,6 +4604,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/melody/1531496939?i=1531497308"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"「足音」のカップリング曲。🎄"
@@ -3833,6 +4625,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%9C%98%E8%9B%9B%E3%81%AE%E7%B3%B8/1531496939?i=1531497310"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"芥川龍之介の小説「蜘蛛の糸」から"
@@ -3850,6 +4646,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/i-can-make-it/1531496939?i=1531497311"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ライブ映像はモノクロの暗いタッチで描かれた"
@@ -3867,6 +4667,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/rollin-rolling-%E4%B8%80%E8%A6%8B%E3%81%AF%E7%99%BE%E8%81%9E%E3%81%AB%E5%A6%82%E3%81%8B%E3%81%9A/1531496939?i=1531497313"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"百聞は一見に如かず"
@@ -3884,6 +4688,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%94%BE%E3%81%9F%E3%82%8C%E3%82%8B/1531496939?i=1531497316"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"6th配信限定シングル。「足音」のカップリング曲でもある"
@@ -3901,6 +4709,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E8%A1%97%E3%81%AE%E9%A2%A8%E6%99%AF/1531496939?i=1531497320"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"小田和正との共作「パノラマの街」が原曲。ap25で初披露"
@@ -3918,6 +4730,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%81%8B%E5%91%BD/1531496939?i=1531497322"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ベートーベン「運命」"
@@ -3943,6 +4759,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/_B09-nM3knE?si=LaWGv7llUZT2WTQt"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"35thシングル。ミスチル初のセルフプロデュース楽曲"
@@ -3960,6 +4780,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E5%BF%98%E3%82%8C%E5%BE%97%E3%81%AC%E4%BA%BA/1531496939?i=1531497331"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"その日が来るのをどこかで願ってる"
@@ -3977,6 +4801,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/you-make-me-happy/1531496939?i=1531497333"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"虹ツアーで演奏された"
@@ -3994,6 +4822,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/jewelry/1531496939?i=1531497666"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ライブ未披露"
@@ -4019,6 +4851,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/_WrC9qLcaEw?si=dAezu49ZFQQ3kqTY"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"5th配信限定シングル。ライブのスクリーンアートがスゴイっ"
@@ -4036,6 +4872,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/waltz/1531496939?i=1531497674"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":""
@@ -4057,6 +4897,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/4fs7QoPnRNE?si=d1oXv3xzIOvGGq65"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"世代を越えて"
@@ -4078,6 +4922,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/kvlEWUpIl2Y?si=Rd7JDt0l9lsITXld"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ライブ定番曲になりつつある。サビを話すように歌うアレンジがイイ"
@@ -4095,6 +4943,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/reflection/1531496939?i=1531497737"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"桜井さんがピアノを弾いてる"
@@ -4112,6 +4964,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E9%81%A0%E3%81%8F%E3%81%B8%E3%81%A8/1531496939?i=1531497740"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"2マンLIVEでのみ披露"
@@ -4129,6 +4985,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/i-wanna-be-there/1531496939?i=1531497745"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"🍊ツアーのアンコール一曲目。ステキ"
@@ -4150,6 +5010,10 @@
       {
         "label": "YouTube",
         "url": "https://youtu.be/3PnCgAlmK3Q?si=hALo3kc7QXiRXn8P"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"ノブナガ"
@@ -4167,6 +5031,10 @@
       {
         "label": "Apple Music",
         "url": "https://music.apple.com/jp/album/%E6%9C%AA%E5%AE%8C/1531496939?i=1531497752"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9917"
       }
     ],
     "Memo":"🍊🪶"

@@ -14,8 +14,8 @@
 
     /* フォント */
     --font-title: 40px;
-    --font-lyrics: 15px;
-    --font-info: 18px;
+    --font-lyrics: 16px;
+    --font-info: 16px;
 
     /* 歌詞の配置 */
     --lyrics-h: center; --lyrics-v: center;
@@ -37,9 +37,9 @@
 
     --info-image-max: 420px;
 
-    /* ▼ 追加：間隔（必要ならここを調整） */
-    --gap-img-to-release: 28px;    /* 画像→Release の追加間隔 */
-    --gap-album-to-links: 22px;    /* Albuminfo→リンク の追加間隔 */
+    /* 追加：間隔調整 */
+    --release-margin-top: 50px;      /* 画像とreleaseの間 */
+    --other-links-margin-top: 18px;  /* 「演奏/披露されたライブ」リンク段と、その他リンク段の間 */
   }
 
   *{box-sizing:border-box}
@@ -185,8 +185,12 @@
     align-items: var(--info-align);
     text-align: var(--info-align);
 
+    opacity:0;
+    transition: opacity var(--text-fade-ms) ease;
+
     color: var(--c-text);
   }
+  .infoBlock.show{ opacity:1; }
 
   .infoImage{
     width: min(92%, var(--info-image-max));
@@ -198,6 +202,9 @@
 
   .infoText{ font-size: var(--font-info); margin:0; }
 
+  /* 画像とreleaseの間隔 */
+  #infoRelease{ margin-top: var(--release-margin-top); }
+
   .linkList a{ color: var(--accent); text-decoration: underline; }
 
   .linkList{
@@ -207,25 +214,12 @@
     flex-wrap:wrap;
   }
 
-  /* ▼ 段階表示（ここが今回のキモ） */
-  .infoStep{
-    opacity:0;
-    transform: translateY(10px);
-    transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
-    will-change: opacity, transform;
-  }
-  .infoStep.show{
-    opacity:1;
-    transform:none;
-  }
-
-  /* ▼ 追加の間隔（画像→Release、Albuminfo→Links） */
-  #infoRelease{ margin-top: var(--gap-img-to-release); }
-  #infoLinks{ margin-top: var(--gap-album-to-links); }
+  /* 「演奏/披露されたライブ」→その他リンク の段間 */
+  .linkListOther{ margin-top: var(--other-links-margin-top); }
 
   @media (max-width: 420px) {
     :root{
-      --font-info: 15px;
+      --font-lyrics: 18px; --font-info: 15px;
       --title-left: 12px; --title-top: 12px;
     }
     .stack{ transform: translateY(-28px); }
@@ -257,12 +251,16 @@
     <section id="screen3" class="screen" aria-live="polite" aria-atomic="true">
       <h1 id="songTitleFixed" class="titleFixed"></h1>
 
-      <!-- 上から順に：画像 → release → Albuminfo → リンク（時間差で表示） -->
+      <!-- 上から順に：画像 → release → Albuminfo → リンク（ライブ → その他） -->
       <div id="infoBlock" class="infoBlock">
-        <img id="infoImage" class="infoImage infoStep" alt="">
-        <p id="infoRelease" class="infoText infoStep"></p>
-        <p id="infoAlbumInfo" class="infoText infoStep"></p>
-        <div id="infoLinks" class="linkList infoStep"></div>
+        <img id="infoImage" class="infoImage" alt="">
+        <p id="infoRelease" class="infoText"></p>
+        <p id="infoAlbumInfo" class="infoText"></p>
+
+        <!-- 「演奏/披露されたライブ」リンク（先に表示） -->
+        <div id="infoLinksLive" class="linkList"></div>
+        <!-- その他リンク（次に表示：1段下） -->
+        <div id="infoLinks" class="linkList linkListOther"></div>
       </div>
     </section>
   </div>
@@ -289,11 +287,7 @@
     HOLD_AFTER_LAST_NO_CARET_MS:   8000, // \n^ なし（= 全行同時に出る）
 
     TITLE_AFTER_FADEOUT_MS:  1800,
-
-    /* ▼ 追加：画面3での段階表示タイミング */
-    IMG_AFTER_TITLE_MS:   1000,   // タイトル表示後 → 画像
-    TEXT_AFTER_IMG_MS:    2000,   // 画像後 → release + albuminfo
-    LINKS_AFTER_TEXT_MS:  2000    // release+albuminfo後 → links
+    INFO_AFTER_TITLE_MS:     3000
   };
 
   let albumInfo = {
@@ -510,33 +504,45 @@
     }
   }
 
-  function hideInfoSteps(){
-    ['infoImage','infoRelease','infoAlbumInfo','infoLinks'].forEach(id=>{
-      const el = document.getElementById(id);
-      if(el) el.classList.remove('show');
-    });
-  }
-
   function resetUI(){
     document.getElementById('lyrics').innerHTML = '';
-
     const title = document.getElementById('songTitleFixed');
-    title.textContent = '';
-    title.classList.remove('show');
+    title.textContent = ''; title.classList.remove('show');
     title.style.fontSize = '';
 
     const img = document.getElementById('infoImage');
-    img.removeAttribute('src');
-    img.style.display='none';
+    img.removeAttribute('src'); img.style.display='none';
 
     document.getElementById('infoRelease').textContent = '';
     document.getElementById('infoAlbumInfo').textContent = '';
-    document.getElementById('infoLinks').innerHTML = '';
 
-    hideInfoSteps();
+    const linksEl = document.getElementById('infoLinks');
+    const liveEl  = document.getElementById('infoLinksLive');
+    linksEl.innerHTML = '';
+    liveEl.innerHTML  = '';
+    linksEl.style.display = 'none';
+    liveEl.style.display  = 'none';
+
+    document.getElementById('infoBlock').classList.remove('show');
 
     const s3 = document.getElementById('screen3');
     s3.style.backgroundImage = '';
+  }
+
+  function linkToAnchor(l){
+    if (!l) return '';
+    if (typeof l === 'string'){
+      return `<a href="${l}" target="_blank" rel="noopener">Link</a>`;
+    }
+    if (l?.url){
+      const label = (l.label || 'Link');
+      return `<a href="${l.url}" target="_blank" rel="noopener">${label}</a>`;
+    }
+    return '';
+  }
+
+  function isLiveLabel(label){
+    return label === '披露されたライブ' || label === '演奏されたライブ';
   }
 
   function renderAll(song){
@@ -581,51 +587,30 @@
     else if (detail)  albumLine = `${detail}収録`;
     document.getElementById('infoAlbumInfo').textContent = albumLine;
 
-    // links
-    const links=(song.links||[]);
-    const html = Array.isArray(links)
-      ? links.map(l=> (typeof l==='string')
-          ? `<a href="${l}" target="_blank" rel="noopener">Link</a>`
-          : (l?.url ? `<a href="${l.url}" target="_blank" rel="noopener">${l.label||'Link'}</a>` : '')
-        ).filter(Boolean).join('')
-      : (links?.url ? `<a href="${links.url}" target="_blank" rel="noopener">${links.label||'Link'}</a>` : '');
-    document.getElementById('infoLinks').innerHTML = html;
+    // links（ライブ → その他）
+    const links = Array.isArray(song.links) ? song.links : (song.links ? [song.links] : []);
+    const liveLinks   = [];
+    const normalLinks = [];
 
-    return { fadeoutDoneAt };
-  }
+    links.forEach(l=>{
+      const label = (typeof l === 'string') ? 'Link' : String(l?.label || 'Link');
+      if (isLiveLabel(label)) liveLinks.push(l);
+      else normalLinks.push(l);
+    });
 
-  function showInfoSequential(song){
-    hideInfoSteps();
+    const liveHtml   = liveLinks.map(linkToAnchor).filter(Boolean).join('');
+    const normalHtml = normalLinks.map(linkToAnchor).filter(Boolean).join('');
 
-    const imgEl   = document.getElementById('infoImage');
-    const relEl   = document.getElementById('infoRelease');
-    const albEl   = document.getElementById('infoAlbumInfo');
+    const liveEl  = document.getElementById('infoLinksLive');
     const linksEl = document.getElementById('infoLinks');
 
-    const hasImg   = (imgEl && imgEl.style.display !== 'none');
-    const hasRel   = !!(relEl && relEl.textContent.trim());
-    const hasAlb   = !!(albEl && albEl.textContent.trim());
-    const hasLinks = !!(linksEl && linksEl.innerHTML.trim());
+    liveEl.innerHTML  = liveHtml;
+    linksEl.innerHTML = normalHtml;
 
-    // タイトルの後に「画像 → release+album → links」
-    const base = CONFIG.TITLE_AFTER_FADEOUT_MS;
+    liveEl.style.display  = liveHtml   ? 'flex' : 'none';
+    linksEl.style.display = normalHtml ? 'flex' : 'none';
 
-    // 画像
-    later(base + CONFIG.IMG_AFTER_TITLE_MS, ()=>{
-      if (hasImg) imgEl.classList.add('show');
-      // 画像がない場合でも次に進む（何もしない）
-    });
-
-    // release + albuminfo
-    later(base + CONFIG.IMG_AFTER_TITLE_MS + CONFIG.TEXT_AFTER_IMG_MS, ()=>{
-      if (hasRel) relEl.classList.add('show');
-      if (hasAlb) albEl.classList.add('show');
-    });
-
-    // links
-    later(base + CONFIG.IMG_AFTER_TITLE_MS + CONFIG.TEXT_AFTER_IMG_MS + CONFIG.LINKS_AFTER_TEXT_MS, ()=>{
-      if (hasLinks) linksEl.classList.add('show');
-    });
+    return { fadeoutDoneAt };
   }
 
   async function startFlow(){
@@ -647,11 +632,11 @@
       fitTitleOneLine(document.getElementById('songTitleFixed'), { minPx: 14 });
     });
 
-    // タイトル表示
     later(fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS, ()=>{
       document.getElementById('songTitleFixed').classList.add('show');
-      // タイトルが出たタイミングを基準に段階表示を開始
-      showInfoSequential(current);
+    });
+    later(fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS + CONFIG.INFO_AFTER_TITLE_MS, ()=>{
+      document.getElementById('infoBlock').classList.add('show');
     });
   }
 
