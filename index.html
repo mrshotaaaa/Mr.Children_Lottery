@@ -51,28 +51,40 @@
   --start-top-pad: 10vh;
 
   /* ▼ 1行目：YourSong（サイズ & 左右ずらし） */
-  --start-heading-size: clamp(34px, 10vw, 60px);
-  --start-heading-x: 0px;
+  --start-heading-size: clamp(34px, 10vw, 50px);
+  --start-heading-x: -40px;
 
   /* ▼ 2行目：お届けします（サイズ & 左右ずらし） */
-  --start-sub-size: clamp(18px, 6.5vw, 44px);
-  --start-sub-x: 0px;
+  --start-sub-size: clamp(18px, 6.5vw, 30px);
+  --start-sub-x: 60px;
 
   /* 行間（1行目と2行目の距離） */
-  --start-gap: 10px;
+  --start-gap: 20px;
 
   /* 中央ボタン（透明・丸）のサイズ */
-  --start-btn-size: clamp(140px, 34vw, 240px);
+  --start-btn-size: clamp(140px, 34vw, 150px);
 
   /* ボタン位置（%で調整） */
-  --start-btn-left: 50%;
-  --start-btn-top:  25%;
+  --start-btn-left: 49.5%;
+  --start-btn-top:  -4.5%;
 
   /* ボタンの透明度（0.0〜1.0） */
   --start-btn-opacity: 0.0;
 
   /* ボタン枠（透明にしたいなら rgba(...,0)） */
   --start-btn-border: rgba(0,0,0,.0);
+
+  /* ✅ 追加：画面1のフォント（ゴシック） */
+  --start-font:
+    system-ui,
+    -apple-system,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic",
+    "YuGothic",
+    "Meiryo",
+    "Noto Sans JP",
+    sans-serif;
 
   /* =======================================================
      画面3（情報ブロック）位置・間隔
@@ -101,7 +113,7 @@ body{
   margin:0;
   display:grid;
   place-items:center;
-  background:#0a0a0a; /* ✅ 周りの黒を消す（前は #000） */
+  background:#0a0a0a;
   font-family:
     "Hiragino Mincho ProN",
     "Yu Mincho",
@@ -118,7 +130,7 @@ body{
   height: min(100vh, calc(100vw * 16 / 9));
   overflow:hidden;
   border-radius: 12px;
-  background:#070707; /* ✅ ここも白にしておく */
+  background:#070707;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -140,10 +152,10 @@ body{
 #screen1{
   background-color: var(--start-bg-color);
   background-image: var(--start-bg);
-  background-size: var(--start-bg-size); /* ✅ cover */
+  background-size: var(--start-bg-size);
   background-position: var(--start-bg-pos);
   background-repeat: no-repeat;
-  color:#fcf9f9;
+  color:#684205;
   text-align:center;
 }
 #screen1::before{
@@ -166,14 +178,16 @@ body{
   pointer-events:none;
 }
 .startHeading{
+  font-family: var(--start-font); /* ✅ 追加：画面1だけゴシック */
   font-size: var(--start-heading-size);
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: .01em;
   line-height: 1.05;
   text-shadow: 0 2px 18px rgba(255, 255, 255, 0.15);
   transform: translateX(var(--start-heading-x));
 }
 .startSub{
+  font-family: var(--start-font); /* ✅ 追加：画面1だけゴシック */
   font-size: var(--start-sub-size);
   font-weight: 800;
   line-height: 1.1;
@@ -685,3 +699,4 @@ async function startFlow(){
 </script>
 </body>
 </html>
+
