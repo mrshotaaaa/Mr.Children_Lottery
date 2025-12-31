@@ -15,7 +15,7 @@
   --text-fade-ms:   3500ms;   /* 文字フェード */
 
   /* ===== 共通色 ===== */
-  --c-bg: #fff; --c-text:#111; --accent:#2563eb;
+  --c-bg: #fff; --c-text:#000000; --accent:#2563eb;
 
   /* ===== 画面2（歌詞）フォント ===== */
   --font-lyrics: 15px;
@@ -33,7 +33,7 @@
   --title-top:  50px;
 
   /* =======================================================
-     画面1（スタート画面）ここが一番大事
+     画面1（スタート画面）
      ======================================================= */
 
   /* 背景画像 */
@@ -50,18 +50,18 @@
   --start-heading-x: -40px;
 
   /* ▼ 2行目：お届けします（サイズ & 左右ずらし） */
-  --start-sub-size: clamp(18px, 6.5vw, 35px);
-  --start-sub-x: 45px; 
+  --start-sub-size: clamp(18px, 6.5vw, 40px);
+  --start-sub-x: 40px;
 
   /* 行間（1行目と2行目の距離） */
   --start-gap: 10px;
 
   /* 中央ボタン（透明・丸）のサイズ */
-  --start-btn-size: clamp(140px, 34vw, 180px);
+  --start-btn-size: clamp(140px, 34vw, 200px);
 
   /* ボタン位置（%で調整） */
   --start-btn-left: 49.5%;
-  --start-btn-top:  -0%;
+  --start-btn-top:  5%;
 
   /* ボタンの透明度（0.0〜1.0） */
   --start-btn-opacity: 0.0;
@@ -138,7 +138,7 @@ body{
   background-size: contain;           /* 拡大しすぎない */
   background-position: center;
   background-repeat: no-repeat;
-  color:#111;
+  color:#f8f6f6;
   text-align:center;
 }
 #screen1::before{
