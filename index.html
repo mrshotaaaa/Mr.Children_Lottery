@@ -3,468 +3,531 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>YourSong – Mobile 9:16 + MS Gothic + Fade</title>
+<title>YourSong – Mobile 9:16 + Fade</title>
 
 <style>
+/* =========================================================
+   ✅ EDIT HERE（ここだけ触ればOK）
+   ========================================================= */
+:root{
+  /* ===== 全体フェード ===== */
+  --screen-fade-ms: 2000ms;   /* 画面切替 */
+  --text-fade-ms:   3500ms;   /* 文字フェード */
+
+  /* ===== 共通色 ===== */
+  --c-bg: #fff; --c-text:#111; --accent:#2563eb;
+
+  /* ===== 画面2（歌詞）フォント ===== */
+  --font-lyrics: 15px;
+
+  /* ===== 画面3（タイトル/情報）フォント ===== */
+  --font-title: 40px;
+  --font-info:  16px;
+
+  /* ===== 画面2（歌詞）配置 ===== */
+  --lyrics-h: center; --lyrics-v: center;
+  --lyrics-x: 0px; --lyrics-y: 0px;
+
+  /* ===== 画面3（タイトル）位置 ===== */
+  --title-left: 16px;
+  --title-top:  50px;
+
+  /* =======================================================
+     画面1（スタート画面）ここが一番大事
+     ======================================================= */
+
+  /* 背景画像 */
+  --start-bg: url("Images/GIFTforyou.png");
+
+  /* 黒フィルター（0.0〜1.0） */
+  --start-filter: rgba(0,0,0,.0);
+
+  /* 上の文字ブロック全体の「上からの位置」 */
+  --start-top-pad: 10vh;
+
+  /* ▼ 1行目：YourSong（サイズ & 左右ずらし） */
+  --start-heading-size: clamp(34px, 10vw, 50px);
+  --start-heading-x: -40px;
+
+  /* ▼ 2行目：お届けします（サイズ & 左右ずらし） */
+  --start-sub-size: clamp(18px, 6.5vw, 35px);
+  --start-sub-x: 45px; 
+
+  /* 行間（1行目と2行目の距離） */
+  --start-gap: 10px;
+
+  /* 中央ボタン（透明・丸）のサイズ */
+  --start-btn-size: clamp(140px, 34vw, 180px);
+
+  /* ボタン位置（%で調整） */
+  --start-btn-left: 49.5%;
+  --start-btn-top:  -0%;
+
+  /* ボタンの透明度（0.0〜1.0） */
+  --start-btn-opacity: 0.0;
+
+  /* ボタン枠（透明にしたいなら rgba(...,0)） */
+  --start-btn-border: rgba(0,0,0,.0);
+
+  /* =======================================================
+     画面3（情報ブロック）位置・間隔
+     ======================================================= */
+  --info-left: 50%;
+  --info-top: 47%;
+  --info-translate-x: -50%;
+  --info-translate-y: -50%;
+
+  --info-gap: 10px;
+  --info-align: center; /* left / center / right */
+  --info-image-max: 420px;
+
+  /* 画面3：間隔（ここを増やすと広がる） */
+  --gap-image-release: 28px; /* 画像 → release */
+  --gap-album-live:   20px;  /* アルバム情報 → 演奏されたライブ */
+  --gap-live-other:   20px;  /* 演奏されたライブ → その他リンク */
+}
+
+/* =========================================================
+   Base
+   ========================================================= */
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  display:grid;
+  place-items:center;
+  background:#000;
+  font-family:
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    "MS PMincho",
+    "MS Mincho",
+    "Noto Serif JP",
+    serif;
+}
+
+.stage{
+  position:relative;
+  aspect-ratio: 9 / 16;
+  width: min(100vw, calc(100vh * 9 / 16));
+  height: min(100vh, calc(100vw * 16 / 9));
+  overflow:hidden;
+  border-radius: 12px;
+  background:#000;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.screen{
+  position:absolute;
+  inset:0;
+  display:grid;
+  justify-items:stretch;
+  align-items:stretch;
+  opacity:0;
+  pointer-events:none;
+  transition: opacity var(--screen-fade-ms) ease;
+}
+.screen.active{ opacity:1; pointer-events:auto; }
+
+/* =========================================================
+   Screen 1（Start）
+   ========================================================= */
+#screen1{
+  background-color:#fff;              /* 余白が出ても白 */
+  background-image: var(--start-bg);
+  background-size: contain;           /* 拡大しすぎない */
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#111;
+  text-align:center;
+}
+#screen1::before{
+  content:"";
+  position:absolute; inset:0;
+  background: var(--start-filter);
+  pointer-events:none;
+}
+#screen1 > *{ position:relative; z-index:1; }
+
+/* 上部文字（2行） */
+.startOverlay{
+  position:absolute; inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  padding-top: var(--start-top-pad);
+  gap: var(--start-gap);
+  pointer-events:none;
+}
+
+.startHeading{
+  font-size: var(--start-heading-size);
+  font-weight: 800;
+  letter-spacing: .01em;
+  line-height: 1.05;
+  text-shadow: 0 2px 18px rgba(0,0,0,.15);
+  transform: translateX(var(--start-heading-x));
+}
+.startSub{
+  font-size: var(--start-sub-size);
+  font-weight: 800;
+  line-height: 1.1;
+  text-shadow: 0 2px 18px rgba(0,0,0,.15);
+  transform: translateX(var(--start-sub-x));
+}
+
+/* 中央の透明丸ボタン */
+.tapBtn{
+  position:absolute;
+  left: var(--start-btn-left);
+  top:  var(--start-btn-top);
+  transform: translate(-50%, -50%);
+  width:  var(--start-btn-size);
+  height: var(--start-btn-size);
+  border-radius: 999px;
+
+  background: rgba(255,255,255,var(--start-btn-opacity));
+  border: 2px solid var(--start-btn-border);
+
+  /* ぼやけの原因になりやすいのでオフ */
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+
+  cursor:pointer;
+  pointer-events:auto;
+}
+.tapBtn:focus{
+  outline: 3px solid rgba(37, 99, 235, .45);
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   Screen 2（Lyrics）
+   ========================================================= */
+#screen2{ background: var(--c-bg); color: var(--c-text); }
+
+.lyricsWrap{
+  justify-self: var(--lyrics-h);
+  align-self: var(--lyrics-v);
+  transform: translate(var(--lyrics-x), var(--lyrics-y));
+  width: 92%;
+  max-width: 560px;
+  padding: 4vh 2vw;
+  text-align: center;
+}
+.lyrics{
+  white-space: pre-wrap;
+  line-height: 1.9;
+  font-size: var(--font-lyrics);
+}
+.lyrics .line{
+  opacity:0; transform: translateY(10px);
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.lyrics .line.show{ opacity:1; transform:none; }
+.lyrics .seg{
+  display:inline-block;
+  opacity:0; transform: translateY(10px);
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.lyrics .seg.show{ opacity:1; transform:none; }
+
+/* =========================================================
+   Screen 3（Info）
+   ========================================================= */
+#screen3{ background: var(--c-bg); color: var(--c-text); }
+#screen3{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#screen3::before{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.75);
+  pointer-events:none;
+}
+#screen3 > *{ position:relative; z-index:1; }
+#screen3{ color:#f3f4f6; }
+#screen3 .infoBlock{ color:#f3f4f6; }
+#screen3 .linkList a{ color:#93c5fd; }
+
+.titleFixed{
+  position:absolute;
+  left: var(--title-left);
+  right: var(--title-left);
+  top: var(--title-top);
+  margin:0;
+  font-size: var(--font-title);
+  font-weight: 800;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  opacity:0; transform: translateY(-6px);
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.titleFixed.show{ opacity:1; transform:none; }
+
+.infoBlock{
+  position:absolute;
+  left: var(--info-left);
+  top:  var(--info-top);
+  transform: translate(var(--info-translate-x), var(--info-translate-y));
+  width: min(82%, 560px);
+  display:flex;
+  flex-direction: column;
+  gap: var(--info-gap);
+  align-items: var(--info-align);
+  text-align: var(--info-align);
+  opacity:0;
+  transition: opacity var(--text-fade-ms) ease;
+}
+.infoBlock.show{ opacity:1; }
+
+.infoStep{
+  opacity:0;
+  transform: translateY(8px);
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.infoStep.show{ opacity:1; transform:none; }
+
+.infoImage{
+  width: min(92%, var(--info-image-max));
+  height:auto;
+  object-fit:contain;
+  display:none;
+  border-radius: 6px;
+}
+
+.infoText{ font-size: var(--font-info); margin:0; }
+
+#infoRelease{ margin-top: var(--gap-image-release); }
+#liveWrap{   margin-top: var(--gap-album-live); }
+#otherWrap{  margin-top: var(--gap-live-other); }
+
+.linkList{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.linkList a{ text-decoration: underline; }
+
+/* スマホ用：font-lyrics は上書きしない */
+@media (max-width: 420px) {
   :root{
-    --screen-fade-ms: 2000ms;   /* 画面切替 */
-    --text-fade-ms:   3500ms;   /* 文字フェード */
-
-    --c-bg: #fff; --c-text:#111; --accent:#2563eb;
-
-    /* フォント */
-    --font-title: 40px;
-    --font-lyrics: 16px;
-    --font-info: 16px;
-
-    /* 歌詞の配置 */
-    --lyrics-h: center; --lyrics-v: center;
-    --lyrics-x: 0px; --lyrics-y: 0px;
-
-    /* タイトル（左上） */
-    --title-left: 16px;  --title-top: 50px;
-
-    /* ===============================
-       画面3：情報ブロック位置（ここを触る）
-       =============================== */
-    --info-left: 50%;
-    --info-top: 45%;
-    --info-translate-x: -50%;
-    --info-translate-y: -50%;
-
-    --info-gap: 12px;
-    --info-align: center; /* left / center / right */
-
-    --info-image-max: 420px;
-
-    /* 追加：間隔調整 */
-    --release-margin-top: 50px;      /* 画像とreleaseの間 */
-    --other-links-margin-top: 18px;  /* 「演奏/披露されたライブ」リンク段と、その他リンク段の間 */
+    --title-left: 12px;
+    --title-top:  12px;
   }
-
-  *{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0; display:grid; place-items:center;
-    background:#000;
-    font-family:
-      "Hiragino Mincho ProN",
-      "Yu Mincho",
-      "MS PMincho",
-      "MS Mincho",
-      "Noto Serif JP",
-      serif;
-  }
-
-  .stage{
-    position:relative;
-    aspect-ratio: 9 / 16;
-    width: min(100vw, calc(100vh * 9 / 16));
-    height: min(100vh, calc(100vw * 16 / 9));
-    overflow:hidden; border-radius: 12px; background:#000;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .screen{
-    position:absolute; inset:0; display:grid;
-    justify-items:stretch; align-items:stretch;
-    opacity:0; pointer-events:none; transition: opacity var(--screen-fade-ms) ease;
-  }
-  .screen.active{ opacity:1; pointer-events:auto; }
-
-  /* 画面1（スタート） */
-  #screen1{
-    background: radial-gradient(60% 50% at 20% 15%, rgba(15,23,42,.85) 0, rgba(11,15,20,.9) 65%), #0b0f14;
-    color:#e6edf3; text-align:center;
-  }
-  .stack{
-    display:grid; gap:14px; padding:16px; width:92%; max-width: 520px;
-    justify-self:center; align-self:center; transform:translateY(-40px);
-  }
-  .startTitle{ font-size: clamp(22px, 5.4vw, 38px); letter-spacing:.08em; font-weight:700; }
-  .btn{
-    justify-self:center; appearance:none; cursor:pointer;
-    padding:12px 18px; border-radius:14px;
-    border:1px solid #1f2937; background:#111823; color:#e6edf3; font-size:16px;
-  }
-  .btn:focus{ outline:2px solid #60a5fa; outline-offset:3px }
-
-  /* 画面2・3（白背景・黒文字） */
-  #screen2, #screen3{ background: var(--c-bg); color: var(--c-text); }
-
-  /* ▼▼▼ 追加：画面3の背景画像＆黒フィルター ▼▼▼ */
-  #screen3{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #screen3::before{
-    content:"";
-    position:absolute; inset:0;
-    background: rgba(0,0,0,.75);
-    pointer-events:none;
-  }
-  #screen3 > *{ position:relative; z-index:1; }
-  #screen3{ color:#f3f4f6; }
-  #screen3 .infoBlock{ color:#f3f4f6; }
-  #screen3 .linkList a{ color:#93c5fd; }
-  /* ▲▲▲ 追加ここまで ▲▲▲ */
-
-  /* 歌詞（中央） */
-  .lyricsWrap{
-    justify-self: var(--lyrics-h);
-    align-self: var(--lyrics-v);
-    transform: translate(var(--lyrics-x), var(--lyrics-y));
-    width: 92%; max-width: 560px; padding: 4vh 2vw; text-align: center;
-  }
-  .lyrics{
-    white-space: pre-wrap;
-    line-height: 1.9;
-    font-size: var(--font-lyrics);
-    font-family:
-      "Hiragino Mincho ProN",
-      "Yu Mincho",
-      "MS PMincho",
-      "MS Mincho",
-      "Noto Serif JP",
-      serif;
-  }
-
-  /* 行（ブロック内の1行） */
-  .lyrics .line{
-    opacity:0; transform: translateY(10px);
-    transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
-    will-change: opacity, transform;
-  }
-  .lyrics .line.show{ opacity:1; transform:none; }
-
-  /* 同一行内セグメント（| で遅延） */
-  .lyrics .seg{
-    display:inline-block;
-    opacity:0; transform: translateY(10px);
-    transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
-    will-change: opacity, transform;
-  }
-  .lyrics .seg.show{ opacity:1; transform:none; }
-
-  /* タイトル（左上・テキスト用フェード） */
-  .titleFixed{
-    position: absolute;
-    left: var(--title-left);
-    right: var(--title-left);
-    top: var(--title-top);
-    margin:0;
-    font-size: var(--font-title);
-    font-weight: 800;
-    letter-spacing: .02em;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
-
-    opacity:0; transform: translateY(-6px);
-    transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
-  }
-  .titleFixed.show{ opacity:1; transform:none; }
-
-  /* ===============================
-     画面3：情報（順番：画像→release→Albuminfo→リンク）
-     =============================== */
-  .infoBlock{
-    position:absolute;
-    left: var(--info-left);
-    top:  var(--info-top);
-    transform: translate(var(--info-translate-x), var(--info-translate-y));
-
-    width: min(82%, 560px);
-
-    display:flex;
-    flex-direction: column;
-    gap: var(--info-gap);
-
-    align-items: var(--info-align);
-    text-align: var(--info-align);
-
-    opacity:0;
-    transition: opacity var(--text-fade-ms) ease;
-
-    color: var(--c-text);
-  }
-  .infoBlock.show{ opacity:1; }
-
-  .infoImage{
-    width: min(92%, var(--info-image-max));
-    height:auto;
-    object-fit:contain;
-    display:none;
-    border-radius: 6px;
-  }
-
-  .infoText{ font-size: var(--font-info); margin:0; }
-
-  /* 画像とreleaseの間隔 */
-  #infoRelease{ margin-top: var(--release-margin-top); }
-
-  .linkList a{ color: var(--accent); text-decoration: underline; }
-
-  .linkList{
-    display:flex;
-    gap:12px;
-    justify-content:center;
-    flex-wrap:wrap;
-  }
-
-  /* 「演奏/披露されたライブ」→その他リンク の段間 */
-  .linkListOther{ margin-top: var(--other-links-margin-top); }
-
-  @media (max-width: 420px) {
-    :root{
-      --font-info: 15px;
-      --title-left: 12px; --title-top: 12px;
-    }
-    .stack{ transform: translateY(-28px); }
-  }
-  @media (max-aspect-ratio: 9/16) {
-    .stage{ width: 100vw; height: calc(100vw * 16 / 9); }
-  }
+}
+@media (max-aspect-ratio: 9/16) {
+  .stage{ width: 100vw; height: calc(100vw * 16 / 9); }
+}
 </style>
 </head>
 
 <body>
   <div class="stage" role="application" aria-label="YourSong 9:16 Stage">
 
+    <!-- Screen 1 -->
     <section id="screen1" class="screen active" aria-label="Start">
-      <div class="stack">
-        <div class="startTitle">GIFT for you</div>
-        <button id="startBtn" class="btn">YourSong</button>
+      <div class="startOverlay" aria-hidden="true">
+        <div class="startHeading">YourSong</div>
+        <div class="startSub">お届けします</div>
       </div>
+
+      <button id="startBtn" class="tapBtn" aria-label="Start"></button>
     </section>
 
-    <!-- 画面2：白背景・黒文字（歌詞だけ） -->
+    <!-- Screen 2 -->
     <section id="screen2" class="screen" aria-live="polite" aria-atomic="true">
       <div class="lyricsWrap">
         <div id="lyrics" class="lyrics"></div>
       </div>
     </section>
 
-    <!-- 画面3：背景画像 + 黒フィルター（タイトル＋情報） -->
+    <!-- Screen 3 -->
     <section id="screen3" class="screen" aria-live="polite" aria-atomic="true">
       <h1 id="songTitleFixed" class="titleFixed"></h1>
 
-      <!-- 上から順に：画像 → release → Albuminfo → リンク（ライブ → その他） -->
       <div id="infoBlock" class="infoBlock">
-        <img id="infoImage" class="infoImage" alt="">
-        <p id="infoRelease" class="infoText"></p>
-        <p id="infoAlbumInfo" class="infoText"></p>
+        <img id="infoImage" class="infoImage infoStep" alt="">
+        <p id="infoRelease" class="infoText infoStep"></p>
+        <p id="infoAlbumInfo" class="infoText infoStep"></p>
 
-        <!-- 「演奏/披露されたライブ」リンク（先に表示） -->
-        <div id="infoLinksLive" class="linkList"></div>
-        <!-- その他リンク（次に表示：1段下） -->
-        <div id="infoLinks" class="linkList linkListOther"></div>
+        <div id="liveWrap" class="infoStep">
+          <div id="infoLiveLinks" class="linkList"></div>
+        </div>
+
+        <div id="otherWrap" class="infoStep">
+          <div id="infoOtherLinks" class="linkList"></div>
+        </div>
       </div>
     </section>
+
   </div>
 
 <script>
-  const CONFIG = {
-    DATA_FILE: 'songsinfo.json',
-    IMAGE_BASE: 'Images/',
+/* =========================================================
+   JS（基本いじらなくてOK）
+   ========================================================= */
+const CONFIG = {
+  DATA_FILE: 'songsinfo.json',
+  IMAGE_BASE: 'Images/',
 
-    SCREEN_FADE_MS: 2000,
-    TEXT_FADE_MS:   3500,
+  SCREEN_FADE_MS: 2000,
+  TEXT_FADE_MS:   3500,
 
-    // 歌詞が最初に出るまで
-    LYRICS_DELAY_MS: 2500,
+  LYRICS_DELAY_MS: 2500,
+  STAGGER_BLOCK_MS: 5000,
+  STAGGER_INLINE_MS: 4000,
 
-    // \n^ がある場合：ブロック（次のタイミング）までの間隔
-    STAGGER_BLOCK_MS: 5000,
+  HOLD_AFTER_LAST_WITH_CARET_MS: 5700,
+  HOLD_AFTER_LAST_NO_CARET_MS:   8000,
 
-    // | がある場合：同一行内で次セグメントを遅らせる間隔（1本ごと）
-    STAGGER_INLINE_MS: 4000,
+  TITLE_AFTER_FADEOUT_MS:  1800,
+  INFO_AFTER_TITLE_MS:     3000,
 
-    // 表示を保つ時間（最後に出てから消えるまで）
-    HOLD_AFTER_LAST_WITH_CARET_MS: 5700, // \n^ あり
-    HOLD_AFTER_LAST_NO_CARET_MS:   8000, // \n^ なし（= 全行同時に出る）
+  STEP_MS: 650
+};
 
-    TITLE_AFTER_FADEOUT_MS:  1800,
-    INFO_AFTER_TITLE_MS:     3000
+let albumInfo = {
+  "1":  { albumid: 1,  album: "EVERYTHING",                 albumdetail: "1stAlbum",  release: "1992-05-10", image: "EVERYTHING.png" },
+  "2":  { albumid: 2,  album: "Kind of Love",               albumdetail: "2ndAlbum",  release: "1992-12-01", image: "Kind of Love.png" },
+  "3":  { albumid: 3,  album: "Versus",                     albumdetail: "3rdAlbum",  release: "1993-09-01", image: "Versus.png" },
+  "4":  { albumid: 4,  album: "Atomic Heart",               albumdetail: "4thAlbum",  release: "1994-09-01", image: "Atomic Heart.png" },
+  "5":  { albumid: 5,  album: "深海",                       albumdetail: "5thAlbum",  release: "1996-06-24", image: "深海.png" },
+  "6":  { albumid: 6,  album: "BOLERO",                     albumdetail: "6thAlbum",  release: "1997-03-05", image: "BOLERO.png" },
+  "7":  { albumid: 7,  album: "DISCOVERY",                  albumdetail: "7thAlbum",  release: "1999-02-03", image: "DISCOVERY.png" },
+  "8":  { albumid: 8,  album: "1/42",                       albumdetail: "8thAlbum",  release: "1999-09-08", image: "1-42.png" },
+  "9":  { albumid: 9,  album: "Q",                          albumdetail: "9thAlbum",  release: "2000-09-27", image: "Q.png" },
+  "10": { albumid: 10, album: "IT'S A WONDERFUL WORLD",     albumdetail: "10thAlbum", release: "2002-05-10", image: "IT'S A WONDERFUL WORLD.png" },
+  "11": { albumid: 11, album: "シフクノオト",               albumdetail: "11thAlbum", release: "2004-04-07", image: "シフクノオト.png" },
+  "12": { albumid: 12, album: "I ♥ U",                      albumdetail: "12thAlbum", release: "2005-09-21", image: "IU.png" },
+  "13": { albumid: 13, album: "HOME",                       albumdetail: "13thAlbum", release: "2007-03-14", image: "HOME.png" },
+  "14": { albumid: 14, album: "B-SIDE",                     albumdetail: "14thAlbum", release: "2007-05-10", image: "B-SIDE.png" },
+  "15": { albumid: 15, album: "SUPERMARKET FANTASY",        albumdetail: "15thAlbum", release: "2008-12-10", image: "SUPERMARKET FANTASY.png" },
+  "16": { albumid: 16, album: "SENSE",                      albumdetail: "16thAlbum", release: "2010-12-01", image: "SENSE.png" },
+  "17": { albumid: 17, album: "[(an imitation) blood orange]", albumdetail: "17thAlbum", release: "2012-11-28", image: "[(an imitation) blood orange].png" },
+  "18": { albumid: 18, album: "REFLECTION",                 albumdetail: "18thAlbum", release: "2015-06-04", image: "REFLECTION.png" },
+  "19": { albumid: 19, album: "重力と呼吸",                 albumdetail: "19thAlbum", release: "2018-10-03", image: "重力と呼吸.png" },
+  "20": { albumid: 20, album: "SOUNDTRACKS",                albumdetail: "20thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
+  "21": { albumid: 21, album: "miss you",                   albumdetail: "21stAlbum", release: "2023-10-04", image: "miss you.png" }
+};
+
+let songs = [], current = null, timers = [];
+
+function buildUrl(base, filename){
+  if (!filename) return '';
+  if (/^https?:\/\//i.test(filename)) return filename;
+  const joined = base.replace(/\/?$/, '/') + filename;
+  return encodeURI(joined);
+}
+
+async function loadSongs(){
+  try{
+    const url = new URL(CONFIG.DATA_FILE, location.href).toString();
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status} (${res.statusText})`);
+    const text = await res.text();
+    const data = JSON.parse(text);
+    if (!Array.isArray(data) || !data.length) throw new Error('JSON is empty or not an array');
+    songs = data.map(normalizeSong);
+  }catch(e){
+    console.error('[loadSongs] failed:', e);
+    alert(`${CONFIG.DATA_FILE} が読み込めませんでした\n→ ${e.message}`);
+    songs = [];
+  }
+}
+
+function normalizeSong(raw){
+  const links=[]; const L=raw.link;
+  if(L){
+    if(typeof L==='string') links.push({label:'Link',url:L});
+    else if(Array.isArray(L)) L.forEach(x=> typeof x==='string'
+      ? links.push({label:'Link',url:x})
+      : (x?.url && links.push({label:x.label||'Link',url:x.url})));
+    else if(L?.url) links.push({label:L.label||'Link',url:L.url});
+  }
+
+  const albumid = (raw.albumid ?? raw.albumId ?? raw.albumID);
+  const a = albumInfo[String(albumid)] || {};
+
+  return {
+    id: raw.songid ?? raw.id ?? null,
+    songid: raw.songid ?? raw.id ?? null,
+    albumid: albumid ?? null,
+
+    title: raw.Title || raw.title || '',
+
+    album: a.album || raw.album || '',
+    albumdetail: a.albumdetail || raw.albumdetail || '',
+    release: a.release ?? raw.release ?? '',
+    image: a.image || raw.image || '',
+
+    lyrics: Array.isArray(raw.Lyrics) ? raw.Lyrics.join('\n') : String(raw.Lyrics || ''),
+    links
   };
+}
 
-  let albumInfo = {
-    "1": { albumid: 1, album: "EVERYTHING", albumdetail: "1stAlbum", release: "1992-05-10", image: "EVERYTHING.png" },
-    "2": { albumid: 2, album: "Kind of Love", albumdetail: "2ndAlbum", release: "1992-12-01", image: "Kind of Love.png" },
-    "3": { albumid: 3, album: "Versus", albumdetail: "3rdAlbum", release: "1993-09-01", image: "Versus.png" },
-    "4": { albumid: 4, album: "Atomic Heart", albumdetail: "4thAlbum", release: "1994-09-01", image: "Atomic Heart.png" },
-    "5": { albumid: 5, album: "深海", albumdetail: "5thAlbum", release: "1996-06-24", image: "深海.png" },
-    "6": { albumid: 6, album: "BOLERO", albumdetail: "6thAlbum", release: "1997-03-05", image: "BOLERO.png" },
-    "7": { albumid: 7, album: "DISCOVERY", albumdetail: "7thAlbum", release: "1999-02-03", image: "DISCOVERY.png" },
-    "9": { albumid: 9, album: "Q", albumdetail: "9thAlbum", release: "2000-09-27", image: "Q.png" },
-    "10": { albumid: 10, album: "IT'S A WONDERFUL WORLD", albumdetail: "10thAlbum", release: "2002-05-10", image: "IT'S A WONDERFUL WORLD.png" },
-    "11": { albumid: 11, album: "シフクノオト", albumdetail: "11stAlbum", release: "2004-04-07", image: "シフクノオト.png" },
-    "12": { albumid: 12, album: "I ♥ U", albumdetail: "12thAlbum", release: "2005-09-21", image: "IU.png" },
-    "13": { albumid: 13, album: "HOME", albumdetail: "13thAlbum", release: "2007-03-14", image: "HOME.png" },
-    "14": { albumid: 14, album: "B-SIDE", albumdetail: "14thAlbum", release: "2007-05-10", image: "B-SIDE.png" },
-    "15": { albumid: 15, album: "SUPERMARKET FANTASY", albumdetail: "15thAlbum", release: "2008-12-10", image: "SUPERMARKET FANTASY.png" },
-    "16": { albumid: 16, album: "SENSE", albumdetail: "16thAlbum", release: "2010-12-01", image: "SENSE.png" },
-    "17": { albumid: 17, album: "[(an imitation) blood orange]", albumdetail: "17thAlbum", release: "2012-11-28", image: "[(an imitation) blood orange].png" },
-    "18": { albumid: 18, album: "REFLECTION", albumdetail: "18thAlbum", release: "2015-06-04", image: "REFLECTION.png" },
-    "19": { albumid: 19, album: "重力と呼吸", albumdetail: "19thAlbum", release: "2018-10-03", image: "重力と呼吸.png" },
-    "20": { albumid: 20, album: "SOUNDTRACKS", albumdetail: "20thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
-    "21": { albumid: 21, album: "miss you", albumdetail: "21stAlbum", release: "2023-10-04", image: "miss you.png" }
-  };
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
 
-  let songs = [], current = null, timers = [];
+function clearTimers(){ timers.forEach(t=>clearTimeout(t)); timers=[]; }
+const later = (ms, fn) => { const t=setTimeout(fn, ms); timers.push(t); };
 
-  function buildUrl(base, filename){
-    if (!filename) return '';
-    if (/^https?:\/\//i.test(filename)) return filename;
-    const joined = base.replace(/\/?$/, '/') + filename;
-    return encodeURI(joined);
-  }
+function fitTitleOneLine(el, { minPx = 14 } = {}){
+  el.style.fontSize = '';
+  requestAnimationFrame(() => {
+    const cs = getComputedStyle(el);
+    let size = parseFloat(cs.fontSize);
+    const min = minPx;
+    if (!el.clientWidth) return;
 
-  async function loadSongs(){
-    try{
-      const url = new URL(CONFIG.DATA_FILE, location.href).toString();
-      const res = await fetch(url, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status} (${res.statusText})`);
-      const text = await res.text();
-      const data = JSON.parse(text);
-      if (!Array.isArray(data) || !data.length) throw new Error('JSON is empty or not an array');
-      songs = data.map(normalizeSong);
-    }catch(e){
-      console.error('[loadSongs] failed:', e);
-      alert(`${CONFIG.DATA_FILE} が読み込めませんでした\n→ ${e.message}`);
-      songs = [];
+    let guard = 0;
+    while (el.scrollWidth > el.clientWidth && size > min && guard < 200){
+      size -= 1;
+      el.style.fontSize = `${size}px`;
+      guard++;
     }
-  }
+  });
+}
 
-  function normalizeSong(raw){
-    const links=[]; const L=raw.link;
-    if(L){
-      if(typeof L==='string') links.push({label:'Link',url:L});
-      else if(Array.isArray(L)) L.forEach(x=> typeof x==='string'
-        ? links.push({label:'Link',url:x})
-        : (x?.url && links.push({label:x.label||'Link',url:x.url})));
-      else if(L?.url) links.push({label:L.label||'Link',url:L.url});
-    }
+function buildLineWithInlineDelay(lineText){
+  const lineEl = document.createElement('div');
+  lineEl.className = 'line';
 
-    const albumid = (raw.albumid ?? raw.albumId ?? raw.albumID);
-    const a = albumInfo[String(albumid)] || {};
+  const parts = String(lineText ?? '').split('|');
+  const safeParts = parts.length ? parts : [''];
 
-    return {
-      id: raw.songid ?? raw.id ?? null,
-      songid: raw.songid ?? raw.id ?? null,
-      albumid: albumid ?? null,
+  safeParts.forEach((p)=>{
+    const seg = document.createElement('span');
+    seg.className = 'seg';
+    seg.textContent = p.length ? p : (safeParts.length === 1 ? ' ' : '');
+    lineEl.appendChild(seg);
+  });
 
-      title: raw.Title || raw.title || '',
+  return lineEl;
+}
 
-      album: a.album || raw.album || '',
-      albumdetail: a.albumdetail || raw.albumdetail || '',
-      release: a.release ?? raw.release ?? '',
-      image: a.image || raw.image || '',
+function setLyricLines(container, text){
+  container.innerHTML = '';
 
-      lyrics: Array.isArray(raw.Lyrics) ? raw.Lyrics.join('\n') : String(raw.Lyrics || ''),
-      links
-    };
-  }
+  const normalized = String(text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  const hasCaretSep = /\n\^\s*/.test(normalized);
 
-  function showScreen(id){
-    document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-  }
+  const allLineEls = [];
+  const allSegEls = [];
 
-  function clearTimers(){ timers.forEach(t=>clearTimeout(t)); timers=[]; }
-  const later = (ms, fn) => { const t=setTimeout(fn, ms); timers.push(t); };
+  if (hasCaretSep){
+    const blocks = normalized.split(/\n\^\s*/);
 
-  function fitTitleOneLine(el, { minPx = 14 } = {}){
-    el.style.fontSize = '';
-    requestAnimationFrame(() => {
-      const cs = getComputedStyle(el);
-      let size = parseFloat(cs.fontSize);
-      const min = minPx;
-      if (!el.clientWidth) return;
-
-      let guard = 0;
-      while (el.scrollWidth > el.clientWidth && size > min && guard < 200){
-        size -= 1;
-        el.style.fontSize = `${size}px`;
-        guard++;
-      }
-    });
-  }
-
-  function buildLineWithInlineDelay(lineText){
-    const lineEl = document.createElement('div');
-    lineEl.className = 'line';
-
-    const parts = String(lineText ?? '').split('|');
-    const safeParts = parts.length ? parts : [''];
-
-    safeParts.forEach((p)=>{
-      const seg = document.createElement('span');
-      seg.className = 'seg';
-      seg.textContent = p.length ? p : (safeParts.length === 1 ? ' ' : '');
-      lineEl.appendChild(seg);
-    });
-
-    return lineEl;
-  }
-
-  function setLyricLines(container, text){
-    container.innerHTML = '';
-
-    const normalized = String(text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-    const hasCaretSep = /\n\^\s*/.test(normalized);
-
-    const allLineEls = [];
-    const allSegEls = [];
-
-    if (hasCaretSep){
-      const blocks = normalized.split(/\n\^\s*/);
-
-      blocks.forEach((blockText, blockIndex)=>{
-        const lines = String(blockText || '').split('\n');
-
-        lines.forEach((lineText)=>{
-          const lineEl = buildLineWithInlineDelay(lineText);
-          container.appendChild(lineEl);
-          allLineEls.push(lineEl);
-
-          const segs = Array.from(lineEl.querySelectorAll('.seg'));
-          segs.forEach((segEl, segIndex)=>{
-            const showAt =
-              CONFIG.LYRICS_DELAY_MS
-              + blockIndex * CONFIG.STAGGER_BLOCK_MS
-              + segIndex * CONFIG.STAGGER_INLINE_MS;
-
-            allSegEls.push({ el: segEl, showAtMs: showAt });
-          });
-
-          later(CONFIG.LYRICS_DELAY_MS + blockIndex * CONFIG.STAGGER_BLOCK_MS, ()=>{
-            lineEl.classList.add('show');
-          });
-        });
-      });
-
-      allSegEls.forEach(({el, showAtMs})=>{
-        later(showAtMs, ()=> el.classList.add('show'));
-      });
-
-      const lastShow = allSegEls.length
-        ? Math.max(...allSegEls.map(x => x.showAtMs))
-        : CONFIG.LYRICS_DELAY_MS;
-
-      const fadeOutStartAt = lastShow + CONFIG.HOLD_AFTER_LAST_WITH_CARET_MS;
-
-      later(fadeOutStartAt, ()=>{
-        allSegEls.forEach(x => x.el.classList.remove('show'));
-        allLineEls.forEach(x => x.classList.remove('show'));
-      });
-
-      return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
-
-    } else {
-      const lines = normalized.split('\n');
+    blocks.forEach((blockText, blockIndex)=>{
+      const lines = String(blockText || '').split('\n');
 
       lines.forEach((lineText)=>{
         const lineEl = buildLineWithInlineDelay(lineText);
@@ -475,183 +538,256 @@
         segs.forEach((segEl, segIndex)=>{
           const showAt =
             CONFIG.LYRICS_DELAY_MS
+            + blockIndex * CONFIG.STAGGER_BLOCK_MS
             + segIndex * CONFIG.STAGGER_INLINE_MS;
 
           allSegEls.push({ el: segEl, showAtMs: showAt });
         });
+
+        later(CONFIG.LYRICS_DELAY_MS + blockIndex * CONFIG.STAGGER_BLOCK_MS, ()=>{
+          lineEl.classList.add('show');
+        });
       });
+    });
 
-      later(CONFIG.LYRICS_DELAY_MS, ()=>{
-        allLineEls.forEach(el => el.classList.add('show'));
+    allSegEls.forEach(({el, showAtMs})=>{
+      later(showAtMs, ()=> el.classList.add('show'));
+    });
+
+    const lastShow = allSegEls.length
+      ? Math.max(...allSegEls.map(x => x.showAtMs))
+      : CONFIG.LYRICS_DELAY_MS;
+
+    const fadeOutStartAt = lastShow + CONFIG.HOLD_AFTER_LAST_WITH_CARET_MS;
+
+    later(fadeOutStartAt, ()=>{
+      allSegEls.forEach(x => x.el.classList.remove('show'));
+      allLineEls.forEach(x => x.classList.remove('show'));
+    });
+
+    return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
+
+  } else {
+    const lines = normalized.split('\n');
+
+    lines.forEach((lineText)=>{
+      const lineEl = buildLineWithInlineDelay(lineText);
+      container.appendChild(lineEl);
+      allLineEls.push(lineEl);
+
+      const segs = Array.from(lineEl.querySelectorAll('.seg'));
+      segs.forEach((segEl, segIndex)=>{
+        const showAt =
+          CONFIG.LYRICS_DELAY_MS
+          + segIndex * CONFIG.STAGGER_INLINE_MS;
+
+        allSegEls.push({ el: segEl, showAtMs: showAt });
       });
+    });
 
-      allSegEls.forEach(({el, showAtMs})=>{
-        later(showAtMs, ()=> el.classList.add('show'));
-      });
+    later(CONFIG.LYRICS_DELAY_MS, ()=>{
+      allLineEls.forEach(el => el.classList.add('show'));
+    });
 
-      const lastShow = allSegEls.length
-        ? Math.max(...allSegEls.map(x => x.showAtMs))
-        : CONFIG.LYRICS_DELAY_MS;
+    allSegEls.forEach(({el, showAtMs})=>{
+      later(showAtMs, ()=> el.classList.add('show'));
+    });
 
-      const fadeOutStartAt = lastShow + CONFIG.HOLD_AFTER_LAST_NO_CARET_MS;
+    const lastShow = allSegEls.length
+      ? Math.max(...allSegEls.map(x => x.showAtMs))
+      : CONFIG.LYRICS_DELAY_MS;
 
-      later(fadeOutStartAt, ()=>{
-        allSegEls.forEach(x => x.el.classList.remove('show'));
-        allLineEls.forEach(x => x.classList.remove('show'));
-      });
+    const fadeOutStartAt = lastShow + CONFIG.HOLD_AFTER_LAST_NO_CARET_MS;
 
-      return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
-    }
+    later(fadeOutStartAt, ()=>{
+      allSegEls.forEach(x => x.el.classList.remove('show'));
+      allLineEls.forEach(x => x.classList.remove('show'));
+    });
+
+    return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
   }
+}
 
-  function resetUI(){
-    document.getElementById('lyrics').innerHTML = '';
-    const title = document.getElementById('songTitleFixed');
-    title.textContent = ''; title.classList.remove('show');
-    title.style.fontSize = '';
+function resetUI(){
+  document.getElementById('lyrics').innerHTML = '';
 
-    const img = document.getElementById('infoImage');
-    img.removeAttribute('src'); img.style.display='none';
+  const title = document.getElementById('songTitleFixed');
+  title.textContent = '';
+  title.classList.remove('show');
+  title.style.fontSize = '';
 
-    document.getElementById('infoRelease').textContent = '';
-    document.getElementById('infoAlbumInfo').textContent = '';
+  const s3 = document.getElementById('screen3');
+  s3.style.backgroundImage = '';
 
-    const linksEl = document.getElementById('infoLinks');
-    const liveEl  = document.getElementById('infoLinksLive');
-    linksEl.innerHTML = '';
-    liveEl.innerHTML  = '';
-    linksEl.style.display = 'none';
-    liveEl.style.display  = 'none';
+  const infoBlock = document.getElementById('infoBlock');
+  infoBlock.classList.remove('show');
 
-    document.getElementById('infoBlock').classList.remove('show');
+  document.querySelectorAll('.infoStep').forEach(el => el.classList.remove('show'));
 
-    const s3 = document.getElementById('screen3');
-    s3.style.backgroundImage = '';
-  }
+  const img = document.getElementById('infoImage');
+  img.removeAttribute('src');
+  img.style.display='none';
 
-  function linkToAnchor(l){
-    if (!l) return '';
+  document.getElementById('infoRelease').textContent = '';
+  document.getElementById('infoAlbumInfo').textContent = '';
+
+  document.getElementById('infoLiveLinks').innerHTML = '';
+  document.getElementById('infoOtherLinks').innerHTML = '';
+
+  document.getElementById('liveWrap').style.display = 'none';
+  document.getElementById('otherWrap').style.display = 'none';
+}
+
+function isLiveLink(label){
+  const s = String(label || '');
+  return /(披露|演奏).*(ライブ)/.test(s) || (/(ライブ)/.test(s) && /(披露|演奏)/.test(s));
+}
+
+function makeLinksHTML(items){
+  return items.map(l=>{
     if (typeof l === 'string'){
       return `<a href="${l}" target="_blank" rel="noopener">Link</a>`;
     }
     if (l?.url){
-      const label = (l.label || 'Link');
-      return `<a href="${l.url}" target="_blank" rel="noopener">${label}</a>`;
+      return `<a href="${l.url}" target="_blank" rel="noopener">${l.label||'Link'}</a>`;
     }
     return '';
+  }).filter(Boolean).join('');
+}
+
+function renderAll(song){
+  const fadeoutDoneAt = setLyricLines(
+    document.getElementById('lyrics'),
+    (song.lyrics||'').trim()
+  );
+
+  const titleEl = document.getElementById('songTitleFixed');
+  titleEl.textContent = song.title || '—';
+  fitTitleOneLine(titleEl, { minPx: 14 });
+
+  const s3 = document.getElementById('screen3');
+  if (song.image) {
+    const bg = buildUrl(CONFIG.IMAGE_BASE, song.image);
+    s3.style.backgroundImage = `url("${bg}")`;
+  } else {
+    s3.style.backgroundImage = '';
   }
 
-  function isLiveLabel(label){
-    return label === '披露されたライブ' || label === '演奏されたライブ';
+  const img = document.getElementById('infoImage');
+  if (song.image) {
+    const src = buildUrl(CONFIG.IMAGE_BASE, song.image);
+    img.src = src;
+    img.alt = song.title ? `${song.title} image` : 'album image';
+    img.style.display = 'block';
+    img.onerror = () => { img.style.display = 'none'; };
+  } else {
+    img.style.display = 'none';
   }
 
-  function renderAll(song){
-    const fadeoutDoneAt = setLyricLines(
-      document.getElementById('lyrics'),
-      (song.lyrics||'').trim()
-    );
+  const rel = String(song.release || '').trim();
+  document.getElementById('infoRelease').textContent = rel ? `Release：${rel}` : '';
 
-    const titleEl = document.getElementById('songTitleFixed');
-    titleEl.textContent = song.title || '—';
-    fitTitleOneLine(titleEl, { minPx: 14 });
+  const detail = String(song.albumdetail || '').trim();
+  const alb    = String(song.album || '').trim();
+  let albumLine = '';
+  if (detail && alb) albumLine = `${detail}『${alb}』収録`;
+  else if (alb)     albumLine = `『${alb}』収録`;
+  else if (detail)  albumLine = `${detail}収録`;
+  document.getElementById('infoAlbumInfo').textContent = albumLine;
 
-    const s3 = document.getElementById('screen3');
-    if (song.image) {
-      const bg = buildUrl(CONFIG.IMAGE_BASE, song.image);
-      s3.style.backgroundImage = `url("${bg}")`;
-    } else {
-      s3.style.backgroundImage = '';
-    }
+  const links = (song.links||[]);
+  const liveLinks  = [];
+  const otherLinks = [];
 
+  links.forEach(l=>{
+    const label = (typeof l === 'string') ? 'Link' : (l?.label || 'Link');
+    if (isLiveLink(label)) liveLinks.push(l);
+    else otherLinks.push(l);
+  });
+
+  const liveWrap  = document.getElementById('liveWrap');
+  const otherWrap = document.getElementById('otherWrap');
+
+  if (liveLinks.length){
+    document.getElementById('infoLiveLinks').innerHTML = makeLinksHTML(liveLinks);
+    liveWrap.style.display = 'block';
+  } else {
+    liveWrap.style.display = 'none';
+  }
+
+  if (otherLinks.length){
+    document.getElementById('infoOtherLinks').innerHTML = makeLinksHTML(otherLinks);
+    otherWrap.style.display = 'block';
+  } else {
+    otherWrap.style.display = 'none';
+  }
+
+  return { fadeoutDoneAt };
+}
+
+async function startFlow(){
+  if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
+  clearTimers();
+
+  document.documentElement.style.setProperty('--screen-fade-ms', `${CONFIG.SCREEN_FADE_MS}ms`);
+  document.documentElement.style.setProperty('--text-fade-ms',   `${CONFIG.TEXT_FADE_MS}ms`);
+
+  current = songs[Math.floor(Math.random()*songs.length)];
+
+  showScreen('screen2');
+
+  resetUI();
+  const { fadeoutDoneAt } = renderAll(current);
+
+  later(fadeoutDoneAt, ()=>{
+    showScreen('screen3');
+    fitTitleOneLine(document.getElementById('songTitleFixed'), { minPx: 14 });
+  });
+
+  const titleAt = fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS;
+  later(titleAt, ()=>{
+    document.getElementById('songTitleFixed').classList.add('show');
+  });
+
+  const infoAt = titleAt + CONFIG.INFO_AFTER_TITLE_MS;
+  later(infoAt, ()=>{
+    document.getElementById('infoBlock').classList.add('show');
+  });
+
+  later(infoAt + CONFIG.STEP_MS * 0, ()=>{
     const img = document.getElementById('infoImage');
-    if (song.image) {
-      const src = buildUrl(CONFIG.IMAGE_BASE, song.image);
-      img.src = src;
-      img.alt = song.title ? `${song.title} image` : 'album image';
-      img.style.display = 'block';
-      img.onerror = () => { img.style.display = 'none'; };
-    } else {
-      img.style.display = 'none';
-    }
+    if (img.style.display !== 'none') img.classList.add('show');
+  });
+  later(infoAt + CONFIG.STEP_MS * 1, ()=>{
+    const el = document.getElementById('infoRelease');
+    if (el.textContent.trim()) el.classList.add('show');
+  });
+  later(infoAt + CONFIG.STEP_MS * 2, ()=>{
+    const el = document.getElementById('infoAlbumInfo');
+    if (el.textContent.trim()) el.classList.add('show');
+  });
+  later(infoAt + CONFIG.STEP_MS * 3, ()=>{
+    const wrap = document.getElementById('liveWrap');
+    if (wrap.style.display !== 'none') wrap.classList.add('show');
+  });
+  later(infoAt + CONFIG.STEP_MS * 4, ()=>{
+    const wrap = document.getElementById('otherWrap');
+    if (wrap.style.display !== 'none') wrap.classList.add('show');
+  });
+}
 
-    // release
-    const rel = String(song.release || '').trim();
-    document.getElementById('infoRelease').textContent = rel ? `Release：${rel}` : '';
-
-    // Albuminfo（albumdetail + album）
-    const detail = String(song.albumdetail || '').trim();
-    const alb    = String(song.album || '').trim();
-    let albumLine = '';
-    if (detail && alb) albumLine = `${detail}『${alb}』収録`;
-    else if (alb)     albumLine = `『${alb}』収録`;
-    else if (detail)  albumLine = `${detail}収録`;
-    document.getElementById('infoAlbumInfo').textContent = albumLine;
-
-    // links（ライブ → その他）
-    const links = Array.isArray(song.links) ? song.links : (song.links ? [song.links] : []);
-    const liveLinks   = [];
-    const normalLinks = [];
-
-    links.forEach(l=>{
-      const label = (typeof l === 'string') ? 'Link' : String(l?.label || 'Link');
-      if (isLiveLabel(label)) liveLinks.push(l);
-      else normalLinks.push(l);
-    });
-
-    const liveHtml   = liveLinks.map(linkToAnchor).filter(Boolean).join('');
-    const normalHtml = normalLinks.map(linkToAnchor).filter(Boolean).join('');
-
-    const liveEl  = document.getElementById('infoLinksLive');
-    const linksEl = document.getElementById('infoLinks');
-
-    liveEl.innerHTML  = liveHtml;
-    linksEl.innerHTML = normalHtml;
-
-    liveEl.style.display  = liveHtml   ? 'flex' : 'none';
-    linksEl.style.display = normalHtml ? 'flex' : 'none';
-
-    return { fadeoutDoneAt };
-  }
-
-  async function startFlow(){
-    if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
-    clearTimers();
-
-    document.documentElement.style.setProperty('--screen-fade-ms', `${CONFIG.SCREEN_FADE_MS}ms`);
-    document.documentElement.style.setProperty('--text-fade-ms',   `${CONFIG.TEXT_FADE_MS}ms`);
-
-    current = songs[Math.floor(Math.random()*songs.length)];
-
-    showScreen('screen2');
-
-    resetUI();
-    const { fadeoutDoneAt } = renderAll(current);
-
-    later(fadeoutDoneAt, ()=>{
-      showScreen('screen3');
-      fitTitleOneLine(document.getElementById('songTitleFixed'), { minPx: 14 });
-    });
-
-    later(fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS, ()=>{
-      document.getElementById('songTitleFixed').classList.add('show');
-    });
-    later(fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS + CONFIG.INFO_AFTER_TITLE_MS, ()=>{
-      document.getElementById('infoBlock').classList.add('show');
-    });
-  }
-
-  (async function init(){
-    try{ await loadSongs(); }catch(e){ console.warn(e); }
-    document.getElementById('startBtn').addEventListener('click', startFlow);
-    window.addEventListener('keydown', e=>{
-      if(e.key==='Enter'||e.key===' '){
-        const s1 = document.getElementById('screen1');
-        if(s1.classList.contains('active')){
-          e.preventDefault(); startFlow();
-        }
+(async function init(){
+  try{ await loadSongs(); }catch(e){ console.warn(e); }
+  document.getElementById('startBtn').addEventListener('click', startFlow);
+  window.addEventListener('keydown', e=>{
+    if(e.key==='Enter'||e.key===' '){
+      const s1 = document.getElementById('screen1');
+      if(s1.classList.contains('active')){
+        e.preventDefault(); startFlow();
       }
-    });
-  })();
+    }
+  });
+})();
 </script>
 </body>
 </html>
