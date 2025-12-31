@@ -15,7 +15,7 @@
   --text-fade-ms:   3500ms;   /* 文字フェード */
 
   /* ===== 共通色 ===== */
-  --c-bg: #fff; --c-text:#000000; --accent:#2563eb;
+  --c-bg: #fff; --c-text:#111; --accent:#2563eb;
 
   /* ===== 画面2（歌詞）フォント ===== */
   --font-lyrics: 15px;
@@ -39,6 +39,11 @@
   /* 背景画像 */
   --start-bg: url("Images/GIFTforyou.png");
 
+  /* ✅ 背景をピッタリにする設定（ここが本体） */
+  --start-bg-size: cover;     /* cover = 画面いっぱい（必要ならトリミング） */
+  --start-bg-pos:  center;    /* どこを中心に見せるか */
+  --start-bg-color:#fff;      /* 画像が読み込めない時の地色 */
+
   /* 黒フィルター（0.0〜1.0） */
   --start-filter: rgba(0,0,0,.0);
 
@@ -46,22 +51,22 @@
   --start-top-pad: 10vh;
 
   /* ▼ 1行目：YourSong（サイズ & 左右ずらし） */
-  --start-heading-size: clamp(34px, 10vw, 50px);
-  --start-heading-x: -40px;
+  --start-heading-size: clamp(34px, 10vw, 60px);
+  --start-heading-x: 0px;
 
   /* ▼ 2行目：お届けします（サイズ & 左右ずらし） */
-  --start-sub-size: clamp(18px, 6.5vw, 40px);
-  --start-sub-x: 40px;
+  --start-sub-size: clamp(18px, 6.5vw, 44px);
+  --start-sub-x: 0px;
 
   /* 行間（1行目と2行目の距離） */
   --start-gap: 10px;
 
   /* 中央ボタン（透明・丸）のサイズ */
-  --start-btn-size: clamp(140px, 34vw, 200px);
+  --start-btn-size: clamp(140px, 34vw, 240px);
 
   /* ボタン位置（%で調整） */
-  --start-btn-left: 49.5%;
-  --start-btn-top:  5%;
+  --start-btn-left: 50%;
+  --start-btn-top:  25%;
 
   /* ボタンの透明度（0.0〜1.0） */
   --start-btn-opacity: 0.0;
@@ -96,7 +101,7 @@ body{
   margin:0;
   display:grid;
   place-items:center;
-  background:#000;
+  background:#0a0a0a; /* ✅ 周りの黒を消す（前は #000） */
   font-family:
     "Hiragino Mincho ProN",
     "Yu Mincho",
@@ -113,7 +118,7 @@ body{
   height: min(100vh, calc(100vw * 16 / 9));
   overflow:hidden;
   border-radius: 12px;
-  background:#000;
+  background:#070707; /* ✅ ここも白にしておく */
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -133,12 +138,12 @@ body{
    Screen 1（Start）
    ========================================================= */
 #screen1{
-  background-color:#fff;              /* 余白が出ても白 */
+  background-color: var(--start-bg-color);
   background-image: var(--start-bg);
-  background-size: contain;           /* 拡大しすぎない */
-  background-position: center;
+  background-size: var(--start-bg-size); /* ✅ cover */
+  background-position: var(--start-bg-pos);
   background-repeat: no-repeat;
-  color:#f8f6f6;
+  color:#fcf9f9;
   text-align:center;
 }
 #screen1::before{
@@ -160,13 +165,12 @@ body{
   gap: var(--start-gap);
   pointer-events:none;
 }
-
 .startHeading{
   font-size: var(--start-heading-size);
   font-weight: 800;
   letter-spacing: .01em;
   line-height: 1.05;
-  text-shadow: 0 2px 18px rgba(0,0,0,.15);
+  text-shadow: 0 2px 18px rgba(255, 255, 255, 0.15);
   transform: translateX(var(--start-heading-x));
 }
 .startSub{
@@ -190,7 +194,6 @@ body{
   background: rgba(255,255,255,var(--start-btn-opacity));
   border: 2px solid var(--start-btn-border);
 
-  /* ぼやけの原因になりやすいのでオフ */
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
 
@@ -315,7 +318,6 @@ body{
 }
 .linkList a{ text-decoration: underline; }
 
-/* スマホ用：font-lyrics は上書きしない */
 @media (max-width: 420px) {
   :root{
     --title-left: 12px;
@@ -331,36 +333,29 @@ body{
 <body>
   <div class="stage" role="application" aria-label="YourSong 9:16 Stage">
 
-    <!-- Screen 1 -->
     <section id="screen1" class="screen active" aria-label="Start">
       <div class="startOverlay" aria-hidden="true">
         <div class="startHeading">YourSong</div>
         <div class="startSub">お届けします</div>
       </div>
-
       <button id="startBtn" class="tapBtn" aria-label="Start"></button>
     </section>
 
-    <!-- Screen 2 -->
     <section id="screen2" class="screen" aria-live="polite" aria-atomic="true">
       <div class="lyricsWrap">
         <div id="lyrics" class="lyrics"></div>
       </div>
     </section>
 
-    <!-- Screen 3 -->
     <section id="screen3" class="screen" aria-live="polite" aria-atomic="true">
       <h1 id="songTitleFixed" class="titleFixed"></h1>
-
       <div id="infoBlock" class="infoBlock">
         <img id="infoImage" class="infoImage infoStep" alt="">
         <p id="infoRelease" class="infoText infoStep"></p>
         <p id="infoAlbumInfo" class="infoText infoStep"></p>
-
         <div id="liveWrap" class="infoStep">
           <div id="infoLiveLinks" class="linkList"></div>
         </div>
-
         <div id="otherWrap" class="infoStep">
           <div id="infoOtherLinks" class="linkList"></div>
         </div>
@@ -370,26 +365,18 @@ body{
   </div>
 
 <script>
-/* =========================================================
-   JS（基本いじらなくてOK）
-   ========================================================= */
 const CONFIG = {
   DATA_FILE: 'songsinfo.json',
   IMAGE_BASE: 'Images/',
-
   SCREEN_FADE_MS: 2000,
   TEXT_FADE_MS:   3500,
-
   LYRICS_DELAY_MS: 2500,
   STAGGER_BLOCK_MS: 5000,
   STAGGER_INLINE_MS: 4000,
-
   HOLD_AFTER_LAST_WITH_CARET_MS: 5700,
   HOLD_AFTER_LAST_NO_CARET_MS:   8000,
-
   TITLE_AFTER_FADEOUT_MS:  1800,
   INFO_AFTER_TITLE_MS:     3000,
-
   STEP_MS: 650
 };
 
@@ -459,14 +446,11 @@ function normalizeSong(raw){
     id: raw.songid ?? raw.id ?? null,
     songid: raw.songid ?? raw.id ?? null,
     albumid: albumid ?? null,
-
     title: raw.Title || raw.title || '',
-
     album: a.album || raw.album || '',
     albumdetail: a.albumdetail || raw.albumdetail || '',
     release: a.release ?? raw.release ?? '',
     image: a.image || raw.image || '',
-
     lyrics: Array.isArray(raw.Lyrics) ? raw.Lyrics.join('\n') : String(raw.Lyrics || ''),
     links
   };
@@ -610,76 +594,41 @@ function setLyricLines(container, text){
 
 function resetUI(){
   document.getElementById('lyrics').innerHTML = '';
-
-  const title = document.getElementById('songTitleFixed');
-  title.textContent = '';
-  title.classList.remove('show');
-  title.style.fontSize = '';
-
-  const s3 = document.getElementById('screen3');
-  s3.style.backgroundImage = '';
-
-  const infoBlock = document.getElementById('infoBlock');
-  infoBlock.classList.remove('show');
-
+  document.getElementById('songTitleFixed').textContent = '';
+  document.getElementById('songTitleFixed').classList.remove('show');
+  document.getElementById('songTitleFixed').style.fontSize = '';
+  document.getElementById('screen3').style.backgroundImage = '';
+  document.getElementById('infoBlock').classList.remove('show');
   document.querySelectorAll('.infoStep').forEach(el => el.classList.remove('show'));
-
-  const img = document.getElementById('infoImage');
-  img.removeAttribute('src');
-  img.style.display='none';
-
-  document.getElementById('infoRelease').textContent = '';
-  document.getElementById('infoAlbumInfo').textContent = '';
-
-  document.getElementById('infoLiveLinks').innerHTML = '';
-  document.getElementById('infoOtherLinks').innerHTML = '';
-
-  document.getElementById('liveWrap').style.display = 'none';
-  document.getElementById('otherWrap').style.display = 'none';
 }
 
 function isLiveLink(label){
   const s = String(label || '');
   return /(披露|演奏).*(ライブ)/.test(s) || (/(ライブ)/.test(s) && /(披露|演奏)/.test(s));
 }
-
 function makeLinksHTML(items){
   return items.map(l=>{
-    if (typeof l === 'string'){
-      return `<a href="${l}" target="_blank" rel="noopener">Link</a>`;
-    }
-    if (l?.url){
-      return `<a href="${l.url}" target="_blank" rel="noopener">${l.label||'Link'}</a>`;
-    }
+    if (typeof l === 'string') return `<a href="${l}" target="_blank" rel="noopener">Link</a>`;
+    if (l?.url) return `<a href="${l.url}" target="_blank" rel="noopener">${l.label||'Link'}</a>`;
     return '';
   }).filter(Boolean).join('');
 }
 
 function renderAll(song){
-  const fadeoutDoneAt = setLyricLines(
-    document.getElementById('lyrics'),
-    (song.lyrics||'').trim()
-  );
+  const fadeoutDoneAt = setLyricLines(document.getElementById('lyrics'), (song.lyrics||'').trim());
 
   const titleEl = document.getElementById('songTitleFixed');
   titleEl.textContent = song.title || '—';
   fitTitleOneLine(titleEl, { minPx: 14 });
 
   const s3 = document.getElementById('screen3');
-  if (song.image) {
-    const bg = buildUrl(CONFIG.IMAGE_BASE, song.image);
-    s3.style.backgroundImage = `url("${bg}")`;
-  } else {
-    s3.style.backgroundImage = '';
-  }
+  if (song.image) s3.style.backgroundImage = `url("${buildUrl(CONFIG.IMAGE_BASE, song.image)}")`;
+  else s3.style.backgroundImage = '';
 
   const img = document.getElementById('infoImage');
-  if (song.image) {
-    const src = buildUrl(CONFIG.IMAGE_BASE, song.image);
-    img.src = src;
-    img.alt = song.title ? `${song.title} image` : 'album image';
+  if (song.image){
+    img.src = buildUrl(CONFIG.IMAGE_BASE, song.image);
     img.style.display = 'block';
-    img.onerror = () => { img.style.display = 'none'; };
   } else {
     img.style.display = 'none';
   }
@@ -698,7 +647,6 @@ function renderAll(song){
   const links = (song.links||[]);
   const liveLinks  = [];
   const otherLinks = [];
-
   links.forEach(l=>{
     const label = (typeof l === 'string') ? 'Link' : (l?.label || 'Link');
     if (isLiveLink(label)) liveLinks.push(l);
@@ -708,19 +656,11 @@ function renderAll(song){
   const liveWrap  = document.getElementById('liveWrap');
   const otherWrap = document.getElementById('otherWrap');
 
-  if (liveLinks.length){
-    document.getElementById('infoLiveLinks').innerHTML = makeLinksHTML(liveLinks);
-    liveWrap.style.display = 'block';
-  } else {
-    liveWrap.style.display = 'none';
-  }
+  document.getElementById('infoLiveLinks').innerHTML = makeLinksHTML(liveLinks);
+  liveWrap.style.display = liveLinks.length ? 'block' : 'none';
 
-  if (otherLinks.length){
-    document.getElementById('infoOtherLinks').innerHTML = makeLinksHTML(otherLinks);
-    otherWrap.style.display = 'block';
-  } else {
-    otherWrap.style.display = 'none';
-  }
+  document.getElementById('infoOtherLinks').innerHTML = makeLinksHTML(otherLinks);
+  otherWrap.style.display = otherLinks.length ? 'block' : 'none';
 
   return { fadeoutDoneAt };
 }
@@ -729,64 +669,18 @@ async function startFlow(){
   if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
   clearTimers();
 
-  document.documentElement.style.setProperty('--screen-fade-ms', `${CONFIG.SCREEN_FADE_MS}ms`);
-  document.documentElement.style.setProperty('--text-fade-ms',   `${CONFIG.TEXT_FADE_MS}ms`);
-
   current = songs[Math.floor(Math.random()*songs.length)];
-
   showScreen('screen2');
 
   resetUI();
   const { fadeoutDoneAt } = renderAll(current);
 
-  later(fadeoutDoneAt, ()=>{
-    showScreen('screen3');
-    fitTitleOneLine(document.getElementById('songTitleFixed'), { minPx: 14 });
-  });
-
-  const titleAt = fadeoutDoneAt + CONFIG.TITLE_AFTER_FADEOUT_MS;
-  later(titleAt, ()=>{
-    document.getElementById('songTitleFixed').classList.add('show');
-  });
-
-  const infoAt = titleAt + CONFIG.INFO_AFTER_TITLE_MS;
-  later(infoAt, ()=>{
-    document.getElementById('infoBlock').classList.add('show');
-  });
-
-  later(infoAt + CONFIG.STEP_MS * 0, ()=>{
-    const img = document.getElementById('infoImage');
-    if (img.style.display !== 'none') img.classList.add('show');
-  });
-  later(infoAt + CONFIG.STEP_MS * 1, ()=>{
-    const el = document.getElementById('infoRelease');
-    if (el.textContent.trim()) el.classList.add('show');
-  });
-  later(infoAt + CONFIG.STEP_MS * 2, ()=>{
-    const el = document.getElementById('infoAlbumInfo');
-    if (el.textContent.trim()) el.classList.add('show');
-  });
-  later(infoAt + CONFIG.STEP_MS * 3, ()=>{
-    const wrap = document.getElementById('liveWrap');
-    if (wrap.style.display !== 'none') wrap.classList.add('show');
-  });
-  later(infoAt + CONFIG.STEP_MS * 4, ()=>{
-    const wrap = document.getElementById('otherWrap');
-    if (wrap.style.display !== 'none') wrap.classList.add('show');
-  });
+  later(fadeoutDoneAt, ()=> showScreen('screen3'));
 }
 
 (async function init(){
-  try{ await loadSongs(); }catch(e){ console.warn(e); }
+  await loadSongs();
   document.getElementById('startBtn').addEventListener('click', startFlow);
-  window.addEventListener('keydown', e=>{
-    if(e.key==='Enter'||e.key===' '){
-      const s1 = document.getElementById('screen1');
-      if(s1.classList.contains('active')){
-        e.preventDefault(); startFlow();
-      }
-    }
-  });
 })();
 </script>
 </body>
