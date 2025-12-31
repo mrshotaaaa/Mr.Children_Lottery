@@ -217,7 +217,7 @@
     "Title": "抱きしめたい",
     "albumid": 2,
     "songid": 2.4,
-    "Lyrics": "震えそうな夜に 声をひそめ君と\n指切りしたあの約束",
+    "Lyrics": "抱きしめたい\n溢れるほどの想いが溢れてしまう前に",
     "link": [
       {
         "label": "Spotify",
@@ -415,7 +415,7 @@
     "Title": "メインストリートに行こう",
     "albumid": 3,
     "songid": 3.2,
-    "Lyrics": "My city of joy\n週末の天使",
+    "Lyrics": "My city of joy 週末の天使",
     "link": [
       {
         "label": "Spotify",
@@ -430,7 +430,7 @@
         "url": "https://www.livefans.jp/songs/1233"
       }
     ],
-    "Memo":"ヒカリノアトリエツアーで20年ぶりの披露"
+    "Memo":"My city of joy  週末の天使\n星降る街で君とランデブー 夢みたい"
   },
   {
     "Title": "and I close to you",
@@ -545,7 +545,7 @@
     "Title": "LOVE",
     "albumid": 3,
     "songid": 3.8,
-    "Lyrics": "燃えるような恋じゃなくときめきでもない\n^でもいつまでも君だけの特別でいたい",
+    "Lyrics": "燃えるような恋じゃなくときめきでもない\nでもいつまでも君だけの特別でいたい",
     "link": [
       {
         "label": "Spotify",
@@ -659,7 +659,7 @@
     "Title": "innocent world",
     "albumid": 4,
     "songid": 4.3,
-    "Lyrics": "どこまでも歩き続けて行くよ\n^いいだろう？\n^mr.myself",
+    "Lyrics": "いつの日もこの胸に\n流れてるメロディー",
     "link": [
       {
         "label": "Spotify",
@@ -877,7 +877,7 @@
     "Title": "シーラカンス",
     "albumid": 5,
     "songid": 5.1,
-    "Lyrics": "どんな未来を目指すも\n何処に骨を埋めるも\n^選択肢はいくつだってある\n^言うなれば自由",
+    "Lyrics": "どんな未来を目指すも 何処に骨を埋めるも\n選択肢はいくつだってある\n言うなれば自由",
     "link": [
       {
         "label": "Spotify",
@@ -1067,7 +1067,7 @@
     "Memo":"天国へ連れてって"
   },
   {
-    "Title": "花-Memento-Mori-",
+    "Title": "花 -Mémento-Mori-",
     "albumid": 5,
     "songid": 5.10,
     "Lyrics": "負けないように 枯れないように\n^笑って咲く花になろう",
@@ -1165,7 +1165,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1262"
+        "url": "https://www.livefans.jp/songs/4732"
       }
     ],
     "Memo":"時代の着せ替え人形です🎎"
@@ -1186,7 +1186,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1259"
+        "url": "https://www.livefans.jp/songs/9935"
       }
     ],
     "Memo":"ライブではカプセルに入って演奏"
@@ -1240,7 +1240,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1311"
+        "url": "https://www.livefans.jp/songs/4029"
       }
     ],
     "Memo":"9thシングル。昔は滅多に演奏されてなかった。"
@@ -1261,7 +1261,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1264"
+        "url": "https://www.livefans.jp/songs/9934"
       }
     ],
     "Memo":"リグプロのリハで桜井さんがドラム叩いてる"
@@ -1286,7 +1286,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1258"
+        "url": "https://www.livefans.jp/songs/4043"
       }
     ],
     "Memo":"僕らはスーパーマン🦸‍♂️"
@@ -1307,7 +1307,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1265"
+        "url": "https://www.livefans.jp/songs/9933"
       }
     ],
     "Memo":"ライブで披露されたのは数回のみ。映像化なし"
@@ -1332,7 +1332,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/9917"
+        "url": "https://www.livefans.jp/songs/1263"
       }
     ],
     "Memo":"7thシングル。MVがない"
@@ -1357,7 +1357,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1267"
+        "url": "https://www.livefans.jp/songs/9936"
       }
     ],
     "Memo":"ライブで披露されたのは数回のみ"
@@ -1436,7 +1436,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/2819"
+        "url": "https://www.livefans.jp/songs/2823"
       }
     ],
     "Memo":"16thシングル。爆発💥"
@@ -1541,7 +1541,7 @@
     "Title": "I'll be",
     "albumid": 7,
     "songid": 7.7,
-    "Lyrics": "生きている証を時代に打ち付けろ\n貧弱な魂で悪あがきしながら",
+    "Lyrics": "何度へましたっていいさ\n起死回生で毎日がレボリューション",
     "link": [
       {
         "label": "Spotify",
@@ -1624,7 +1624,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1651"
+        "url": "https://www.livefans.jp/songs/1497"
       }
     ],
     "Memo":"15thシングル。「どこかに”あなた”を必要としてる人がいる」"
@@ -1670,7 +1670,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/123248"
+        "url": "https://www.livefans.jp/songs/2833"
       }
     ],
     "Memo":"Thanksgiving25では一曲目に披露"
@@ -1691,7 +1691,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/84351"
+        "url": "https://www.livefans.jp/songs/2836"
       }
     ],
     "Memo":"一発でクリアしよう"
@@ -1720,7 +1720,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1310"
+        "url": "https://www.livefans.jp/songs/1492"
       }
     ],
     "Memo":"19thシングル。密・空・ない"
@@ -1741,7 +1741,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/84352"
+        "url": "https://www.livefans.jp/songs/2832"
       }
     ],
     "Memo":"フライングスターター"
@@ -1762,7 +1762,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/84353"
+        "url": "https://www.livefans.jp/songs/2838"
       }
     ],
     "Memo":"ブラオレツアーで田原さんがコーラス"
@@ -1783,7 +1783,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1554"
+        "url": "https://www.livefans.jp/songs/2830"
       }
     ],
     "Memo":"話す相手も自ずと狭まって（花咲いても自ずとせば舞って）"
@@ -1804,7 +1804,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1721"
+        "url": "https://www.livefans.jp/songs/2831"
       }
     ],
     "Memo":"NYでのレコーディング風景から"
@@ -1813,7 +1813,7 @@
     "Title": "友とコーヒーと嘘と胃袋",
     "albumid": 9,
     "songid": 9.8,
-    "Lyrics": "悲しみも 憎しみも 愛しさも\n優しさも いやらしさも\n^食べるよ",
+    "Lyrics": "悲しみも 憎しみも 愛しさも\n^優しさも いやらしさも\n^食べるよ 食べるよ 食べるよ",
     "link": [
       {
         "label": "Spotify",
@@ -1825,7 +1825,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/84354"
+        "url": "https://www.livefans.jp/songs/2834"
       }
     ],
     "Memo":"間奏の語りは酔った状態で録られた"
@@ -1846,7 +1846,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/84355"
+        "url": "https://www.livefans.jp/songs/2829"
       }
     ],
     "Memo":"桜井さん自身のお気に入りソング。2000年元日に作詞"
@@ -1867,7 +1867,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/84356"
+        "url": "https://www.livefans.jp/songs/2839"
       }
     ],
     "Memo":"手塚治虫、ブルースりー、ジョンレノン"
@@ -1896,7 +1896,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1556"
+        "url": "https://www.livefans.jp/songs/2835"
       }
     ],
     "Memo":"18thシングル。ライブでは複数のバージョンがある"
@@ -1917,7 +1917,7 @@
       },
       {
         "label": "披露されたライブ",
-        "url": "https://www.livefans.jp/songs/1457"
+        "url": "https://www.livefans.jp/songs/1563"
       }
     ],
     "Memo":"神を賛美せよ"
@@ -2046,7 +2046,7 @@
         "url": "https://music.apple.com/jp/album/youthful-days/1531496356?i=1531496746"
       },
       {
-        "label": "YouTube",
+        "label": "MV",
         "url": "https://youtu.be/l0n0hRasLw0?si=Hcf6EPy28rJ7HJSY"
       },
       {
@@ -2169,7 +2169,7 @@
     "Title": "君が好き",
     "albumid": 10,
     "songid": 10.11,
-    "Lyrics": "君が好き 君が好き\n^煮え切らない\n^メロディに添って思いを焦がして",
+    "Lyrics": "君が好き\n^君が好き\n^煮え切らない\n^メロディに添って思いを焦がして",
     "link": [
       {
         "label": "Spotify",
@@ -2491,7 +2491,7 @@
     "Title": "タガタメ",
     "albumid": 11,
     "songid": 11.11,
-    "Lyrics": "左の人右の人\nふとした場所できっと繋がってるから\n^片一方を捌けないよな\n^僕らは連鎖する生き物だよ",
+    "Lyrics": "左の人右の人\n^ふとした場所できっと繋がってるから\n^片一方を捌けないよな\n^僕らは連鎖する生き物だよ",
     "link": [
       {
         "label": "Spotify",
@@ -2516,7 +2516,7 @@
     "Title": "HERO",
     "albumid": 11,
     "songid": 11.12,
-    "Lyrics": "ずっとヒーローでありたい\nただ一人君にとっての",
+    "Lyrics": "ずっとヒーローでありたい\n^ただ一人君にとっての",
     "link": [
       {
         "label": "Spotify",
@@ -2527,7 +2527,7 @@
         "url": "https://music.apple.com/jp/album/hero/1531496933?i=1531497121"
       },
       {
-        "label": "YouTube",
+        "label": "MV",
         "url": "https://youtu.be/ofYTAoS4LzE?si=-NbGMG57zVtbW9as"
       },
       {
@@ -2699,7 +2699,7 @@
     "Title": "CANDY",
     "albumid": 12,
     "songid": 12.7,
-    "Lyrics": "柄でもないけど\n会えると嬉しいよ",
+    "Lyrics": "柄でもないけど 会えると嬉しいよ\n^悩んだ末に想いを飲み込む日々",
     "link": [
       {
         "label": "Spotify",
@@ -2745,7 +2745,7 @@
     "Title": "Sign",
     "albumid": 12,
     "songid": 12.9,
-    "Lyrics": "身体でも心でもなく愛している",
+    "Lyrics": "ありふれた時間が愛しく思えたら\nそれは愛の仕業と小さく笑った",
     "link": [
       {
         "label": "Spotify",
@@ -2901,7 +2901,7 @@
     "Title": "彩り",
     "albumid": 13,
     "songid": 13.2,
-    "Lyrics": "なんてことのない作業が\n^回り回り回り回って\n^今僕の目の前の人の\n^笑い顔を作ってゆく",
+    "Lyrics": "なんてことのない作業が\n^回り回り回り回って\n^今僕の目の前の人の 笑い顔を作ってゆく",
     "link": [
       {
         "label": "Spotify",
@@ -2930,7 +2930,7 @@
     "Title": "箒星",
     "albumid": 13,
     "songid": 13.3,
-    "Lyrics": "でもね僕らは未来の担い手\n人の形した光\n^暗闇と戯れ合っては\n^眩しく煌めく「箒星」",
+    "Lyrics": "でもね僕らは未来の担い手 人の形した光\n^暗闇と戯れ合っては\n^眩しく煌めく|「箒星」",
     "link": [
       {
         "label": "Spotify",
@@ -2976,7 +2976,7 @@
     "Title": "PIANO MAN",
     "albumid": 13,
     "songid": 13.5,
-    "Lyrics": "無限大にある\nきっと可能性は果てしない\n^転んだなら\n這いつくばったって進もう",
+    "Lyrics": "無限大にある きっと可能性は果てしない\n^転んだなら 這いつくばったって進もう",
     "link": [
       {
         "label": "Spotify",
@@ -3235,7 +3235,7 @@
     "Title": "雨のち晴れ Remix Version",
     "albumid": 14,
     "songid": 14.3,
-    "Lyrics": "もうちょっと もうちょっと\n頑張ってみるから\n^ねぇもっと ねぇもっと\nいい事があるかな？",
+    "Lyrics": "もうちょっと もうちょっと 頑張ってみるから\n^ねぇもっと ねぇもっと いい事があるかな？",
     "link": [
       {
         "label": "Spotify",
@@ -3260,7 +3260,7 @@
     "Title": "フラジャイル",
     "albumid": 14,
     "songid": 14.4,
-    "Lyrics": "メディアは数字より事実をさぁ追いかけろ！",
+    "Lyrics": "メディアは数字より事実を さぁ追いかけろ！",
     "link": [
       {
         "label": "Spotify",
@@ -3385,7 +3385,7 @@
     "Title": "独り言",
     "albumid": 14,
     "songid": 14.9,
-    "Lyrics": "もう少し前へあと一歩前へ\nおいでよ おいでよ",
+    "Lyrics": "もう少し前へ あと一歩前へ\nおいでよ おいでよ",
     "link": [
       {
         "label": "Spotify",
@@ -3577,7 +3577,7 @@
     "Title": "ほころび",
     "albumid": 14,
     "songid": 14.17,
-    "Lyrics": "ほころびはまた広がって\n何かが顔を出した",
+    "Lyrics": "ほころんだ場所がこの胸にある",
     "link": [
       {
         "label": "Spotify",
@@ -3652,7 +3652,7 @@
     "Title": "くるみ -for the Film- 幸福な食卓",
     "albumid": 14,
     "songid": 14.2,
-    "Lyrics": "今以上をいつも欲しがるくせに\n変わらない愛を求め歌う",
+    "Lyrics": "出会いの数だけ別れは増える\nそれでも希望に胸は震える",
     "link": [
       {
         "label": "Spotify",
@@ -3702,7 +3702,7 @@
     "Title": "HANABI",
     "albumid": 15,
     "songid": 15.2,
-    "Lyrics": "もう一回 もう一回\nもう一回 もう一回\n^僕はこの手を伸ばしたい",
+    "Lyrics": "もう一回 もう一回    もう一回 もう一回\n僕はこの手を伸ばしたい",
     "link": [
       {
         "label": "Spotify",
@@ -3713,7 +3713,7 @@
         "url": "https://music.apple.com/jp/album/hanabi/1531496623?i=1531496627"
       },
       {
-        "label": "YouTube",
+        "label": "MV",
         "url": "https://youtu.be/EXxaBXKjl6Q?si=CztDic02ExmxlpRe"
       },
       {
@@ -3760,7 +3760,7 @@
     "Title": "声",
     "albumid": 15,
     "songid": 15.4,
-    "Lyrics": "僕は今日も待ってる\n^その声を待っている",
+    "Lyrics": "別に巧くなくていい 声が枯れてたっていい\n^僕は今日も待ってる| その声を待っている",
     "link": [
       {
         "label": "Spotify",
@@ -3785,7 +3785,7 @@
     "Title": "少年",
     "albumid": 15,
     "songid": 15.5,
-    "Lyrics": "「幸せ」はいつだって\n抱きしめたとたんに\nピントがぼやけてしまうから",
+    "Lyrics": "「幸せ」はいつだって\n抱きしめたとたんに ピントがぼやけてしまうから",
     "link": [
       {
         "label": "Spotify",
@@ -3806,7 +3806,7 @@
     "Title": "旅立ちの唄",
     "albumid": 15,
     "songid": 15.6,
-    "Lyrics": "手の届かない場所で\n背中を押してるから",
+    "Lyrics": "手の届かない場所で 背中を押してるから",
     "link": [
       {
         "label": "Spotify",
@@ -3915,7 +3915,7 @@
     "Title": "羊、吠える",
     "albumid": 15,
     "songid": 15.11,
-    "Lyrics": "いいこと「49」嫌なこと「51」の比率",
+    "Lyrics": "いいこと「49」 嫌なこと「51」の比率",
     "link": [
       {
         "label": "Spotify",
@@ -3972,7 +3972,7 @@
         "url": "https://music.apple.com/jp/album/gift/1531496623?i=1531496642"
       },
       {
-        "label": "YouTube",
+        "label": "MV",
         "url": "https://youtu.be/wZlgIGsT-Ns?si=3FWKlB4GCJhHd2eN"
       },
       {
@@ -4521,7 +4521,7 @@
     "Title": "祈り ～涙の軌道",
     "albumid": 17,
     "songid": 17.11,
-    "Lyrics": "見慣れた場所が違う顔して見えるのも\n本当は僕の目線が変わってきたから",
+    "Lyrics": "涙の軌道は綺麗な川に変わる\n^そこに笹舟のような祈りを浮かべればいい",
     "link": [
       {
         "label": "Spotify",
@@ -4756,7 +4756,7 @@
     "Title": "足音～Be Strong",
     "albumid": 18,
     "songid": 18.11,
-    "Lyrics": "この足音を聞いてる\n誰かがきっといる",
+    "Lyrics": "時には灯りのない孤独な夜が来たって\n^この足音を聞いてる| 誰かがきっといる",
     "link": [
       {
         "label": "Spotify",
@@ -4877,7 +4877,7 @@
     "Title": "WALTZ",
     "albumid": 18,
     "songid": 18.16,
-    "Lyrics": "「光」「夢」「微笑み」\nさようなら\n「闇」「絶望」「悲しみ」\nこんにちは",
+    "Lyrics": "「光」「夢」「微笑み」 さようなら\n「闇」「絶望」「悲しみ」 こんにちは",
     "link": [
       {
         "label": "Spotify",
@@ -4923,7 +4923,7 @@
     "Title": "幻聴",
     "albumid": 18,
     "songid": 18.18,
-    "Lyrics": "向こうで手招くのは宝島などではなく\n人懐っこくて優しくて\n暖かな誰かの微笑み",
+    "Lyrics": "人懐っこくて優しくて\n暖かな誰かの微笑み",
     "link": [
       {
         "label": "Spotify",
@@ -4990,7 +4990,7 @@
     "Title": "I wanna be there",
     "albumid": 18,
     "songid": 18.21,
-    "Lyrics": "「生きていること」にもっと\n感謝して生きていたい",
+    "Lyrics": "「生きていること」にもっと感謝して生きていたい",
     "link": [
       {
         "label": "Spotify",
@@ -5086,7 +5086,7 @@
     "Title": "海にて、心は裸になりたがる",
     "albumid": 19,
     "songid": 19.2,
-    "Lyrics": "今心は裸になりたがってるよ",
+    "Lyrics": "対照的と思っていても実はあちこちが似ているよ\n^今 心は裸になりたがってるよ",
     "link": [
       {
         "label": "Spotify",
@@ -5371,7 +5371,7 @@
     "Title": "君と重ねたモノローグ",
     "albumid": 20,
     "songid": 20.4,
-    "Lyrics": "また会おう\nこの道のどこかで\nありがとう\nこの気持ち届くかな",
+    "Lyrics": "また会おう この道のどこかで\n^ありがとう この気持ち届くかな",
     "link": [
       {
         "label": "Spotify",
@@ -5607,7 +5607,7 @@
     "Title": "LOST",
     "albumid": 21,
     "songid": 21.5,
-    "Lyrics": "また今日も立ち尽くしている",
+    "Lyrics": "尖った分その痛みが\n走った分その衝撃が\n自分に返ってくるから",
     "link": [
       {
         "label": "Spotify",
@@ -5788,6 +5788,1356 @@
       {
         "label": "披露されたライブ",
         "url": "https://www.livefans.jp/songs/790198"
+      }
+    ]
+  },
+
+
+
+
+
+  {
+    "Title": "君がいた夏",
+    "singleid": 1,
+    "songid": 22,
+    "Lyrics": "おもちゃの時計の針を戻しても\n何も変わらない",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7GEHyc1ry9SHvW6i2ZJGqt?si=49680d2091944812"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%8C%E3%81%84%E3%81%9F%E5%A4%8F/1374885899?i=1374885901"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/sGeI0R9i5MQ?si=LRIbEKERC4DAgNKT"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1230"
+      }
+    ]
+  },
+   {
+    "Title": "抱きしめたい",
+    "singleid": 2,
+    "songid": 23,
+    "Lyrics": "クリスマスの夜に\n^声をひそめ君と\n^指切りしたあの約束",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3prEheW02dNOtnHpA148cv?si=8e5ce85028384c2c"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E6%8A%B1%E3%81%8D%E3%81%97%E3%82%81%E3%81%9F%E3%81%84/1374928091?i=1374928119"
+      },
+           {
+        "label": "YouTube",
+        "url": "https://youtu.be/8BeGx1hiEWo?si=N--QlSOjYkVZmtQ2"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/qiUgB0S-1Dc?si=tZ8hVws0wQp0kLqv"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1231"
+      }
+    ]
+  },
+   {
+    "Title": "Replay",
+    "singleid": 3,
+    "songid": 24,
+    "Lyrics": "髪を切るだけで忘られるような\n恋じゃないだろう",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0YbcaQrZCZXOCmJ9pYCRYf?si=9fda65f2f2aa4c9b"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/replay/1374950064?i=1374950069"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/h5kKnPzh8gw?si=0Q8ZbP2dITmwKKL8"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1225"
+      }
+    ]
+  },
+   {
+    "Title": "CROSS ROAD",
+    "singleid": 4,
+    "songid": 25,
+    "Lyrics": "真冬のひまわりのように\n鮮やかに揺れてる",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3ZW5MghuMy9jgr9VPBwxyn?si=ea5622365bfa4e30"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/cross-road/1374884180?i=1374884187"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/C4zJfYA_ur8?si=uGEju2zU6DZwxxdf"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1239"
+      }
+    ]
+  },
+   
+  {
+    "Title": "innocent world",
+    "singleid": 5,
+    "songid": 26,
+    "Lyrics": "どこまでも歩き続けて行くよ\n^いいだろう？\n^mr.myself",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/2pI6Avig0HNZGsZ777MKXM?si=c735b4c5f8f14cbf"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/innocent-world/1374883459?i=1374883461"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/rfVhsgCqG0I?si=f94LErrt_8BHZra7"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&t=5338s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1252"
+      }
+    ]
+  },
+     {
+    "Title": "Tomorrow never knows",
+    "singleid": 6,
+    "songid": 27,
+    "Lyrics": "心のまま僕はゆくのさ\n誰も知る事のない明日へ…",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/42JrgapwGBuPHG9YKjR6dj?si=d626f3c8fe48464d"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/tomorrow-never-knows/1374950945?i=1374950946"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/Nxwt_s1lM04?si=eq2uy-Q04y5ZZbp3"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/AfjteCMzYUo?si=-OheRWEFJ-CV6jag"
+      },
+      {
+        "label": "披露されたライブ",
+         "url": "https://www.livefans.jp/songs/1260"
+      }
+    ]
+  },
+       {
+    "Title": "everybody goes〜秩序のない現代にドロップキック〜",
+    "singleid": 7,
+    "songid": 28,
+    "Lyrics": "カメラの前で悩ましげなポーズ\nそしてベットじゃ社長の上に跨って",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0BBKBOxslugSfy3ZWLmJ8T?si=89cdc38187f64f62"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/everybody-goes-%E7%A7%A9%E5%BA%8F%E3%81%AE%E3%81%AA%E3%81%84%E7%8F%BE%E4%BB%A3%E3%81%AB%E3%83%89%E3%83%AD%E3%83%83%E3%83%97%E3%82%AD%E3%83%83%E3%82%AF/1374953750?i=1374953900"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.livefans.jp/songs/1263"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1263"
+      }
+    ]
+  },
+        {
+    "Title": "【es】～Theme of es～",
+    "singleid": 8,
+    "songid": 29,
+    "Lyrics": "”答え”なんてどこにも見当たらないけど\nそれでいいさ\n流れるままに進もう",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0fTBwCG7DpSCSxLRz9dbLk?si=ebde0d7c8f954ab0"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/es-theme-of-es/1374878070?i=1374878073"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/BbSrrsuOWJk?si=AOVT4saea2UJXluV"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/55391"
+      }
+    ]
+  },
+  {
+    "Title": "シーソーゲーム〜勇敢な恋の歌〜",
+    "singleid": 9,
+    "songid": 30,
+    "Lyrics": "”世界中の誰もが業の深い生命体",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/6E1RUEx9bejMGyI27FUj7c?si=d33b2e5f9d1f40b4"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%82%B7%E3%83%BC%E3%82%BD%E3%83%BC%E3%82%B2%E3%83%BC%E3%83%A0-%E5%8B%87%E6%95%A2%E3%81%AA%E6%81%8B%E3%81%AE%E6%AD%8C/1374882734?i=1374882736"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/mOJIchNt3RY?si=ILTGnPjZCjNZdQrU"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/ACt_DfVjqIY?si=fz2tWjEQQKGEYg-c"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4029"
+      }
+    ]
+  },
+   {
+    "Title": "名もなき詩",
+    "singleid": 10,
+    "songid": 31,
+    "Lyrics": "愛はきっと奪うでも与えるでもなくて\n気が付けばそこにある物",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/5mS5FENlAQQVkFb7rZOdOr?si=99f81d444a2b41f3"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%90%8D%E3%82%82%E3%81%AA%E3%81%8D%E8%A9%A9/1374910671?i=1374910673"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/gj5Nu6feFTQ?si=HmqlcYx0uuv72LK-"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1523"
+      }
+    ]
+  },
+  {
+    "Title": "花 -Mémento-Mori-",
+    "singleid": 11,
+    "songid": 32,
+    "Lyrics": "心の中に永遠なる花を咲かそう",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/2UJmLf3F4X1FyHclS25Oe0?si=80de36dac9ff4d6c"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E8%8A%B1-m%C3%A9mento-mori/1375035908?i=1375036241"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/mdo-oEZ5_24?si=j3RWt0E1nzNzOGTl"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/giXe6hftGhg?si=zLdAPzLAETxJw3pL"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2821"
+      }
+    ]
+  },
+   {
+    "Title": "マシンガンをぶっ放せ-Mr.Children Bootleg-",
+    "singleid": 12,
+    "songid": 33,
+    "Lyrics": "愛にしゃぶりたいんさい\n愛にすがりついたんさい",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/42wFSXIELA76phNPZDGfbc?si=0891807a621b430e"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%83%9E%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%B3%E3%82%92%E3%81%B6%E3%81%A3%E6%94%BE%E3%81%9B/1375029034?i=1375029035"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9928"
+      }
+    ]
+  },
+     {
+    "Title": "Everything(It's you)",
+    "singleid": 13,
+    "songid": 34,
+    "Lyrics": "愛すべき人よ君も同じように\n苦しみに似た想いを抱いてるの",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0bSvOb29g2KQkqrrJwUQ5X?si=0cc2e62baa9e441c"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/everything-its-you/1374940408?i=1374940419"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/ZMLdS2ZiI8w?si=byBFQ4_K-eHzl8NL"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/EoQVLCwtBvI?si=KDhL4PsVqlWzOSq0"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2819"
+      }
+    ]
+  },
+  {
+    "Title": "ニシエヒガシエ",
+    "singleid": 14,
+    "songid": 35,
+    "Lyrics": "必死で猛ダッシュです",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3kDir6z2HJwL6zyQU0CuBr?si=d53ca2c32d8143d9"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%83%8B%E3%82%B7%E3%82%A8%E3%83%92%E3%82%AC%E3%82%B7%E3%82%A8/1374875755?i=1374875756"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/bH1u6maQZEg?si=He87OquvBAzG7JCb"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/RqEcYIqy-nE?si=xCsbqAC1M75ymW88"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2822"
+      }
+    ]
+  },  
+  {
+    "Title": "終わりなき旅",
+   "singleid": 15,
+    "songid": 36,
+    "Lyrics": "もっと素晴らしいはずの自分を探して",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/6VCf1oaI9RjdflJ46aes7i?si=ca5e9555bda04311"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E7%B5%82%E3%82%8F%E3%82%8A%E3%81%AA%E3%81%8D%E6%97%85/1374906672?i=1374906674"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/QCiERL2m3Ss?si=lGc3CAomFSA2Nk7_"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=CxasK4veEu8&list=RDCxasK4veEu8&index=1&t=4628s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1497"
+      }
+    ]
+  },
+  {
+    "Title": "光の射す方へ",
+    "singleid": 16,
+    "songid": 37,
+    "Lyrics": "独りきり情熱を振り回すバッティングセンター",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/1BoZDSPTkGMpwDL1aqwIPW?si=9875fc4339af44c5"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%85%89%E3%81%AE%E5%B0%84%E3%81%99%E6%96%B9%E3%81%B8/1374870562?i=1374870884"
+      },
+           {
+        "label": "MV",
+        "url": "https://youtu.be/dmqJsMYbAXc?si=1iWJW19uz3mpqqCK"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/datXpA5tja0?si=88n9klrXDztm5Rjp"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2823"
+      }
+    ]
+  },
+  {
+    "Title": "I'LL BE",
+    "singleid": 17,
+    "songid": 38,
+    "Lyrics": "笑いたがる人にはキスを",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3mHcxz9Vq7LpY4e6eZGvnF?si=a01e9d56f7f74ba1"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/ill-be/1374924285?i=1374924286"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/5XqeYHNSgYE?si=CGqxSHs8Y4gSyrBn"
+      },
+      {
+        "label": "会員限定ライブで一度だけ披露",
+        "url": ""
+      }
+    ]
+  },
+    {
+    "Title": "口笛",
+    "singleid": 18,
+    "songid": 39,
+    "Lyrics": "どんな場面も二人で笑いながら\n^優しく響く\n^あの口笛のように",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0A8iu0TYudqKfUmNSBqHcs?si=0b875531a9984e39"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%8F%A3%E7%AC%9B/1374931436?i=1374931449"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/3mwg3uRxMng?si=HXJKvsUrHrx6YOqa"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/rbqnrYy4nk0?si=Fk7J--4xqJIYbfNH"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/2835"
+      }
+    ]
+  },
+    {
+    "Title": "NOT FOUND",
+    "singleid": 19,
+    "songid": 40,
+    "Lyrics": "愛という素敵な嘘で騙してほしい",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/1BwiTA6P1bImMPkd3LQWNC?si=1934f84b9a094d88"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/not-found/1374907900?i=1374908982"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/kCNpOe5S1B4?si=3eYDkWt9alZ83puq"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/EvBDa4TX3Bo?si=G4ZtRayonZl1Whdn"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1492"
+      }
+    ]
+  },
+     {
+    "Title": "優しい歌",
+    "singleid": 20,
+    "songid": 41,
+    "Lyrics": "群衆の中に立って空を見れば\n大切な物に気付いて狂おしくなる",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/6LUtFW7J2fvopbOc2dZ8H8?si=c7ccfb512ad54c1a"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%84%AA%E3%81%97%E3%81%84%E6%AD%8C/1374884961?i=1374885251"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/96P0YFo3pIk?si=aA2grqVKVe5hoOXG"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4042"
+      }
+    ]
+  },
+       {
+    "Title": "youthful days",
+    "singleid": 21,
+    "songid": 42,
+    "Lyrics": "かんぱ〜い！！",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/206UfaQVJWFWA7yJIKwS4s?si=ce7736b9c6744aa8"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/youthful-days/1374934649?i=1374934821"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/l0n0hRasLw0?si=Hcf6EPy28rJ7HJSY"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/1Y3Ya47jMKQ?si=9sBVgW8wNzdF88n3"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4015"
+      }
+    ]
+  },
+  {
+    "Title": "君が好き",
+    "singleid": 22,
+    "songid": 43,
+    "Lyrics": "自販機で二つ缶コーヒーを買って",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/5Bcmy12lTa8OnooF8b7sPR?si=85192139abc0482a"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%8C%E5%A5%BD%E3%81%8D/1374874547?i=1374874558"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/8KRYmKWchCo?si=rOlxN_Ay3S86bdRK"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9969"
+      }
+    ]
+  },
+  {
+    "Title": "Any",
+    "singleid": 23,
+    "songid": 44,
+    "Lyrics": "また12色の心で\n好きな背景を描き足して行く",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7s3o971t5nU9MkGfwOefDl?si=d9ec45ea1188445a"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/any/1374972201?i=1374972202"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/l1AlDdC95l4?si=PEKG2lHXjXAxI38g"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4022"
+      }
+    ]
+  },
+ {
+    "Title": "HERO",
+    "singleid": 24,
+    "songid": 45,
+    "Lyrics": "誰か一人の命と引き換えに世界を救えるとして\n僕は誰かが名乗り出るのを待っているだけの男だ",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3oH0TFOJbCG9z8NJiXDfnE?si=df7b8b65d805439c"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/hero/1374826198?i=1374826199"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/ofYTAoS4LzE?si=-NbGMG57zVtbW9as"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/Ic3rQpzXXqo?si=5Eh7dSlvps3vkN-7"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1491"
+      }
+    ]
+  },
+   {
+    "Title": "掌",
+    "singleid": 25,
+    "songid": 46,
+    "Lyrics": "ひとつにならなくていいよ\n認め合うことができるから",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/5YcKYKEawFkZuZqYxh4vAD?si=63bf8cc1c1314ce5"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E6%8E%8C/1374916036?i=1374916037"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/42JXfCgYfiU?si=rWterA90WmP4-1MC"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=CxasK4veEu8&t=2535s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1495"
+      }
+    ]
+  },
+    {
+    "Title": "くるみ",
+    "singleid": 25,
+    "songid": 47,
+    "Lyrics": "今以上をいつも欲しがるくせに\n変わらない愛を求め歌う",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/1pf4ZwFo8nJzIX38oCEBhT?si=ee8dbaed7f584484"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%81%8F%E3%82%8B%E3%81%BF/1374916036?i=1374916038"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/3Um_xMmE8OA?si=_q6WlvIC_79PhZqu"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1561"
+      }
+    ]
+  },
+ {
+    "Title": "Sign",
+    "singleid": 26,
+    "songid": 48,
+    "Lyrics": "身体でも心でもなく愛している",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/1F5BXt23gzQvKoJwOObotB?si=046dc4f483124cea"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/sign/1374950137?i=1374950537"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/4wuWJ7GAc2s?si=joqRtJE-xX_rJEBC"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/7aJmUeLMZi4?si=vFdUzAW8mLNT70GX"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1499"
+      }
+    ]
+  },
+   {
+    "Title": "未来",
+    "singleid": 27,
+    "songid": 49,
+    "Lyrics": "ヒッチハイクをしてる\n僕を迎えに行こう",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7kYdyNFQlzwFHTVCd9Amz0?si=80ce14639e18453e"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E6%9C%AA%E6%9D%A5/1374827381?i=1374827382"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/YoDq9uPGVoc?si=cjIM9od0lfUPr7X4"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/-7P1eN8HvKM?si=B7rV3iKxeevstUj_"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/9976"
+      }
+    ]
+  },
+   {
+    "Title": "and I love you",
+    "singleid": 27,
+    "songid": 50,
+    "Lyrics": "もう一人きりじゃ飛べない\n君が僕を軽くしてるから",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0Od2616kGrPCuEOovDtkBk?si=c606884a3ad04930"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/and-i-love-you/1374827381?i=1374827383"
+      },
+           {
+        "label": "MV",
+        "url": "https://youtu.be/NpvqhtvTcmc?si=Rxhzy7fSuM6-VbC2"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&index=1&t=4106s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1657"
+      }
+    ]
+  },
+   {
+    "Title": "ランニングハイ",
+    "singleid": 27,
+    "songid": 51,
+    "Lyrics": "退きどきだと言うなかれ素人!",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/5DFxyjeplqIXvZKGjiXhws?si=efe2de41db6643e8"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%8F%E3%82%A4/1374827381?i=1374827384"
+      },
+            {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=CxasK4veEu8&list=RDCxasK4veEu8&index=1&t=1137s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4020"
+      }
+    ]
+  },
+   {
+    "Title": "ヨーイドン",
+    "singleid": 27,
+    "songid": 52,
+    "Lyrics": "ヨーイドンの合図待たずして僕ら\n大人になっていくよ",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0yQbEO3O5uIr8ptCtt4Rh0?si=fdbd4ca37b7a4b1c"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%83%A8%E3%83%BC%E3%82%A4%E3%83%89%E3%83%B3/1374827381?i=1374827385"
+      },
+      {
+        "label": "ライブ未披露",
+        "url": ""
+      }
+    ]
+  },
+   {
+    "Title": "箒星",
+    "singleid": 28,
+    "songid": 53,
+    "Lyrics": "悪いことばっかり見付けないで\n僕ら一緒に探そう",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0zBOQaG7UDH9TcH2Shu2An?si=9c342394e1c04179"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E7%AE%92%E6%98%9F/1374917349?i=1374918074"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/sRJxHz__EH0?si=xNVIEgjBY150IcMA"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1498"
+      }
+    ]
+  },
+  {
+    "Title": "しるし",
+    "singleid": 29,
+    "songid": 54,
+    "Lyrics": "左脳に書いた手紙\nグチャグチャに丸めて捨てる",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0hjKgze2D9lfbVlnllVifS?si=e07ce724f60f4170"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%81%97%E3%82%8B%E3%81%97/1374876228?i=1374876230"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/xXA5StMti8c?si=hhpyjSeORUevKuXR"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=uBrd8EVZs6U&list=RDuBrd8EVZs6U&index=1&t=4513s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4027"
+      }
+    ]
+  },
+   {
+    "Title": "フェイク",
+    "singleid": 30,
+    "songid": 55,
+    "Lyrics": "この手が掴んだものは\n^またしても|フェイク",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7c4J55zAxQd4LM8oCZzhqz?si=4d3cdcfdb116464b"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%83%95%E3%82%A7%E3%82%A4%E3%82%AF/1374956090?i=1374956095"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/n7H4p0ArZUU?si=e1lIF4wWq-dI83dO"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/NS7EQ02hbQU?si=a-_atYplRWy39hhM"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1562"
+      }
+    ]
+  },
+   {
+    "Title": "旅立ちの唄",
+    "singleid": 31,
+    "songid": 56,
+    "Lyrics": "今が大好きだって躊躇などしないで言える\nそんな風に日々を刻んでいこう\nどんな場所にいても",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7DoYhboyk10Y5JC4UT2aen?si=ac43e2df8b2a4ba3"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/sPyWyBjM-3E?si=0VT7Y9KVarOx_3WS"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E6%97%85%E7%AB%8B%E3%81%A1%E3%81%AE%E5%94%84/1374880496?i=1374880728"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4032"
+      }
+    ]
+  },
+   {
+    "Title": "GIFT",
+    "singleid": 32,
+    "songid": 57,
+    "Lyrics": "降り注ぐ日差しがあって\n^だからこそ日陰もあって\n^その全てが意味を持って互いを讃えているのなら\n^もうどんな場所にいても光を感じれるよ",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7k7INgTej6v9Rarh6HFyXw?si=e2ceed30a0f9429d"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/gift/1374823656?i=1374823737"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/wZlgIGsT-Ns?si=3FWKlB4GCJhHd2eN"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/PndExyZsuYA?si=fC3ZDteptyUhU_m9"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1564"
+      }
+    ]
+  },
+     {
+    "Title": "風と星とメビウスの輪（Single Version）",
+    "singleid": 32,
+    "songid": 58,
+    "Lyrics": "メビウスの輪の上を笑いながら\n寄り添って歩けたなら",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/06mbI7nISc3aQUIMsDNPX7?si=e277906ff1b7413f"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E9%A2%A8%E3%81%A8%E6%98%9F%E3%81%A8%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9%E3%81%AE%E8%BC%AA-single-version/1374823656?i=1374823739"
+      },
+      {
+        "label": "Single versionはライブ未演奏",
+        "url": ""
+      }
+    ]
+  },
+       {
+    "Title": "横断歩道を渡る人たち",
+    "singleid": 32,
+    "songid": 59,
+    "Lyrics": "欲しがっているのはおもちゃじゃなく愛情で\n拒んでるのも「我慢」を教えるための愛情で",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/4k6n7hAMnkqdVkLlvCrNGi?si=332e43cd82b84d28"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E6%A8%AA%E6%96%AD%E6%AD%A9%E9%81%93%E3%82%92%E6%B8%A1%E3%82%8B%E4%BA%BA%E3%81%9F%E3%81%A1/1374823656?i=1374823738"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/6yTYBGM1KEk?si=UVj0W0thxEitCJk7"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/4727"
+      }
+    ]
+  },
+  {
+    "Title": "HANABI",
+    "singleid": 33,
+    "songid": 60,
+    "Lyrics": "未来が僕らを呼んでる\nその声は今君にも\n聞こえていますか？",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3eJgra1QqTeQ32Wepfqbqt?si=d45f9286b6eb4649"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/hanabi/1375002608?i=1375002610"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/EXxaBXKjl6Q?si=CztDic02ExmxlpRe"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/2MNL2mU8pBE?si=tRCEFIP4HXGJBW9o"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1559"
+      }
+    ]
+  },
+  {
+    "Title": "タダダキアッテ",
+    "singleid": 33,
+    "songid": 61,
+    "Lyrics": "誰がため戦った？",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/4JD2Wz3JL01IPpiac5RF24?si=d3bb71dcb7884433"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%82%BF%E3%83%80%E3%83%80%E3%82%AD%E3%82%A2%E3%83%83%E3%83%86/1375002608?i=1375002761"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/1655"
+      }
+    ]
+  },
+  {
+    "Title": "夏が終わる〜夏の日のオマージュ〜",
+    "singleid": 33,
+    "songid": 62,
+    "Lyrics": "夏が終わる\nただそれだけのこと",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/47tSLGMVBP1B2lJ6JBWVyR?si=46b3347b5a5244bd"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%A4%8F%E3%81%8C%E7%B5%82%E3%82%8F%E3%82%8B-%E5%A4%8F%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AA%E3%83%9E%E3%83%BC%E3%82%B8%E3%83%A5/1375002608?i=1375002762"
+      },
+      {
+        "label": "ライブ未披露",
+        "url": ""
+      }
+    ]
+  },
+    {
+    "Title": "祈り ～涙の軌道",
+    "singleid": 34,
+    "songid": 62,
+    "Lyrics": "見慣れた場所が違う顔して見えるのも\n本当は僕の目線が変わってきたから",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/19j3ukohWDLTeACFuGQoVw?si=29a59b70722d4923"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E7%A5%88%E3%82%8A-%E6%B6%99%E3%81%AE%E8%BB%8C%E9%81%93/1375038121?i=1375038221"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/g3J8LBnYq4E?si=PkXmsH9627HPNDT2"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/94846"
+      }
+    ]
+  },
+    {
+    "Title": "End of the day",
+    "singleid": 34,
+    "songid": 63,
+    "Lyrics": "本当はもう掴んでて 届いてて\n気付いてないだけ",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7yGBRe1wqGZkB6O701vmTB?si=93df00cfd94b45d3"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/end-of-the-day/1375038121?i=1375038222"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/71283"
+      }
+    ]
+  },
+   {
+    "Title": "pieces",
+    "singleid": 34,
+    "songid": 64,
+    "Lyrics": "その空白はね\nこれから僕らが夢を描くための余白\nいつか描いたやつより本物にしよう",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0HbVLz9LJggpWEpkb0yvfs?si=7ed26890a2bb49ce"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/pieces/1375038121?i=1375038223"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/110215"
+      }
+    ]
+  },
+     {
+    "Title": "足音～Be Strong",
+    "singleid": 35,
+    "songid": 66,
+    "Lyrics": "疲れて歩けないんなら\n^立ち止まってしがみついていれば\n^地球は回っていって\n^きっといい方向へ僕らを運んでくれる",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3OUvZAjWVaeCP09UuQssQr?si=097cc17923584b08"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E8%B6%B3%E9%9F%B3-be-strong/1375031876?i=1375031883"
+      },
+            {
+        "label": "MV",
+        "url": "https://youtu.be/ShhoC3nHX8E?si=o9PnUDNa-GD_BR0o"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/_B09-nM3knE?si=LaWGv7llUZT2WTQt"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/267441"
+      }
+    ]
+  },
+      {
+    "Title": "ヒカリノアトリエ",
+    "singleid": 36,
+    "songid": 67,
+    "Lyrics": "「一体なんの意味がある?」\n^つい損か得かで考えてる\n^でもたった一人でも笑ってくれるなら\n^それが宝物",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/1nNWYZSPqfBVaDgyVvqk3o?si=4142d6027c4045db"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E3%83%92%E3%82%AB%E3%83%AA%E3%83%8E%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A8/1374964038?i=1374964043"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/iftzIYdFLWY?si=ohNMrt0wvRTU89D5"
+      },
+      {
+        "label": "Youtube",
+        "url": "https://www.youtube.com/watch?v=AOySfMfNMSA&t=2705s"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/436329"
+      }
+    ]
+  },
+  {
+    "Title": "himawari",
+    "singleid": 37,
+    "songid": 68,
+    "Lyrics": "優しさの死に化粧で笑ってるように見せてる",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0mSueW5i2ME6O3xyEFzEd2?si=03e8a9b005c24019"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/himawari/1375000977?i=1375000979"
+      },
+           {
+        "label": "MV",
+        "url": "https://youtu.be/_kXE9FHQy9E?si=MkaGeD5rn0cnkX-J"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtu.be/-W0IEVetBaQ?si=QZlTSNTe3Fd_Zim0"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/478838"
+      }
+    ]
+  },
+  {
+    "Title": "忙しい僕ら",
+    "singleid": 37,
+    "songid": 69,
+    "Lyrics": "それが良いことであっても\nまたその逆でも\n同じ場所にとどまってはいられないから",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/5c3Agruyk7Bjm43lwkic64?si=b7c44b43b33c4977"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%BF%99%E3%81%97%E3%81%84%E5%83%95%E3%82%89/1375000977?i=1375000984"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/365699"
+      }
+    ]
+  },
+  {
+    "Title": "Birthday",
+    "singleid": 38,
+    "songid": 71,
+    "Lyrics": "心の火をそっと震わせて",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/5vpSUCiUlEqAQpFLYr16t6?si=4c855dd84f2f4b8f"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/birthday/1499445340?i=1499445341"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/527806"
+      }
+    ]
+  },
+    {
+    "Title": "君と重ねたモノローグ",
+    "singleid": 38,
+    "songid": 72,
+    "Lyrics": "僕に翼はないけれど\n君となら高く飛べるよ",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/7jZIivEiJiWOnAbb03vfA1?si=62f582465ce044b6"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%A8%E9%87%8D%E3%81%AD%E3%81%9F%E3%83%A2%E3%83%8E%E3%83%AD%E3%83%BC%E3%82%B0/1499445340?i=1499445342"
+      },
+      {
+        "label": "ライブ未披露",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "Title": "永遠",
+    "singleid": 39,
+    "songid": 74,
+    "Lyrics": "もう会えなくても\n^君は僕の中の |永遠",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/0CehmyyguuUGzJpjfggeBb?si=23235c081e874b4b"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E6%B0%B8%E9%81%A0/1845298352?i=1845298353"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/711690"
+      }
+    ]
+  },
+  {
+    "Title": "生きろ",
+    "singleid": 40,
+    "songid": 75,
+    "Lyrics": "思いきり笑えるその日が来るまで\n^生きろ",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/2LDZsAumCQEyQ2OyW8dhrQ?si=e70f65fcf8c74e4d"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E7%94%9F%E3%81%8D%E3%82%8D/1845300158?i=1845300172"
+      },
+      {
+        "label": "MV",
+        "url": "https://youtu.be/doYyw2Svqnk?si=dT3ChDtNH_zUulvy"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/711983"
+      }
+    ]
+  },
+   {
+    "Title": "記憶の旅人",
+    "singleid": 41,
+    "songid": 76,
+    "Lyrics": "どうしてあの時伝えなかったの？\n柔らかな後悔が今日も僕に寄り添ってる",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/1HJCqZZM3hN9dKARNp1vGe?si=e7dd55d17ee1452d"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/%E8%A8%98%E6%86%B6%E3%81%AE%E6%97%85%E4%BA%BA/1845304001?i=1845304002"
+      },
+      {
+        "label": "Youtube",
+        "url": "https://youtu.be/0G6CigZjyhk?si=qpNftgrd5Hx-4cuj"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/837655"
+      }
+    ]
+  },
+  {
+    "Title": "in the pocket",
+    "singleid": 42,
+    "songid": 77,
+    "Lyrics": "今日からまた新しいあなたが始まる",
+    "link": [
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/intl-ja/track/3pBis5Le69QcyMW5RAGzNI?si=2c3992f930564061"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/jp/album/in-the-pocket/1845300210?i=1845300211"
+      },
+      {
+        "label": "披露されたライブ",
+        "url": "https://www.livefans.jp/songs/839670"
       }
     ]
   }

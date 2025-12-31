@@ -54,7 +54,7 @@
   --start-heading-size: clamp(34px, 10vw, 50px);
   --start-heading-x: -40px;
 
-  /* ▼ 2行目：お届けします（サイズ & 左右ずらし） */
+  /* ▼ 2行目：が届きました（サイズ & 左右ずらし） */
   --start-sub-size: clamp(18px, 6.5vw, 30px);
   --start-sub-x: 60px;
 
@@ -66,7 +66,7 @@
 
   /* ボタン位置（%で調整） */
   --start-btn-left: 49.5%;
-  --start-btn-top:  -4.5%;
+  --start-btn-top:  -5%;
 
   /* ボタンの透明度（0.0〜1.0） */
   --start-btn-opacity: 0.0;
@@ -74,7 +74,7 @@
   /* ボタン枠（透明にしたいなら rgba(...,0)） */
   --start-btn-border: rgba(0,0,0,.0);
 
-  /* ✅ 追加：画面1のフォント（ゴシック） */
+  /* ✅ 画面1のフォント（ゴシック） */
   --start-font:
     system-ui,
     -apple-system,
@@ -155,7 +155,7 @@ body{
   background-size: var(--start-bg-size);
   background-position: var(--start-bg-pos);
   background-repeat: no-repeat;
-  color:#684205;
+  color:#7b4400;
   text-align:center;
 }
 #screen1::before{
@@ -178,7 +178,7 @@ body{
   pointer-events:none;
 }
 .startHeading{
-  font-family: var(--start-font); /* ✅ 追加：画面1だけゴシック */
+  font-family: var(--start-font);
   font-size: var(--start-heading-size);
   font-weight: 600;
   letter-spacing: .01em;
@@ -187,7 +187,7 @@ body{
   transform: translateX(var(--start-heading-x));
 }
 .startSub{
-  font-family: var(--start-font); /* ✅ 追加：画面1だけゴシック */
+  font-family: var(--start-font);
   font-size: var(--start-sub-size);
   font-weight: 800;
   line-height: 1.1;
@@ -277,7 +277,7 @@ body{
   top: var(--title-top);
   margin:0;
   font-size: var(--font-title);
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: .02em;
   white-space: nowrap;
   overflow: hidden;
@@ -319,6 +319,12 @@ body{
 }
 
 .infoText{ font-size: var(--font-info); margin:0; }
+
+/* ✅「収録」だけは分割しない（収/録が別行にならない） */
+.noSplit{
+  display:inline-block;
+  white-space: nowrap;
+}
 
 #infoRelease{ margin-top: var(--gap-image-release); }
 #liveWrap{   margin-top: var(--gap-album-live); }
@@ -394,28 +400,75 @@ const CONFIG = {
   STEP_MS: 650
 };
 
+/* ✅ アルバム専用（1〜21だけ） */
 let albumInfo = {
-  "1":  { albumid: 1,  album: "EVERYTHING",                 albumdetail: "1stAlbum",  release: "1992-05-10", image: "EVERYTHING.png" },
-  "2":  { albumid: 2,  album: "Kind of Love",               albumdetail: "2ndAlbum",  release: "1992-12-01", image: "Kind of Love.png" },
-  "3":  { albumid: 3,  album: "Versus",                     albumdetail: "3rdAlbum",  release: "1993-09-01", image: "Versus.png" },
-  "4":  { albumid: 4,  album: "Atomic Heart",               albumdetail: "4thAlbum",  release: "1994-09-01", image: "Atomic Heart.png" },
-  "5":  { albumid: 5,  album: "深海",                       albumdetail: "5thAlbum",  release: "1996-06-24", image: "深海.png" },
-  "6":  { albumid: 6,  album: "BOLERO",                     albumdetail: "6thAlbum",  release: "1997-03-05", image: "BOLERO.png" },
-  "7":  { albumid: 7,  album: "DISCOVERY",                  albumdetail: "7thAlbum",  release: "1999-02-03", image: "DISCOVERY.png" },
-  "8":  { albumid: 8,  album: "1/42",                       albumdetail: "8thAlbum",  release: "1999-09-08", image: "1-42.png" },
-  "9":  { albumid: 9,  album: "Q",                          albumdetail: "9thAlbum",  release: "2000-09-27", image: "Q.png" },
-  "10": { albumid: 10, album: "IT'S A WONDERFUL WORLD",     albumdetail: "10thAlbum", release: "2002-05-10", image: "IT'S A WONDERFUL WORLD.png" },
-  "11": { albumid: 11, album: "シフクノオト",               albumdetail: "11thAlbum", release: "2004-04-07", image: "シフクノオト.png" },
-  "12": { albumid: 12, album: "I ♥ U",                      albumdetail: "12thAlbum", release: "2005-09-21", image: "IU.png" },
-  "13": { albumid: 13, album: "HOME",                       albumdetail: "13thAlbum", release: "2007-03-14", image: "HOME.png" },
-  "14": { albumid: 14, album: "B-SIDE",                     albumdetail: "14thAlbum", release: "2007-05-10", image: "B-SIDE.png" },
-  "15": { albumid: 15, album: "SUPERMARKET FANTASY",        albumdetail: "15thAlbum", release: "2008-12-10", image: "SUPERMARKET FANTASY.png" },
-  "16": { albumid: 16, album: "SENSE",                      albumdetail: "16thAlbum", release: "2010-12-01", image: "SENSE.png" },
-  "17": { albumid: 17, album: "[(an imitation) blood orange]", albumdetail: "17thAlbum", release: "2012-11-28", image: "[(an imitation) blood orange].png" },
-  "18": { albumid: 18, album: "REFLECTION",                 albumdetail: "18thAlbum", release: "2015-06-04", image: "REFLECTION.png" },
-  "19": { albumid: 19, album: "重力と呼吸",                 albumdetail: "19thAlbum", release: "2018-10-03", image: "重力と呼吸.png" },
-  "20": { albumid: 20, album: "SOUNDTRACKS",                albumdetail: "20thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
-  "21": { albumid: 21, album: "miss you",                   albumdetail: "21stAlbum", release: "2023-10-04", image: "miss you.png" }
+  "1":  { album: "EVERYTHING",                 albumdetail: "1stAlbum",  release: "1992-05-10", image: "EVERYTHING.png" },
+  "2":  { album: "Kind of Love",               albumdetail: "2ndAlbum",  release: "1992-12-01", image: "Kind of Love.png" },
+  "3":  { album: "Versus",                     albumdetail: "3rdAlbum",  release: "1993-09-01", image: "Versus.png" },
+  "4":  { album: "Atomic Heart",               albumdetail: "4thAlbum",  release: "1994-09-01", image: "Atomic Heart.png" },
+  "5":  { album: "深海",                       albumdetail: "5thAlbum",  release: "1996-06-24", image: "深海.png" },
+  "6":  { album: "BOLERO",                     albumdetail: "6thAlbum",  release: "1997-03-05", image: "BOLERO.png" },
+  "7":  { album: "DISCOVERY",                  albumdetail: "7thAlbum",  release: "1999-02-03", image: "DISCOVERY.png" },
+  "8":  { album: "1/42",                       albumdetail: "8thAlbum",  release: "1999-09-08", image: "1-42.png" },
+  "9":  { album: "Q",                          albumdetail: "9thAlbum",  release: "2000-09-27", image: "Q.png" },
+  "10": { album: "IT'S A WONDERFUL WORLD",     albumdetail: "10thAlbum", release: "2002-05-10", image: "IT'S A WONDERFUL WORLD.png" },
+  "11": { album: "シフクノオト",               albumdetail: "11thAlbum", release: "2004-04-07", image: "シフクノオト.png" },
+  "12": { album: "I ♥ U",                      albumdetail: "12thAlbum", release: "2005-09-21", image: "IU.png" },
+  "13": { album: "HOME",                       albumdetail: "13thAlbum", release: "2007-03-14", image: "HOME.png" },
+  "14": { album: "B-SIDE",                     albumdetail: "14thAlbum", release: "2007-05-10", image: "B-SIDE.png" },
+  "15": { album: "SUPERMARKET FANTASY",        albumdetail: "15thAlbum", release: "2008-12-10", image: "SUPERMARKET FANTASY.png" },
+  "16": { album: "SENSE",                      albumdetail: "16thAlbum", release: "2010-12-01", image: "SENSE.png" },
+  "17": { album: "[(an imitation) blood orange]", albumdetail: "17thAlbum", release: "2012-11-28", image: "[(an imitation) blood orange].png" },
+  "18": { album: "REFLECTION",                 albumdetail: "18thAlbum", release: "2015-06-04", image: "REFLECTION.png" },
+  "19": { album: "重力と呼吸",                 albumdetail: "19thAlbum", release: "2018-10-03", image: "重力と呼吸.png" },
+  "20": { album: "SOUNDTRACKS",                albumdetail: "20thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
+  "21": { album: "miss you",                   albumdetail: "21stAlbum", release: "2023-10-04", image: "miss you.png" }
+};
+
+/* ✅ シングル専用（1〜42） */
+let singleInfo = {
+  "1":  { single: "君がいた夏",            singledetail: "1stSingle",  release: "1992-08-21", image: "君がいた夏.png" },
+  "2":  { single: "抱きしめたい",          singledetail: "2ndSingle",  release: "1992-12-01", image: "抱きしめたい.png" },
+  "3":  { single: "Replay",                singledetail: "3rdSingle",  release: "1993-07-01", image: "Replay.png" },
+  "4":  { single: "CROSS ROAD",            singledetail: "4thSingle",  release: "1993-11-10", image: "CROSS ROAD.png" },
+  "5":  { single: "innocent world",        singledetail: "5thSingle",  release: "1994-06-01", image: "innocent world.png" },
+  "6":  { single: "Tomorrow never knows",  singledetail: "6thSingle",  release: "1994-11-10", image: "Tomorrow never knows.png" },
+  "7":  { single: "everybody goes〜秩序のない現代にドロップキック〜", singledetail: "7thSingle",  release: "1994-12-12", image: "everybody goes.png" },
+  "8":  { single: "【es】～Theme of es～",  singledetail: "8thSingle",  release: "1995-05-10", image: "【es】～Theme of es～.png" },
+  "9":  { single: "シーソーゲーム ～勇敢な恋の歌～", singledetail: "9thSingle",  release: "1995-08-10", image: "シーソーゲーム ～勇敢な恋の歌～.png" },
+  "10": { single: "名もなき詩",            singledetail: "10thSingle", release: "1996-02-05", image: "名もなき詩.png" },
+  "11": { single: "花 -Mémento-Mori-",      singledetail: "11thSingle", release: "1996-04-10", image: "花.png" },
+  "12": { single: "マシンガンをぶっ放せ-Mr.Children Bootleg-", singledetail: "12thSingle", release: "1996-08-08", image: "マシンガンをぶっ放せ.png" },
+  "13": { single: "Everything (It's you)", singledetail: "13thSingle", release: "1997-02-05", image: "Everythingitsyou.png" },
+  "14": { single: "ニシエヒガシエ",        singledetail: "14thSingle", release: "1998-02-11", image: "ニシエヒガシエ.png" },
+  "15": { single: "終わりなき旅",          singledetail: "15thSingle", release: "1998-10-21", image: "終わりなき旅.png" },
+  "16": { single: "光の射す方へ",          singledetail: "16thSingle", release: "1999-01-13", image: "光の射す方へ.png" },
+  "17": { single: "I'LL BE",               singledetail: "17thSingle", release: "1999-05-12", image: "I'LL BE.png" },
+  "18": { single: "口笛",                  singledetail: "18thSingle", release: "2000-01-13", image: "口笛.png" },
+  "19": { single: "NOT FOUND",             singledetail: "19thSingle", release: "2000-08-09", image: "NOT FOUND.png" },
+  "20": { single: "優しい歌",              singledetail: "20thSingle", release: "2001-08-22", image: "優しい歌.png" },
+  "21": { single: "youthful days",         singledetail: "21stSingle", release: "2001-11-07", image: "youthful days.png" },
+  "22": { single: "君が好き",              singledetail: "22ndSingle", release: "2002-01-01", image: "君が好き.png" },
+  "23": { single: "Any",                   singledetail: "23rdSingle", release: "2002-07-10", image: "Any.png" },
+  "24": { single: "HERO",                  singledetail: "24thSingle", release: "2002-12-11", image: "HERO.png" },
+  "25": { single: "掌/くるみ",             singledetail: "25thSingle", release: "2003-11-19", image: "掌.png" },
+  "26": { single: "Sign",                  singledetail: "26thSingle", release: "2004-05-26", image: "Sign.png" },
+  "27": { single: "四次元 Four Dimensions", singledetail: "27thSingle", release: "2005-06-29", image: "四次元 Four Dimensions.png" },
+  "28": { single: "箒星",                  singledetail: "28thSingle", release: "2006-07-05", image: "箒星.png" },
+  "29": { single: "しるし",                singledetail: "29thSingle", release: "2006-11-15", image: "しるし.png" },
+  "30": { single: "フェイク",              singledetail: "30thSingle", release: "2007-01-24", image: "フェイク.png" },
+  "31": { single: "旅立ちの唄",            singledetail: "31stSingle", release: "2007-10-31", image: "旅立ちの唄.png" },
+  "32": { single: "GIFT",                  singledetail: "32ndSingle", release: "2008-07-30", image: "GIFT.png" },
+  "33": { single: "HANABI",                singledetail: "33rdSingle", release: "2008-09-03", image: "HANABI.png" },
+  "34": { single: "祈り ～涙の軌道/End of the day/pieces", singledetail: "34thSingle", release: "2012-04-18", image: "祈り.png" },
+  "35": { single: "足音 ～Be Strong",      singledetail: "35thSingle", release: "2014-11-19", image: "足音.png" },
+  "36": { single: "ヒカリノアトリエ",      singledetail: "36thSingle", release: "2009-12-16", image: "ヒカリノアトリエ.png" },
+  "37": { single: "himawari",              singledetail: "37thSingle", release: "2017-07-26", image: "himawari.png" },
+  "38": { single: "Birthday/君と重ねたモノローグ", singledetail: "38thSingle", release: "2020-11-25", image: "Birthday.png" },
+  "39": { single: "永遠",                  singledetail: "9th配信限定Single", release: "2022-03-24", image: "永遠.png" },
+  "40": { single: "Mr.Children2015-2021&NOW", singledetail: "BestAlbum", release: "2022-05-11", image: "生きろ.png" },
+  "41": { single: "記憶の旅人",            singledetail: "10th配信限定Single", release: "2024-05-03", image: "記憶の旅人.png" },
+  "42": { single: "in the pocket",         singledetail: "11th配信限定Single", release: "2024-08-30", image: "in the pocket.png" }
 };
 
 let songs = [], current = null, timers = [];
@@ -443,6 +496,7 @@ async function loadSongs(){
   }
 }
 
+/* ✅ songid >= 22 → singleid で singleInfo参照 */
 function normalizeSong(raw){
   const links=[]; const L=raw.link;
   if(L){
@@ -453,18 +507,43 @@ function normalizeSong(raw){
     else if(L?.url) links.push({label:L.label||'Link',url:L.url});
   }
 
-  const albumid = (raw.albumid ?? raw.albumId ?? raw.albumID);
-  const a = albumInfo[String(albumid)] || {};
+  const songidNum = Number(raw.songid ?? raw.id ?? 0);
+
+  const albumid  = (raw.albumid  ?? raw.albumId  ?? raw.albumID  ?? raw.AlbumID  ?? raw.AlbumId);
+  const singleid = (raw.singleid ?? raw.singleId ?? raw.singleID ?? raw.SingleID ?? raw.SingleId);
+
+  const useSingle = songidNum >= 22;
+
+  const metaAlbum  = albumInfo[String(albumid)] || {};
+  const metaSingle = singleInfo[String(singleid)] || {};
 
   return {
     id: raw.songid ?? raw.id ?? null,
     songid: raw.songid ?? raw.id ?? null,
-    albumid: albumid ?? null,
+
+    kind: useSingle ? 'single' : 'album',
+    albumid: useSingle ? null : (albumid ?? null),
+    singleid: useSingle ? (singleid ?? null) : null,
+
     title: raw.Title || raw.title || '',
-    album: a.album || raw.album || '',
-    albumdetail: a.albumdetail || raw.albumdetail || '',
-    release: a.release ?? raw.release ?? '',
-    image: a.image || raw.image || '',
+
+    // ✅ 画面3が読むキーをここで揃える
+    album: useSingle
+      ? (metaSingle.single || raw.single || raw.album || '')
+      : (metaAlbum.album || raw.album || ''),
+
+    albumdetail: useSingle
+      ? (metaSingle.singledetail || raw.singledetail || raw.albumdetail || '')
+      : (metaAlbum.albumdetail || raw.albumdetail || ''),
+
+    release: useSingle
+      ? (metaSingle.release ?? raw.release ?? '')
+      : (metaAlbum.release ?? raw.release ?? ''),
+
+    image: useSingle
+      ? (metaSingle.image || raw.image || '')
+      : (metaAlbum.image || raw.image || ''),
+
     lyrics: Array.isArray(raw.Lyrics) ? raw.Lyrics.join('\n') : String(raw.Lyrics || ''),
     links
   };
@@ -650,13 +729,29 @@ function renderAll(song){
   const rel = String(song.release || '').trim();
   document.getElementById('infoRelease').textContent = rel ? `Release：${rel}` : '';
 
+  /* ✅ ここから：収録だけ分割禁止（収/録が別行にならない） */
   const detail = String(song.albumdetail || '').trim();
   const alb    = String(song.album || '').trim();
-  let albumLine = '';
-  if (detail && alb) albumLine = `${detail}『${alb}』収録`;
-  else if (alb)     albumLine = `『${alb}』収録`;
-  else if (detail)  albumLine = `${detail}収録`;
-  document.getElementById('infoAlbumInfo').textContent = albumLine;
+
+  const infoAlbEl = document.getElementById('infoAlbumInfo');
+  infoAlbEl.textContent = '';
+
+  let prefix = '';
+  let needShuroku = false;
+
+  if (detail && alb) { prefix = `${detail}『${alb}』`; needShuroku = true; }
+  else if (alb)     { prefix = `『${alb}』`;            needShuroku = true; }
+  else if (detail)  { prefix = `${detail}`;            needShuroku = true; }
+
+  if (needShuroku){
+    if (prefix) infoAlbEl.appendChild(document.createTextNode(prefix));
+
+    const sp = document.createElement('span');
+    sp.className = 'noSplit';
+    sp.textContent = '収録';
+    infoAlbEl.appendChild(sp);
+  }
+  /* ✅ ここまで */
 
   const links = (song.links||[]);
   const liveLinks  = [];
@@ -679,6 +774,31 @@ function renderAll(song){
   return { fadeoutDoneAt };
 }
 
+/* ✅ 画面3のタイトル/情報を「show」で順番に出す */
+function revealScreen3(){
+  const titleEl = document.getElementById('songTitleFixed');
+  const block   = document.getElementById('infoBlock');
+
+  titleEl.classList.remove('show');
+  block.classList.remove('show');
+  block.querySelectorAll('.infoStep').forEach(el => el.classList.remove('show'));
+
+  later(CONFIG.TITLE_AFTER_FADEOUT_MS, ()=>{
+    titleEl.classList.add('show');
+  });
+
+  later(CONFIG.TITLE_AFTER_FADEOUT_MS + CONFIG.INFO_AFTER_TITLE_MS, ()=>{
+    block.classList.add('show');
+
+    const steps = Array.from(block.querySelectorAll('.infoStep'))
+      .filter(el => getComputedStyle(el).display !== 'none');
+
+    steps.forEach((el, i)=>{
+      later(i * CONFIG.STEP_MS, ()=> el.classList.add('show'));
+    });
+  });
+}
+
 async function startFlow(){
   if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
   clearTimers();
@@ -689,7 +809,10 @@ async function startFlow(){
   resetUI();
   const { fadeoutDoneAt } = renderAll(current);
 
-  later(fadeoutDoneAt, ()=> showScreen('screen3'));
+  later(fadeoutDoneAt, ()=>{
+    showScreen('screen3');
+    revealScreen3();
+  });
 }
 
 (async function init(){
@@ -699,4 +822,3 @@ async function startFlow(){
 </script>
 </body>
 </html>
-
