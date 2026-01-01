@@ -774,6 +774,33 @@ function renderAll(song){
   return { fadeoutDoneAt };
 }
 
+/* ✅ Single(songid>=22) を「30回に1回」くらい出す（確率ベースで分岐） */
+function pickSongSingle1of30(list){
+  if (!Array.isArray(list) || !list.length) return null;
+
+  const singles = [];
+  const albums  = [];
+
+  list.forEach(s=>{
+    const id = Number(s?.songid ?? s?.id ?? 0);
+    (id >= 22 ? singles : albums).push(s);
+  });
+
+  // どちらかが空なら通常抽選にフォールバック
+  if (!singles.length || !albums.length){
+    return list[Math.floor(Math.random() * list.length)];
+  }
+
+  // ✅ 30回に1回 = 1/30
+  const pSingle = 1 / 30;
+
+  if (Math.random() < pSingle){
+    return singles[Math.floor(Math.random() * singles.length)];
+  } else {
+    return albums[Math.floor(Math.random() * albums.length)];
+  }
+}
+
 /* ✅ 画面3のタイトル/情報を「show」で順番に出す */
 function revealScreen3(){
   const titleEl = document.getElementById('songTitleFixed');
@@ -803,7 +830,9 @@ async function startFlow(){
   if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
   clearTimers();
 
-  current = songs[Math.floor(Math.random()*songs.length)];
+  /* ✅ ここが変更点：Singleを 1/30 で抽選 */
+  current = pickSongSingle1of30(songs);
+
   showScreen('screen2');
 
   resetUI();
