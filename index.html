@@ -8,11 +8,16 @@
 <style>
 /* =========================================================
    ✅ EDIT HERE（ここだけ触ればOK）
+   - 画面1 / 画面2 / 画面3 の設定をここに集約
+   - 方向（上から入る）もここで統一
    ========================================================= */
 :root{
   /* ===== 全体フェード ===== */
   --screen-fade-ms: 3000ms;   /* 画面切替 */
   --text-fade-ms:   3500ms;   /* 文字フェード */
+
+  /* ===== 共通：上から入る距離（マイナスで上→下） ===== */
+  --fade-from-y: -12px;
 
   /* ===== 共通色 ===== */
   --c-bg: #fff; --c-text:#111; --accent:#2563eb;
@@ -35,46 +40,28 @@
   /* =======================================================
      画面1（スタート画面）
      ======================================================= */
-
-  /* 背景画像（初期値。JSで上書きする） */
   --start-bg: url("Images/youg.png");
-
-  /* ✅ 背景をピッタリにする設定（ここが本体） */
-  --start-bg-size: cover;     /* cover = 画面いっぱい（必要ならトリミング） */
-  --start-bg-pos:  center;    /* どこを中心に見せるか */
-  --start-bg-color:#fff;      /* 画像が読み込めない時の地色 */
-
-  /* 黒フィルター（0.0〜1.0） */
+  --start-bg-size: cover;
+  --start-bg-pos:  center;
+  --start-bg-color:#fff;
   --start-filter: rgba(0,0,0,.0);
 
-  /* 上の文字ブロック全体の「上からの位置」 */
   --start-top-pad: 10vh;
 
-  /* ▼ 1行目：YourSong（サイズ & 左右ずらし） */
   --start-heading-size: clamp(34px, 10vw, 50px);
   --start-heading-x: -40px;
 
-  /* ▼ 2行目：が届きました（サイズ & 左右ずらし） */
   --start-sub-size: clamp(18px, 6.5vw, 30px);
   --start-sub-x: 60px;
 
-  /* 行間（1行目と2行目の距離） */
   --start-gap: 20px;
 
-  /* 中央ボタン（透明・丸）のサイズ */
   --start-btn-size: clamp(140px, 34vw, 150px);
-
-  /* ボタン位置（%で調整） */
   --start-btn-left: 49.5%;
   --start-btn-top:  49%;
-
-  /* ボタンの透明度（0.0〜1.0） */
   --start-btn-opacity: 0.0;
-
-  /* ボタン枠（透明にしたいなら rgba(...,0)） */
   --start-btn-border: rgba(0,0,0,.0);
 
-  /* ✅ 画面1のフォント（ゴシック） */
   --start-font:
     system-ui,
     -apple-system,
@@ -98,10 +85,9 @@
   --info-align: center; /* left / center / right */
   --info-image-max: 420px;
 
-  /* 画面3：間隔（ここを増やすと広がる） */
-  --gap-image-release: 28px; /* 画像 → release */
-  --gap-album-live:   20px;  /* アルバム情報 → 演奏されたライブ */
-  --gap-live-other:   20px;  /* 演奏されたライブ → その他リンク */
+  --gap-image-release: 28px;
+  --gap-album-live:   20px;
+  --gap-live-other:   20px;
 }
 
 /* =========================================================
@@ -148,8 +134,6 @@ body{
 
 /* =========================================================
    ✅ 画面1→画面2：白くフェードアウト（方向なし）
-   - 画面は動かさない
-   - 白いベールを「0→1→0」で被せるだけ
    ========================================================= */
 .stage.flash12::after{
   content:"";
@@ -166,11 +150,10 @@ body{
 }
 @keyframes whiteFlash{
   0%{ opacity:0; }
-  45%{ opacity:1; }  /* 白が一番強い瞬間（ここを調整してもOK） */
+  45%{ opacity:1; }
   100%{ opacity:0; }
 }
 
-/* 画面1は普通にフェードアウト */
 .stage.flash12 #screen1.leaving{
   opacity:1;
   pointer-events:none;
@@ -179,7 +162,6 @@ body{
   opacity:0;
 }
 
-/* 画面2は普通にフェードイン（entering の間だけ 0→1 にする） */
 .stage.flash12 #screen2.entering{
   opacity:0 !important;
   pointer-events:none;
@@ -209,7 +191,6 @@ body{
 }
 #screen1 > *{ position:relative; z-index:1; }
 
-/* 上部文字（2行） */
 .startOverlay{
   position:absolute; inset:0;
   display:flex;
@@ -238,7 +219,6 @@ body{
   transform: translateX(var(--start-sub-x));
 }
 
-/* 中央の透明丸ボタン */
 .tapBtn{
   position:absolute;
   left: var(--start-btn-left);
@@ -281,14 +261,16 @@ body{
   line-height: 1.9;
   font-size: var(--font-lyrics);
 }
+
+/* ✅ 画面2：歌詞は「上から入る」に統一 */
 .lyrics .line{
-  opacity:0; transform: translateY(10px);
+  opacity:0; transform: translateY(var(--fade-from-y));
   transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
 }
 .lyrics .line.show{ opacity:1; transform:none; }
 .lyrics .seg{
   display:inline-block;
-  opacity:0; transform: translateY(10px);
+  opacity:0; transform: translateY(var(--fade-from-y));
   transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
 }
 .lyrics .seg.show{ opacity:1; transform:none; }
@@ -325,30 +307,40 @@ body{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
-  opacity:0; transform: translateY(-6px);
+  opacity:0; transform: translateY(var(--fade-from-y));
   transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
 }
 .titleFixed.show{ opacity:1; transform:none; }
 
+/* ✅ 画面3：infoBlock もタイトルと同じく「上から入る」 */
 .infoBlock{
   position:absolute;
   left: var(--info-left);
   top:  var(--info-top);
-  transform: translate(var(--info-translate-x), var(--info-translate-y));
+
+  /* “座標用 translate” + “上からの入り” を合成 */
+  transform: translate(var(--info-translate-x),
+                      calc(var(--info-translate-y) + var(--fade-from-y)));
+
   width: min(82%, 560px);
   display:flex;
   flex-direction: column;
   gap: var(--info-gap);
   align-items: var(--info-align);
   text-align: var(--info-align);
-  opacity:0;
-  transition: opacity var(--text-fade-ms) ease;
-}
-.infoBlock.show{ opacity:1; }
 
+  opacity:0;
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.infoBlock.show{
+  opacity:1;
+  transform: translate(var(--info-translate-x), var(--info-translate-y));
+}
+
+/* ✅ 画面3：各ステップも「上から入る」 */
 .infoStep{
   opacity:0;
-  transform: translateY(8px);
+  transform: translateY(var(--fade-from-y));
   transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
 }
 .infoStep.show{ opacity:1; transform:none; }
@@ -363,7 +355,6 @@ body{
 
 .infoText{ font-size: var(--font-info); margin:0; }
 
-/* ✅「収録」だけは分割しない（収/録が別行にならない） */
 .noSplit{
   display:inline-block;
   white-space: nowrap;
@@ -615,11 +606,6 @@ function normalizeSong(raw){
   };
 }
 
-/* =========================================================
-   ✅ 画面切替
-   - 通常：opacity フェード
-   - 画面1→画面2：白くフェードアウト（方向なし）
-   ========================================================= */
 function showScreen(id){
   const stage = document.querySelector('.stage');
   const next  = document.getElementById(id);
@@ -925,7 +911,6 @@ async function startFlow(){
   if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
   clearTimers();
 
-  // ✅ 背景は「ページ読み込み時に決めたもの」を使う（クリック直後の画像チラ見え防止）
   current = pickSongByMode(songs, startBgMode);
 
   showScreen('screen2');
