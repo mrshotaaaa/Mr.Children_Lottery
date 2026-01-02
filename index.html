@@ -18,7 +18,7 @@
   --c-bg: #fff; --c-text:#111; --accent:#2563eb;
 
   /* ===== 画面2（歌詞）フォント ===== */
-  --font-lyrics: 13px;
+  --font-lyrics: 15px;
 
   /* ===== 画面3（タイトル/情報）フォント ===== */
   --font-title: 40px;
@@ -36,7 +36,7 @@
      画面1（スタート画面）
      ======================================================= */
 
-  /* 背景画像（JSで確率切替するけど、初期表示は youg.png にしておく） */
+  /* 背景画像（初期値。JSで上書きする） */
   --start-bg: url("Images/youg.png");
 
   /* ✅ 背景をピッタリにする設定（ここが本体） */
@@ -65,8 +65,8 @@
   --start-btn-size: clamp(140px, 34vw, 150px);
 
   /* ボタン位置（%で調整） */
-  --start-btn-left: 49.2%;
-  --start-btn-top:  49.5%;
+  --start-btn-left: 49.5%;
+  --start-btn-top:  49%;
 
   /* ボタンの透明度（0.0〜1.0） */
   --start-btn-opacity: 0.0;
@@ -320,7 +320,6 @@ body{
 
 .infoText{ font-size: var(--font-info); margin:0; }
 
-/* ✅「収録」だけは分割しない（収/録が別行にならない） */
 .noSplit{
   display:inline-block;
   white-space: nowrap;
@@ -390,7 +389,7 @@ const CONFIG = {
   IMAGE_BASE: 'Images/',
   SCREEN_FADE_MS: 2000,
   TEXT_FADE_MS:   3500,
-  LYRICS_DELAY_MS: 3000,
+  LYRICS_DELAY_MS: 2500,
   STAGGER_BLOCK_MS: 5000,
   STAGGER_INLINE_MS: 4000,
   HOLD_AFTER_LAST_WITH_CARET_MS: 5700,
@@ -401,29 +400,32 @@ const CONFIG = {
 };
 
 /* =========================================================
-   ✅ 画面1 背景と抽選ルール（ここだけ触ればOK）
-   - 基本：youg.png（= songid < 22 から抽選）
-   - 約30回に1回：その他画像（複数候補からランダム）
-     → そのときは songid >= 22 から抽選
+   ✅ 画面1 背景画像ロジック
+   - 通常枠（songid < 22 用）：配列からランダム
+   - レア枠（songid >= 22 用）：配列からランダム（約30回に1回）
    ========================================================= */
-const START_BG_RULE = {
-  MAIN_BG: "youg.png",
-  OTHER_BG_CANDIDATES: [
-    //"(yout).png",
-    //"youo.png",
-    //"youe.png",
-    //"(youk).png",
-    //"youn.png",
-    "yousingle.png",
-    //"(youki).png",
-    //"(youb).png"
-    // ここに追加してOK
+const START_BG = {
+  NORMAL_IMAGES: ['youg.png', 'world.png','love.png','qqq.png','くじら.png','sai.png'], // songid<22 用
+  RARE_IMAGES: [
+    'yousingle.png' // songid>=22 用
   ],
-  OTHER_PROB: 1 / 30, // ✅ 約30回に1回
-  THRESHOLD_SONGID: 22 // ✅ 22未満=アルバム側 / 22以上=シングル側
+  RARE_PROB: 1/30
 };
 
-let startMode = 'album'; // 'album' = songid < 22, 'single' = songid >= 22
+let startBgMode = 'normal'; // 'normal' | 'rare'
+
+function applyStartBackground(){
+  const root = document.documentElement;
+  const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+  const useRare = (START_BG.RARE_IMAGES.length > 0) && (Math.random() < START_BG.RARE_PROB);
+  startBgMode = useRare ? 'rare' : 'normal';
+
+  const filename = useRare ? pick(START_BG.RARE_IMAGES) : pick(START_BG.NORMAL_IMAGES);
+
+  // CSS変数 --start-bg を JS で差し替え
+  root.style.setProperty('--start-bg', `url("${CONFIG.IMAGE_BASE}${encodeURI(filename)}")`);
+}
 
 /* ✅ アルバム専用（1〜21だけ） */
 let albumInfo = {
@@ -445,7 +447,7 @@ let albumInfo = {
   "16": { album: "SENSE",                      albumdetail: "16thAlbum", release: "2010-12-01", image: "SENSE.png" },
   "17": { album: "[(an imitation) blood orange]", albumdetail: "17thAlbum", release: "2012-11-28", image: "[(an imitation) blood orange].png" },
   "18": { album: "REFLECTION",                 albumdetail: "18thAlbum", release: "2015-06-04", image: "REFLECTION.png" },
-  "19": { album: "重力と呼吸",                 albumdetail: "19thAlbum", release: "2018-10-03", image: "juuryoku.png" },
+  "19": { album: "重力と呼吸",                 albumdetail: "19thAlbum", release: "2018-10-03", image: "重力と呼吸.png" },
   "20": { album: "SOUNDTRACKS",                albumdetail: "20thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
   "21": { album: "miss you",                   albumdetail: "21stAlbum", release: "2023-10-04", image: "miss you.png" }
 };
@@ -505,45 +507,6 @@ function buildUrl(base, filename){
   return encodeURI(joined);
 }
 
-/* ✅ ランダム用 */
-function pickRandom(arr){
-  return arr[Math.floor(Math.random() * arr.length)];
-}
-
-/* ✅ 画面1の背景を確率で決めて、同時に抽選モードも決める */
-function decideStartBackgroundAndMode(){
-  const hasOthers = Array.isArray(START_BG_RULE.OTHER_BG_CANDIDATES) && START_BG_RULE.OTHER_BG_CANDIDATES.length > 0;
-
-  const useOther = hasOthers && (Math.random() < START_BG_RULE.OTHER_PROB);
-
-  if (useOther){
-    const bgFile = pickRandom(START_BG_RULE.OTHER_BG_CANDIDATES);
-    startMode = 'single'; // songid >= 22
-    document.documentElement.style.setProperty('--start-bg', `url("${buildUrl(CONFIG.IMAGE_BASE, bgFile)}")`);
-  } else {
-    startMode = 'album';  // songid < 22
-    document.documentElement.style.setProperty('--start-bg', `url("${buildUrl(CONFIG.IMAGE_BASE, START_BG_RULE.MAIN_BG)}")`);
-  }
-}
-
-/* ✅ startMode に応じて曲を抽選（album: <22 / single: >=22） */
-function pickSongByStartMode(list){
-  if (!Array.isArray(list) || !list.length) return null;
-
-  const thr = Number(START_BG_RULE.THRESHOLD_SONGID ?? 22);
-
-  const candidates = list.filter(s=>{
-    const id = Number(s?.songid ?? s?.id ?? 0);
-    return (startMode === 'single') ? (id >= thr) : (id < thr);
-  });
-
-  if (!candidates.length){
-    // フォールバック（万一 JSON が偏ってた時）
-    return list[Math.floor(Math.random() * list.length)];
-  }
-  return candidates[Math.floor(Math.random() * candidates.length)];
-}
-
 async function loadSongs(){
   try{
     const url = new URL(CONFIG.DATA_FILE, location.href).toString();
@@ -591,7 +554,6 @@ function normalizeSong(raw){
 
     title: raw.Title || raw.title || '',
 
-    // ✅ 画面3が読むキーをここで揃える
     album: useSingle
       ? (metaSingle.single || raw.single || raw.album || '')
       : (metaAlbum.album || raw.album || ''),
@@ -793,7 +755,6 @@ function renderAll(song){
   const rel = String(song.release || '').trim();
   document.getElementById('infoRelease').textContent = rel ? `Release：${rel}` : '';
 
-  /* ✅ ここから：収録だけ分割禁止（収/録が別行にならない） */
   const detail = String(song.albumdetail || '').trim();
   const alb    = String(song.album || '').trim();
 
@@ -815,7 +776,6 @@ function renderAll(song){
     sp.textContent = '収録';
     infoAlbEl.appendChild(sp);
   }
-  /* ✅ ここまで */
 
   const links = (song.links||[]);
   const liveLinks  = [];
@@ -836,6 +796,31 @@ function renderAll(song){
   otherWrap.style.display = otherLinks.length ? 'block' : 'none';
 
   return { fadeoutDoneAt };
+}
+
+/* =========================================================
+   ✅ 背景（通常/レア）に合わせて曲抽選を分ける
+   - startBgMode === 'normal' → songid < 22 から抽選
+   - startBgMode === 'rare'   → songid >= 22 から抽選
+   ========================================================= */
+function pickSongByMode(list, mode){
+  if (!Array.isArray(list) || !list.length) return null;
+
+  const normalSongs = [];
+  const rareSongs   = [];
+
+  list.forEach(s=>{
+    const id = Number(s?.songid ?? s?.id ?? 0);
+    (id >= 22 ? rareSongs : normalSongs).push(s);
+  });
+
+  if (mode === 'rare'){
+    if (rareSongs.length) return rareSongs[Math.floor(Math.random() * rareSongs.length)];
+    return list[Math.floor(Math.random() * list.length)];
+  } else {
+    if (normalSongs.length) return normalSongs[Math.floor(Math.random() * normalSongs.length)];
+    return list[Math.floor(Math.random() * list.length)];
+  }
 }
 
 /* ✅ 画面3のタイトル/情報を「show」で順番に出す */
@@ -867,8 +852,9 @@ async function startFlow(){
   if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
   clearTimers();
 
-  // ✅ 画面1で見えている背景に合わせて曲を抽選（yougなら<22、その他なら>=22）
-  current = pickSongByStartMode(songs);
+  // ✅ ここが重要：クリック時に背景を変えない（フェード中のチラ見え防止）
+  // applyStartBackground(); ← これを消す
+  current = pickSongByMode(songs, startBgMode);
 
   showScreen('screen2');
 
@@ -882,10 +868,11 @@ async function startFlow(){
 }
 
 (async function init(){
-  // ✅ ページを開いた瞬間に「画面1の背景」と「抽選モード」を確定
-  decideStartBackgroundAndMode();
-
   await loadSongs();
+
+  // ✅ 画面1の背景は「ページ読み込み時に1回だけ」抽選して固定
+  applyStartBackground();
+
   document.getElementById('startBtn').addEventListener('click', startFlow);
 })();
 </script>
