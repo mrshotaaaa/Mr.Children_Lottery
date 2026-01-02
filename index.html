@@ -147,6 +147,49 @@ body{
 .screen.active{ opacity:1; pointer-events:auto; }
 
 /* =========================================================
+   ✅ 画面1→画面2：白くフェードアウト（方向なし）
+   - 画面は動かさない
+   - 白いベールを「0→1→0」で被せるだけ
+   ========================================================= */
+.stage.flash12::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:#fff;
+  opacity:0;
+  pointer-events:none;
+  z-index:50;
+  will-change: opacity;
+}
+.stage.flash12.go::after{
+  animation: whiteFlash var(--screen-fade-ms) ease forwards;
+}
+@keyframes whiteFlash{
+  0%{ opacity:0; }
+  45%{ opacity:1; }  /* 白が一番強い瞬間（ここを調整してもOK） */
+  100%{ opacity:0; }
+}
+
+/* 画面1は普通にフェードアウト */
+.stage.flash12 #screen1.leaving{
+  opacity:1;
+  pointer-events:none;
+}
+.stage.flash12.go #screen1.leaving{
+  opacity:0;
+}
+
+/* 画面2は普通にフェードイン（entering の間だけ 0→1 にする） */
+.stage.flash12 #screen2.entering{
+  opacity:0 !important;
+  pointer-events:none;
+}
+.stage.flash12.go #screen2.entering{
+  opacity:1 !important;
+  pointer-events:auto;
+}
+
+/* =========================================================
    Screen 1（Start）
    ========================================================= */
 #screen1{
@@ -320,6 +363,7 @@ body{
 
 .infoText{ font-size: var(--font-info); margin:0; }
 
+/* ✅「収録」だけは分割しない（収/録が別行にならない） */
 .noSplit{
   display:inline-block;
   white-space: nowrap;
@@ -387,7 +431,7 @@ body{
 const CONFIG = {
   DATA_FILE: 'songsinfo.json',
   IMAGE_BASE: 'Images/',
-  SCREEN_FADE_MS: 2000,
+  SCREEN_FADE_MS: 4000,
   TEXT_FADE_MS:   3500,
   LYRICS_DELAY_MS: 2500,
   STAGGER_BLOCK_MS: 5000,
@@ -399,32 +443,31 @@ const CONFIG = {
   STEP_MS: 1000
 };
 
-/* =========================================================
-   ✅ 画面1 背景画像ロジック
-   - 通常枠（songid < 22 用）：配列からランダム
-   - レア枠（songid >= 22 用）：配列からランダム（約30回に1回）
-   ========================================================= */
 const START_BG = {
-  NORMAL_IMAGES: ['youg.png', 'world.png','love.png','qqq.png','くじら.png','sai.png'], // songid<22 用
-  RARE_IMAGES: [
-    'yousingle.png' // songid>=22 用
-  ],
+  NORMAL_IMAGES: ['youg.png','world.png','love.png','qqq.png','くじら.png','sai.png'],
+  RARE_IMAGES: ['yousingle.png'],
   RARE_PROB: 1/30
 };
 
-let startBgMode = 'normal'; // 'normal' | 'rare'
+let startBgMode = 'normal';
 
 function applyStartBackground(){
   const root = document.documentElement;
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
   const useRare = (START_BG.RARE_IMAGES.length > 0) && (Math.random() < START_BG.RARE_PROB);
   startBgMode = useRare ? 'rare' : 'normal';
-
   const filename = useRare ? pick(START_BG.RARE_IMAGES) : pick(START_BG.NORMAL_IMAGES);
-
-  // CSS変数 --start-bg を JS で差し替え
   root.style.setProperty('--start-bg', `url("${CONFIG.IMAGE_BASE}${encodeURI(filename)}")`);
+}
+
+function getScreenFadeMs(){
+  const raw = getComputedStyle(document.documentElement).getPropertyValue('--screen-fade-ms').trim();
+  if (!raw) return 2000;
+  const n = parseFloat(raw);
+  if (!isFinite(n)) return 2000;
+  if (raw.endsWith('ms')) return n;
+  if (raw.endsWith('s'))  return n * 1000;
+  return n;
 }
 
 /* ✅ アルバム専用（1〜21だけ） */
@@ -447,7 +490,7 @@ let albumInfo = {
   "16": { album: "SENSE",                      albumdetail: "16thAlbum", release: "2010-12-01", image: "SENSE.png" },
   "17": { album: "[(an imitation) blood orange]", albumdetail: "17thAlbum", release: "2012-11-28", image: "[(an imitation) blood orange].png" },
   "18": { album: "REFLECTION",                 albumdetail: "18thAlbum", release: "2015-06-04", image: "REFLECTION.png" },
-  "19": { album: "重力と呼吸",                 albumdetail: "19thAlbum", release: "2018-10-03", image: "重力と呼吸.png" },
+  "19": { album: "重力と呼吸",                 albumdetail: "19thAlbum", release: "2018-10-03", image: "juuryoku.png" },
   "20": { album: "SOUNDTRACKS",                albumdetail: "20thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
   "21": { album: "miss you",                   albumdetail: "21stAlbum", release: "2023-10-04", image: "miss you.png" }
 };
@@ -523,7 +566,6 @@ async function loadSongs(){
   }
 }
 
-/* ✅ songid >= 22 → singleid で singleInfo参照 */
 function normalizeSong(raw){
   const links=[]; const L=raw.link;
   if(L){
@@ -535,10 +577,8 @@ function normalizeSong(raw){
   }
 
   const songidNum = Number(raw.songid ?? raw.id ?? 0);
-
   const albumid  = (raw.albumid  ?? raw.albumId  ?? raw.albumID  ?? raw.AlbumID  ?? raw.AlbumId);
   const singleid = (raw.singleid ?? raw.singleId ?? raw.singleID ?? raw.SingleID ?? raw.SingleId);
-
   const useSingle = songidNum >= 22;
 
   const metaAlbum  = albumInfo[String(albumid)] || {};
@@ -575,9 +615,49 @@ function normalizeSong(raw){
   };
 }
 
+/* =========================================================
+   ✅ 画面切替
+   - 通常：opacity フェード
+   - 画面1→画面2：白くフェードアウト（方向なし）
+   ========================================================= */
 function showScreen(id){
+  const stage = document.querySelector('.stage');
+  const next  = document.getElementById(id);
+  const prev  = document.querySelector('.screen.active');
+
+  const isFlash12 = prev && prev.id === 'screen1' && id === 'screen2';
+
+  if (isFlash12){
+    const dur = getScreenFadeMs();
+
+    stage.classList.add('flash12');
+    stage.classList.remove('go');
+
+    prev.classList.add('leaving');
+
+    next.classList.add('entering');
+    next.classList.add('active');
+
+    void stage.offsetWidth;
+    requestAnimationFrame(()=> stage.classList.add('go'));
+
+    setTimeout(()=>{
+      prev.classList.remove('active','leaving');
+      next.classList.remove('entering');
+
+      stage.classList.remove('go','flash12');
+
+      document.querySelectorAll('.screen').forEach(el=>{
+        if (el !== next) el.classList.remove('active');
+      });
+      next.classList.add('active');
+    }, dur + 60);
+
+    return;
+  }
+
   document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
+  next.classList.add('active');
 }
 
 function clearTimers(){ timers.forEach(t=>clearTimeout(t)); timers=[]; }
@@ -770,7 +850,6 @@ function renderAll(song){
 
   if (needShuroku){
     if (prefix) infoAlbEl.appendChild(document.createTextNode(prefix));
-
     const sp = document.createElement('span');
     sp.className = 'noSplit';
     sp.textContent = '収録';
@@ -798,11 +877,6 @@ function renderAll(song){
   return { fadeoutDoneAt };
 }
 
-/* =========================================================
-   ✅ 背景（通常/レア）に合わせて曲抽選を分ける
-   - startBgMode === 'normal' → songid < 22 から抽選
-   - startBgMode === 'rare'   → songid >= 22 から抽選
-   ========================================================= */
 function pickSongByMode(list, mode){
   if (!Array.isArray(list) || !list.length) return null;
 
@@ -823,7 +897,6 @@ function pickSongByMode(list, mode){
   }
 }
 
-/* ✅ 画面3のタイトル/情報を「show」で順番に出す */
 function revealScreen3(){
   const titleEl = document.getElementById('songTitleFixed');
   const block   = document.getElementById('infoBlock');
@@ -852,8 +925,7 @@ async function startFlow(){
   if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
   clearTimers();
 
-  // ✅ ここが重要：クリック時に背景を変えない（フェード中のチラ見え防止）
-  // applyStartBackground(); ← これを消す
+  // ✅ 背景は「ページ読み込み時に決めたもの」を使う（クリック直後の画像チラ見え防止）
   current = pickSongByMode(songs, startBgMode);
 
   showScreen('screen2');
@@ -869,10 +941,7 @@ async function startFlow(){
 
 (async function init(){
   await loadSongs();
-
-  // ✅ 画面1の背景は「ページ読み込み時に1回だけ」抽選して固定
   applyStartBackground();
-
   document.getElementById('startBtn').addEventListener('click', startFlow);
 })();
 </script>
