@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>YourSongを贈ります</title>
+
+<style>
+/* =========================================================
+   ✅ EDIT HERE（ここだけ触ればOK）
+   - 画面1 / 画面2 / 画面3 の設定をここに集約
+   - 方向（上から入る）もここで統一
+   ========================================================= */
+:root{
+  /* ===== 全体フェード ===== */
+  --screen-fade-ms: 3000ms;   /* 画面切替 */
+  --text-fade-ms:   3500ms;   /* 文字フェード */
+
+  /* ===== 共通：上から入る距離（マイナスで上→下） ===== */
+  --fade-from-y: -12px;
+
+  /* ===== 共通色 ===== */
+  --c-bg: #fff; --c-text:#111; --accent:#2563eb;
+
+  /* ===== 画面2（歌詞）フォント ===== */
+  --font-lyrics: 14px;
+
+  /* ===== 画面3（タイトル/情報）フォント ===== */
+  --font-title: 40px;
+  --font-info:  16px;
+
+  /* ===== 画面2（歌詞）配置 ===== */
+  --lyrics-h: center; --lyrics-v: center;
+  --lyrics-x: 0px; --lyrics-y: 0px;
+
+  /* ===== 画面3（タイトル）位置 ===== */
+  --title-left: 16px;
+  --title-top:  50px;
+
+  /* =======================================================
+     画面1（スタート画面）
+     ======================================================= */
+  --start-bg: url("Images/youg.png");
+  --start-bg-size: cover;
+  --start-bg-pos:  center;
+  --start-bg-color:#fff;
+  --start-filter: rgba(0,0,0,.0);
+
+  --start-top-pad: 10vh;
+
+  --start-heading-size: clamp(34px, 10vw, 50px);
+  --start-heading-x: -40px;
+
+  --start-sub-size: clamp(18px, 6.5vw, 30px);
+  --start-sub-x: 60px;
+
+  --start-gap: 20px;
+
+  --start-btn-size: clamp(140px, 34vw, 150px);
+  --start-btn-left: 49.5%;
+  --start-btn-top:  49%;
+  --start-btn-opacity: 0.0;
+  --start-btn-border: rgba(0,0,0,.0);
+
+  --start-font:
+    system-ui,
+    -apple-system,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic",
+    "YuGothic",
+    "Meiryo",
+    "Noto Sans JP",
+    sans-serif;
+
+  /* =======================================================
+     画面3（情報ブロック）位置・間隔
+     ======================================================= */
+  --info-left: 50%;
+  --info-top: 47%;
+  --info-translate-x: -50%;
+  --info-translate-y: -50%;
+
+  --info-gap: 10px;
+  --info-align: center; /* left / center / right */
+  --info-image-max: 420px;
+
+  --gap-image-release: 28px;
+  --gap-album-live:   20px;
+  --gap-live-other:   20px;
+}
+
+/* =========================================================
+   Base
+   ========================================================= */
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  display:grid;
+  place-items:center;
+  background:#0a0a0a;
+  font-family:
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    "MS PMincho",
+    "MS Mincho",
+    "Noto Serif JP",
+    serif;
+}
+
+.stage{
+  position:relative;
+  aspect-ratio: 9 / 16;
+  width: min(100vw, calc(100vh * 9 / 16));
+  height: min(100vh, calc(100vw * 16 / 9));
+  overflow:hidden;
+  border-radius: 12px;
+  background:#070707;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.screen{
+  position:absolute;
+  inset:0;
+  display:grid;
+  justify-items:stretch;
+  align-items:stretch;
+  opacity:0;
+  pointer-events:none;
+  transition: opacity var(--screen-fade-ms) ease;
+}
+.screen.active{ opacity:1; pointer-events:auto; }
+
+/* =========================================================
+   ✅ 画面1→画面2：白くフェードアウト（方向なし）
+   ========================================================= */
+.stage.flash12::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:#fff;
+  opacity:0;
+  pointer-events:none;
+  z-index:50;
+  will-change: opacity;
+}
+.stage.flash12.go::after{
+  animation: whiteFlash var(--screen-fade-ms) ease forwards;
+}
+@keyframes whiteFlash{
+  0%{ opacity:0; }
+  45%{ opacity:1; }
+  100%{ opacity:0; }
+}
+
+.stage.flash12 #screen1.leaving{
+  opacity:1;
+  pointer-events:none;
+}
+.stage.flash12.go #screen1.leaving{
+  opacity:0;
+}
+
+.stage.flash12 #screen2.entering{
+  opacity:0 !important;
+  pointer-events:none;
+}
+.stage.flash12.go #screen2.entering{
+  opacity:1 !important;
+  pointer-events:auto;
+}
+
+/* =========================================================
+   Screen 1（Start）
+   ========================================================= */
+#screen1{
+  background-color: var(--start-bg-color);
+  background-image: var(--start-bg);
+  background-size: var(--start-bg-size);
+  background-position: var(--start-bg-pos);
+  background-repeat: no-repeat;
+  color:#7b4400;
+  text-align:center;
+}
+#screen1::before{
+  content:"";
+  position:absolute; inset:0;
+  background: var(--start-filter);
+  pointer-events:none;
+}
+#screen1 > *{ position:relative; z-index:1; }
+
+.startOverlay{
+  position:absolute; inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  padding-top: var(--start-top-pad);
+  gap: var(--start-gap);
+  pointer-events:none;
+}
+.startHeading{
+  font-family: var(--start-font);
+  font-size: var(--start-heading-size);
+  font-weight: 600;
+  letter-spacing: .01em;
+  line-height: 1.05;
+  text-shadow: 0 2px 18px rgba(255, 255, 255, 0.15);
+  transform: translateX(var(--start-heading-x));
+}
+.startSub{
+  font-family: var(--start-font);
+  font-size: var(--start-sub-size);
+  font-weight: 800;
+  line-height: 1.1;
+  text-shadow: 0 2px 18px rgba(0,0,0,.15);
+  transform: translateX(var(--start-sub-x));
+}
+
+.tapBtn{
+  position:absolute;
+  left: var(--start-btn-left);
+  top:  var(--start-btn-top);
+  transform: translate(-50%, -50%);
+  width:  var(--start-btn-size);
+  height: var(--start-btn-size);
+  border-radius: 999px;
+
+  background: rgba(255,255,255,var(--start-btn-opacity));
+  border: 2px solid var(--start-btn-border);
+
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+
+  cursor:pointer;
+  pointer-events:auto;
+}
+.tapBtn:focus{
+  outline: 3px solid rgba(37, 99, 235, .45);
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   Screen 2（Lyrics）
+   ========================================================= */
+#screen2{ background: var(--c-bg); color: var(--c-text); }
+
+.lyricsWrap{
+  justify-self: var(--lyrics-h);
+  align-self: var(--lyrics-v);
+  transform: translate(var(--lyrics-x), var(--lyrics-y));
+  width: 92%;
+  max-width: 560px;
+  padding: 4vh 2vw;
+  text-align: center;
+}
+.lyrics{
+  white-space: pre-wrap;
+  line-height: 1.9;
+  font-size: var(--font-lyrics);
+}
+
+/* ✅ 画面2：歌詞は「上から入る」に統一 */
+.lyrics .line{
+  opacity:0; transform: translateY(var(--fade-from-y));
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.lyrics .line.show{ opacity:1; transform:none; }
+.lyrics .seg{
+  display:inline-block;
+  opacity:0; transform: translateY(var(--fade-from-y));
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.lyrics .seg.show{ opacity:1; transform:none; }
+
+/* =========================================================
+   Screen 3（Info）
+   ========================================================= */
+#screen3{ background: var(--c-bg); color: var(--c-text); }
+#screen3{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#screen3::before{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.75);
+  pointer-events:none;
+}
+#screen3 > *{ position:relative; z-index:1; }
+#screen3{ color:#f3f4f6; }
+#screen3 .infoBlock{ color:#f3f4f6; }
+#screen3 .linkList a{ color:#93c5fd; }
+
+.titleFixed{
+  position:absolute;
+  left: var(--title-left);
+  right: var(--title-left);
+  top: var(--title-top);
+  margin:0;
+  font-size: var(--font-title);
+  font-weight: 400;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  opacity:0; transform: translateY(var(--fade-from-y));
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.titleFixed.show{ opacity:1; transform:none; }
+
+/* ✅ 画面3：infoBlock もタイトルと同じく「上から入る」 */
+.infoBlock{
+  position:absolute;
+  left: var(--info-left);
+  top:  var(--info-top);
+
+  /* “座標用 translate” + “上からの入り” を合成 */
+  transform: translate(var(--info-translate-x),
+                      calc(var(--info-translate-y) + var(--fade-from-y)));
+
+  width: min(82%, 560px);
+  display:flex;
+  flex-direction: column;
+  gap: var(--info-gap);
+  align-items: var(--info-align);
+  text-align: var(--info-align);
+
+  opacity:0;
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.infoBlock.show{
+  opacity:1;
+  transform: translate(var(--info-translate-x), var(--info-translate-y));
+}
+
+/* ✅ 画面3：各ステップも「上から入る」 */
+.infoStep{
+  opacity:0;
+  transform: translateY(var(--fade-from-y));
+  transition: opacity var(--text-fade-ms) ease, transform var(--text-fade-ms) ease;
+}
+.infoStep.show{ opacity:1; transform:none; }
+
+.infoImage{
+  width: min(92%, var(--info-image-max));
+  height:auto;
+  object-fit:contain;
+  display:none;
+  border-radius: 6px;
+}
+
+.infoText{ font-size: var(--font-info); margin:0; }
+
+.noSplit{
+  display:inline-block;
+  white-space: nowrap;
+}
+
+#infoRelease{ margin-top: var(--gap-image-release); }
+#liveWrap{   margin-top: var(--gap-album-live); }
+#otherWrap{  margin-top: var(--gap-live-other); }
+
+.linkList{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.linkList a{ text-decoration: underline; }
+
+@media (max-width: 420px) {
+  :root{
+    --title-left: 12px;
+    --title-top:  12px;
+  }
+}
+@media (max-aspect-ratio: 9/16) {
+  .stage{ width: 100vw; height: calc(100vw * 16 / 9); }
+}
+</style>
+</head>
+
+<body>
+  <div class="stage" role="application" aria-label="YourSong 9:16 Stage">
+
+    <section id="screen1" class="screen active" aria-label="Start">
+      <div class="startOverlay" aria-hidden="true">
+        <div class="startHeading"></div>
+        <div class="startSub"></div>
+      </div>
+      <button id="startBtn" class="tapBtn" aria-label="Start"></button>
+    </section>
+
+    <section id="screen2" class="screen" aria-live="polite" aria-atomic="true">
+      <div class="lyricsWrap">
+        <div id="lyrics" class="lyrics"></div>
+      </div>
+    </section>
+
+    <section id="screen3" class="screen" aria-live="polite" aria-atomic="true">
+      <h1 id="songTitleFixed" class="titleFixed"></h1>
+      <div id="infoBlock" class="infoBlock">
+        <img id="infoImage" class="infoImage infoStep" alt="">
+        <p id="infoRelease" class="infoText infoStep"></p>
+        <p id="infoAlbumInfo" class="infoText infoStep"></p>
+        <div id="liveWrap" class="infoStep">
+          <div id="infoLiveLinks" class="linkList"></div>
+        </div>
+        <div id="otherWrap" class="infoStep">
+          <div id="infoOtherLinks" class="linkList"></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+<script>
+const CONFIG = {
+  DATA_FILE: 'songsinfo.json',
+  IMAGE_BASE: 'Images/',
+  SCREEN_FADE_MS: 4000,
+  TEXT_FADE_MS:   3500,
+  LYRICS_DELAY_MS: 2500,
+  STAGGER_BLOCK_MS: 5000,
+  STAGGER_INLINE_MS: 4000,
+  HOLD_AFTER_LAST_WITH_CARET_MS: 5700,
+  HOLD_AFTER_LAST_NO_CARET_MS:   8000,
+  TITLE_AFTER_FADEOUT_MS:  1800,
+  INFO_AFTER_TITLE_MS:     2000,
+  STEP_MS: 1000
+};
+
+const START_BG = {
+  NORMAL_IMAGES: ['youg.png','world.png','love.png','qqq.png','くじら.png','sai.png'],
+  RARE_IMAGES: ['yousingle.png'],
+  RARE_PROB: 1/30
+};
+
+let startBgMode = 'normal';
+
+function applyStartBackground(){
+  const root = document.documentElement;
+  const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const useRare = (START_BG.RARE_IMAGES.length > 0) && (Math.random() < START_BG.RARE_PROB);
+  startBgMode = useRare ? 'rare' : 'normal';
+  const filename = useRare ? pick(START_BG.RARE_IMAGES) : pick(START_BG.NORMAL_IMAGES);
+  root.style.setProperty('--start-bg', `url("${CONFIG.IMAGE_BASE}${encodeURI(filename)}")`);
+}
+
+function getScreenFadeMs(){
+  const raw = getComputedStyle(document.documentElement).getPropertyValue('--screen-fade-ms').trim();
+  if (!raw) return 2000;
+  const n = parseFloat(raw);
+  if (!isFinite(n)) return 2000;
+  if (raw.endsWith('ms')) return n;
+  if (raw.endsWith('s'))  return n * 1000;
+  return n;
+}
+
+/* ✅ アルバム専用（1〜21だけ） */
+let albumInfo = {
+  "1":  { album: "EVERYTHING",                 albumdetail: "1stAlbum",  release: "1992-05-10", image: "EVERYTHING.png" },
+  "2":  { album: "Kind of Love",               albumdetail: "2ndAlbum",  release: "1992-12-01", image: "Kind of Love.png" },
+  "3":  { album: "Versus",                     albumdetail: "3rdAlbum",  release: "1993-09-01", image: "Versus.png" },
+  "4":  { album: "Atomic Heart",               albumdetail: "4thAlbum",  release: "1994-09-01", image: "Atomic Heart.png" },
+  "5":  { album: "深海",                       albumdetail: "5thAlbum",  release: "1996-06-24", image: "深海.png" },
+  "6":  { album: "BOLERO",                     albumdetail: "6thAlbum",  release: "1997-03-05", image: "BOLERO.png" },
+  "7":  { album: "DISCOVERY",                  albumdetail: "7thAlbum",  release: "1999-02-03", image: "DISCOVERY.png" },
+  "8":  { album: "1/42",                       albumdetail: "8thAlbum",  release: "1999-09-08", image: "1-42.png" },
+  "9":  { album: "Q",                          albumdetail: "9thAlbum",  release: "2000-09-27", image: "Q.png" },
+  "10": { album: "IT'S A WONDERFUL WORLD",     albumdetail: "10thAlbum", release: "2002-05-10", image: "IT'S A WONDERFUL WORLD.png" },
+  "11": { album: "シフクノオト",               albumdetail: "11thAlbum", release: "2004-04-07", image: "シフクノオト.png" },
+  "12": { album: "I ♥ U",                      albumdetail: "12thAlbum", release: "2005-09-21", image: "IU.png" },
+  "13": { album: "HOME",                       albumdetail: "13thAlbum", release: "2007-03-14", image: "HOME.png" },
+  "14": { album: "B-SIDE",                     albumdetail: "14thAlbum", release: "2007-05-10", image: "B-SIDE.png" },
+  "15": { album: "SUPERMARKET FANTASY",        albumdetail: "15thAlbum", release: "2008-12-10", image: "SUPERMARKET FANTASY.png" },
+  "16": { album: "SENSE",                      albumdetail: "16thAlbum", release: "2010-12-01", image: "SENSE.png" },
+  "17": { album: "[(an imitation) blood orange]", albumdetail: "17thAlbum", release: "2012-11-28", image: "[(an imitation) blood orange].png" },
+  "18": { album: "REFLECTION",                 albumdetail: "18thAlbum", release: "2015-06-04", image: "REFLECTION.png" },
+  "19": { album: "重力と呼吸",                 albumdetail: "19thAlbum", release: "2018-10-03", image: "juuryoku.png" },
+  "20": { album: "SOUNDTRACKS",                albumdetail: "20thAlbum", release: "2020-12-02", image: "SOUNDTRACKS.png" },
+  "21": { album: "miss you",                   albumdetail: "21stAlbum", release: "2023-10-04", image: "miss you.png" }
+};
+
+/* ✅ シングル専用（1〜42） */
+let singleInfo = {
+  "1":  { single: "君がいた夏",            singledetail: "1stSingle",  release: "1992-08-21", image: "君がいた夏.png" },
+  "2":  { single: "抱きしめたい",          singledetail: "2ndSingle",  release: "1992-12-01", image: "抱きしめたい.png" },
+  "3":  { single: "Replay",                singledetail: "3rdSingle",  release: "1993-07-01", image: "Replay.png" },
+  "4":  { single: "CROSS ROAD",            singledetail: "4thSingle",  release: "1993-11-10", image: "CROSS ROAD.png" },
+  "5":  { single: "innocent world",        singledetail: "5thSingle",  release: "1994-06-01", image: "innocent world.png" },
+  "6":  { single: "Tomorrow never knows",  singledetail: "6thSingle",  release: "1994-11-10", image: "Tomorrow never knows.png" },
+  "7":  { single: "everybody goes〜秩序のない現代にドロップキック〜", singledetail: "7thSingle",  release: "1994-12-12", image: "everybody goes.png" },
+  "8":  { single: "【es】～Theme of es～",  singledetail: "8thSingle",  release: "1995-05-10", image: "【es】～Theme of es～.png" },
+  "9":  { single: "シーソーゲーム ～勇敢な恋の歌～", singledetail: "9thSingle",  release: "1995-08-10", image: "シーソーゲーム ～勇敢な恋の歌～.png" },
+  "10": { single: "名もなき詩",            singledetail: "10thSingle", release: "1996-02-05", image: "名もなき詩.png" },
+  "11": { single: "花 -Mémento-Mori-",      singledetail: "11thSingle", release: "1996-04-10", image: "花.png" },
+  "12": { single: "マシンガンをぶっ放せ-Mr.Children Bootleg-", singledetail: "12thSingle", release: "1996-08-08", image: "マシンガンをぶっ放せ.png" },
+  "13": { single: "Everything (It's you)", singledetail: "13thSingle", release: "1997-02-05", image: "Everythingitsyou.png" },
+  "14": { single: "ニシエヒガシエ",        singledetail: "14thSingle", release: "1998-02-11", image: "ニシエヒガシエ.png" },
+  "15": { single: "終わりなき旅",          singledetail: "15thSingle", release: "1998-10-21", image: "終わりなき旅.png" },
+  "16": { single: "光の射す方へ",          singledetail: "16thSingle", release: "1999-01-13", image: "光の射す方へ.png" },
+  "17": { single: "I'LL BE",               singledetail: "17thSingle", release: "1999-05-12", image: "I'LL BE.png" },
+  "18": { single: "口笛",                  singledetail: "18thSingle", release: "2000-01-13", image: "口笛.png" },
+  "19": { single: "NOT FOUND",             singledetail: "19thSingle", release: "2000-08-09", image: "NOT FOUND.png" },
+  "20": { single: "優しい歌",              singledetail: "20thSingle", release: "2001-08-22", image: "優しい歌.png" },
+  "21": { single: "youthful days",         singledetail: "21stSingle", release: "2001-11-07", image: "youthful days.png" },
+  "22": { single: "君が好き",              singledetail: "22ndSingle", release: "2002-01-01", image: "君が好き.png" },
+  "23": { single: "Any",                   singledetail: "23rdSingle", release: "2002-07-10", image: "Any.png" },
+  "24": { single: "HERO",                  singledetail: "24thSingle", release: "2002-12-11", image: "HERO.png" },
+  "25": { single: "掌/くるみ",             singledetail: "25thSingle", release: "2003-11-19", image: "掌.png" },
+  "26": { single: "Sign",                  singledetail: "26thSingle", release: "2004-05-26", image: "Sign.png" },
+  "27": { single: "四次元 Four Dimensions", singledetail: "27thSingle", release: "2005-06-29", image: "四次元 Four Dimensions.png" },
+  "28": { single: "箒星",                  singledetail: "28thSingle", release: "2006-07-05", image: "箒星.png" },
+  "29": { single: "しるし",                singledetail: "29thSingle", release: "2006-11-15", image: "しるし.png" },
+  "30": { single: "フェイク",              singledetail: "30thSingle", release: "2007-01-24", image: "フェイク.png" },
+  "31": { single: "旅立ちの唄",            singledetail: "31stSingle", release: "2007-10-31", image: "旅立ちの唄.png" },
+  "32": { single: "GIFT",                  singledetail: "32ndSingle", release: "2008-07-30", image: "GIFT.png" },
+  "33": { single: "HANABI",                singledetail: "33rdSingle", release: "2008-09-03", image: "HANABI.png" },
+  "34": { single: "祈り ～涙の軌道/End of the day/pieces", singledetail: "34thSingle", release: "2012-04-18", image: "祈り.png" },
+  "35": { single: "足音 ～Be Strong",      singledetail: "35thSingle", release: "2014-11-19", image: "足音.png" },
+  "36": { single: "ヒカリノアトリエ",      singledetail: "36thSingle", release: "2009-12-16", image: "ヒカリノアトリエ.png" },
+  "37": { single: "himawari",              singledetail: "37thSingle", release: "2017-07-26", image: "himawari.png" },
+  "38": { single: "Birthday/君と重ねたモノローグ", singledetail: "38thSingle", release: "2020-11-25", image: "Birthday.png" },
+  "39": { single: "永遠",                  singledetail: "9th配信限定Single", release: "2022-03-24", image: "永遠.png" },
+  "40": { single: "Mr.Children2015-2021&NOW", singledetail: "BestAlbum", release: "2022-05-11", image: "生きろ.png" },
+  "41": { single: "記憶の旅人",            singledetail: "10th配信限定Single", release: "2024-05-03", image: "記憶の旅人.png" },
+  "42": { single: "in the pocket",         singledetail: "11th配信限定Single", release: "2024-08-30", image: "in the pocket.png" }
+};
+
+let songs = [], current = null, timers = [];
+
+function buildUrl(base, filename){
+  if (!filename) return '';
+  if (/^https?:\/\//i.test(filename)) return filename;
+  const joined = base.replace(/\/?$/, '/') + filename;
+  return encodeURI(joined);
+}
+
+async function loadSongs(){
+  try{
+    const url = new URL(CONFIG.DATA_FILE, location.href).toString();
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status} (${res.statusText})`);
+    const text = await res.text();
+    const data = JSON.parse(text);
+    if (!Array.isArray(data) || !data.length) throw new Error('JSON is empty or not an array');
+    songs = data.map(normalizeSong);
+  }catch(e){
+    console.error('[loadSongs] failed:', e);
+    alert(`${CONFIG.DATA_FILE} が読み込めませんでした\n→ ${e.message}`);
+    songs = [];
+  }
+}
+
+function normalizeSong(raw){
+  const links=[]; const L=raw.link;
+  if(L){
+    if(typeof L==='string') links.push({label:'Link',url:L});
+    else if(Array.isArray(L)) L.forEach(x=> typeof x==='string'
+      ? links.push({label:'Link',url:x})
+      : (x?.url && links.push({label:x.label||'Link',url:x.url})));
+    else if(L?.url) links.push({label:L.label||'Link',url:L.url});
+  }
+
+  const songidNum = Number(raw.songid ?? raw.id ?? 0);
+  const albumid  = (raw.albumid  ?? raw.albumId  ?? raw.albumID  ?? raw.AlbumID  ?? raw.AlbumId);
+  const singleid = (raw.singleid ?? raw.singleId ?? raw.singleID ?? raw.SingleID ?? raw.SingleId);
+  const useSingle = songidNum >= 22;
+
+  const metaAlbum  = albumInfo[String(albumid)] || {};
+  const metaSingle = singleInfo[String(singleid)] || {};
+
+  return {
+    id: raw.songid ?? raw.id ?? null,
+    songid: raw.songid ?? raw.id ?? null,
+
+    kind: useSingle ? 'single' : 'album',
+    albumid: useSingle ? null : (albumid ?? null),
+    singleid: useSingle ? (singleid ?? null) : null,
+
+    title: raw.Title || raw.title || '',
+
+    album: useSingle
+      ? (metaSingle.single || raw.single || raw.album || '')
+      : (metaAlbum.album || raw.album || ''),
+
+    albumdetail: useSingle
+      ? (metaSingle.singledetail || raw.singledetail || raw.albumdetail || '')
+      : (metaAlbum.albumdetail || raw.albumdetail || ''),
+
+    release: useSingle
+      ? (metaSingle.release ?? raw.release ?? '')
+      : (metaAlbum.release ?? raw.release ?? ''),
+
+    image: useSingle
+      ? (metaSingle.image || raw.image || '')
+      : (metaAlbum.image || raw.image || ''),
+
+    lyrics: Array.isArray(raw.Lyrics) ? raw.Lyrics.join('\n') : String(raw.Lyrics || ''),
+    links
+  };
+}
+
+function showScreen(id){
+  const stage = document.querySelector('.stage');
+  const next  = document.getElementById(id);
+  const prev  = document.querySelector('.screen.active');
+
+  const isFlash12 = prev && prev.id === 'screen1' && id === 'screen2';
+
+  if (isFlash12){
+    const dur = getScreenFadeMs();
+
+    stage.classList.add('flash12');
+    stage.classList.remove('go');
+
+    prev.classList.add('leaving');
+
+    next.classList.add('entering');
+    next.classList.add('active');
+
+    void stage.offsetWidth;
+    requestAnimationFrame(()=> stage.classList.add('go'));
+
+    setTimeout(()=>{
+      prev.classList.remove('active','leaving');
+      next.classList.remove('entering');
+
+      stage.classList.remove('go','flash12');
+
+      document.querySelectorAll('.screen').forEach(el=>{
+        if (el !== next) el.classList.remove('active');
+      });
+      next.classList.add('active');
+    }, dur + 60);
+
+    return;
+  }
+
+  document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
+  next.classList.add('active');
+}
+
+function clearTimers(){ timers.forEach(t=>clearTimeout(t)); timers=[]; }
+const later = (ms, fn) => { const t=setTimeout(fn, ms); timers.push(t); };
+
+function fitTitleOneLine(el, { minPx = 14 } = {}){
+  el.style.fontSize = '';
+  requestAnimationFrame(() => {
+    const cs = getComputedStyle(el);
+    let size = parseFloat(cs.fontSize);
+    const min = minPx;
+    if (!el.clientWidth) return;
+
+    let guard = 0;
+    while (el.scrollWidth > el.clientWidth && size > min && guard < 200){
+      size -= 1;
+      el.style.fontSize = `${size}px`;
+      guard++;
+    }
+  });
+}
+
+function buildLineWithInlineDelay(lineText){
+  const lineEl = document.createElement('div');
+  lineEl.className = 'line';
+
+  const parts = String(lineText ?? '').split('|');
+  const safeParts = parts.length ? parts : [''];
+
+  safeParts.forEach((p)=>{
+    const seg = document.createElement('span');
+    seg.className = 'seg';
+    seg.textContent = p.length ? p : (safeParts.length === 1 ? ' ' : '');
+    lineEl.appendChild(seg);
+  });
+
+  return lineEl;
+}
+
+function setLyricLines(container, text){
+  container.innerHTML = '';
+
+  const normalized = String(text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  const hasCaretSep = /\n\^\s*/.test(normalized);
+
+  const allLineEls = [];
+  const allSegEls = [];
+
+  if (hasCaretSep){
+    const blocks = normalized.split(/\n\^\s*/);
+
+    blocks.forEach((blockText, blockIndex)=>{
+      const lines = String(blockText || '').split('\n');
+
+      lines.forEach((lineText)=>{
+        const lineEl = buildLineWithInlineDelay(lineText);
+        container.appendChild(lineEl);
+        allLineEls.push(lineEl);
+
+        const segs = Array.from(lineEl.querySelectorAll('.seg'));
+        segs.forEach((segEl, segIndex)=>{
+          const showAt =
+            CONFIG.LYRICS_DELAY_MS
+            + blockIndex * CONFIG.STAGGER_BLOCK_MS
+            + segIndex * CONFIG.STAGGER_INLINE_MS;
+
+          allSegEls.push({ el: segEl, showAtMs: showAt });
+        });
+
+        later(CONFIG.LYRICS_DELAY_MS + blockIndex * CONFIG.STAGGER_BLOCK_MS, ()=>{
+          lineEl.classList.add('show');
+        });
+      });
+    });
+
+    allSegEls.forEach(({el, showAtMs})=>{
+      later(showAtMs, ()=> el.classList.add('show'));
+    });
+
+    const lastShow = allSegEls.length
+      ? Math.max(...allSegEls.map(x => x.showAtMs))
+      : CONFIG.LYRICS_DELAY_MS;
+
+    const fadeOutStartAt = lastShow + CONFIG.HOLD_AFTER_LAST_WITH_CARET_MS;
+
+    later(fadeOutStartAt, ()=>{
+      allSegEls.forEach(x => x.el.classList.remove('show'));
+      allLineEls.forEach(x => x.classList.remove('show'));
+    });
+
+    return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
+
+  } else {
+    const lines = normalized.split('\n');
+
+    lines.forEach((lineText)=>{
+      const lineEl = buildLineWithInlineDelay(lineText);
+      container.appendChild(lineEl);
+      allLineEls.push(lineEl);
+
+      const segs = Array.from(lineEl.querySelectorAll('.seg'));
+      segs.forEach((segEl, segIndex)=>{
+        const showAt =
+          CONFIG.LYRICS_DELAY_MS
+          + segIndex * CONFIG.STAGGER_INLINE_MS;
+
+        allSegEls.push({ el: segEl, showAtMs: showAt });
+      });
+    });
+
+    later(CONFIG.LYRICS_DELAY_MS, ()=>{
+      allLineEls.forEach(el => el.classList.add('show'));
+    });
+
+    allSegEls.forEach(({el, showAtMs})=>{
+      later(showAtMs, ()=> el.classList.add('show'));
+    });
+
+    const lastShow = allSegEls.length
+      ? Math.max(...allSegEls.map(x => x.showAtMs))
+      : CONFIG.LYRICS_DELAY_MS;
+
+    const fadeOutStartAt = lastShow + CONFIG.HOLD_AFTER_LAST_NO_CARET_MS;
+
+    later(fadeOutStartAt, ()=>{
+      allSegEls.forEach(x => x.el.classList.remove('show'));
+      allLineEls.forEach(x => x.classList.remove('show'));
+    });
+
+    return fadeOutStartAt + CONFIG.TEXT_FADE_MS;
+  }
+}
+
+function resetUI(){
+  document.getElementById('lyrics').innerHTML = '';
+  document.getElementById('songTitleFixed').textContent = '';
+  document.getElementById('songTitleFixed').classList.remove('show');
+  document.getElementById('songTitleFixed').style.fontSize = '';
+  document.getElementById('screen3').style.backgroundImage = '';
+  document.getElementById('infoBlock').classList.remove('show');
+  document.querySelectorAll('.infoStep').forEach(el => el.classList.remove('show'));
+}
+
+function isLiveLink(label){
+  const s = String(label || '');
+  return /(披露|演奏).*(ライブ)/.test(s) || (/(ライブ)/.test(s) && /(披露|演奏)/.test(s));
+}
+function makeLinksHTML(items){
+  return items.map(l=>{
+    if (typeof l === 'string') return `<a href="${l}" target="_blank" rel="noopener">Link</a>`;
+    if (l?.url) return `<a href="${l.url}" target="_blank" rel="noopener">${l.label||'Link'}</a>`;
+    return '';
+  }).filter(Boolean).join('');
+}
+
+function renderAll(song){
+  const fadeoutDoneAt = setLyricLines(document.getElementById('lyrics'), (song.lyrics||'').trim());
+
+  const titleEl = document.getElementById('songTitleFixed');
+  titleEl.textContent = song.title || '—';
+  fitTitleOneLine(titleEl, { minPx: 14 });
+
+  const s3 = document.getElementById('screen3');
+  if (song.image) s3.style.backgroundImage = `url("${buildUrl(CONFIG.IMAGE_BASE, song.image)}")`;
+  else s3.style.backgroundImage = '';
+
+  const img = document.getElementById('infoImage');
+  if (song.image){
+    img.src = buildUrl(CONFIG.IMAGE_BASE, song.image);
+    img.style.display = 'block';
+  } else {
+    img.style.display = 'none';
+  }
+
+  const rel = String(song.release || '').trim();
+  document.getElementById('infoRelease').textContent = rel ? `Release：${rel}` : '';
+
+  const detail = String(song.albumdetail || '').trim();
+  const alb    = String(song.album || '').trim();
+
+  const infoAlbEl = document.getElementById('infoAlbumInfo');
+  infoAlbEl.textContent = '';
+
+  let prefix = '';
+  let needShuroku = false;
+
+  if (detail && alb) { prefix = `${detail}『${alb}』`; needShuroku = true; }
+  else if (alb)     { prefix = `『${alb}』`;            needShuroku = true; }
+  else if (detail)  { prefix = `${detail}`;            needShuroku = true; }
+
+  if (needShuroku){
+    if (prefix) infoAlbEl.appendChild(document.createTextNode(prefix));
+    const sp = document.createElement('span');
+    sp.className = 'noSplit';
+    sp.textContent = '収録';
+    infoAlbEl.appendChild(sp);
+  }
+
+  const links = (song.links||[]);
+  const liveLinks  = [];
+  const otherLinks = [];
+  links.forEach(l=>{
+    const label = (typeof l === 'string') ? 'Link' : (l?.label || 'Link');
+    if (isLiveLink(label)) liveLinks.push(l);
+    else otherLinks.push(l);
+  });
+
+  const liveWrap  = document.getElementById('liveWrap');
+  const otherWrap = document.getElementById('otherWrap');
+
+  document.getElementById('infoLiveLinks').innerHTML = makeLinksHTML(liveLinks);
+  liveWrap.style.display = liveLinks.length ? 'block' : 'none';
+
+  document.getElementById('infoOtherLinks').innerHTML = makeLinksHTML(otherLinks);
+  otherWrap.style.display = otherLinks.length ? 'block' : 'none';
+
+  return { fadeoutDoneAt };
+}
+
+function pickSongByMode(list, mode){
+  if (!Array.isArray(list) || !list.length) return null;
+
+  const normalSongs = [];
+  const rareSongs   = [];
+
+  list.forEach(s=>{
+    const id = Number(s?.songid ?? s?.id ?? 0);
+    (id >= 22 ? rareSongs : normalSongs).push(s);
+  });
+
+  if (mode === 'rare'){
+    if (rareSongs.length) return rareSongs[Math.floor(Math.random() * rareSongs.length)];
+    return list[Math.floor(Math.random() * list.length)];
+  } else {
+    if (normalSongs.length) return normalSongs[Math.floor(Math.random() * normalSongs.length)];
+    return list[Math.floor(Math.random() * list.length)];
+  }
+}
+
+function revealScreen3(){
+  const titleEl = document.getElementById('songTitleFixed');
+  const block   = document.getElementById('infoBlock');
+
+  titleEl.classList.remove('show');
+  block.classList.remove('show');
+  block.querySelectorAll('.infoStep').forEach(el => el.classList.remove('show'));
+
+  later(CONFIG.TITLE_AFTER_FADEOUT_MS, ()=>{
+    titleEl.classList.add('show');
+  });
+
+  later(CONFIG.TITLE_AFTER_FADEOUT_MS + CONFIG.INFO_AFTER_TITLE_MS, ()=>{
+    block.classList.add('show');
+
+    const steps = Array.from(block.querySelectorAll('.infoStep'))
+      .filter(el => getComputedStyle(el).display !== 'none');
+
+    steps.forEach((el, i)=>{
+      later(i * CONFIG.STEP_MS, ()=> el.classList.add('show'));
+    });
+  });
+}
+
+async function startFlow(){
+  if(!songs.length){ alert(`${CONFIG.DATA_FILE} が読み込めませんでした`); return; }
+  clearTimers();
+
+  current = pickSongByMode(songs, startBgMode);
+
+  showScreen('screen2');
+
+  resetUI();
+  const { fadeoutDoneAt } = renderAll(current);
+
+  later(fadeoutDoneAt, ()=>{
+    showScreen('screen3');
+    revealScreen3();
+  });
+}
+
+(async function init(){
+  await loadSongs();
+  applyStartBackground();
+  document.getElementById('startBtn').addEventListener('click', startFlow);
+})();
+</script>
+</body>
+</html>
