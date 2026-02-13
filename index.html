@@ -96,7 +96,7 @@
      画面3（情報ブロック）位置・間隔
      ======================================================= */
   --info-left: 50%;
-  --info-top: 52%;
+  --info-top: 48%;
   --info-translate-x: -50%;
   --info-translate-y: -50%;
 
@@ -106,7 +106,7 @@
 
   --gap-image-release: 28px;
   --gap-album-live:   20px;
-  --gap-live-other:   15px;
+  --gap-live-other:   10px;
 }
 
 /* =========================================================
@@ -313,10 +313,10 @@ body{
 #screen3{ color:#f3f4f6; }
 #screen3 .infoBlock{ color:#f3f4f6; }
 #screen3 .linkList a{ color:#93c5fd; }
-.againBtn{
+#screen3 .againBtn{
   position:absolute;
   left:50%;
-  bottom: 8px;
+  bottom: 40px;
   transform: translateX(-50%);
   padding: 20;
   width: 70px;
@@ -334,7 +334,7 @@ body{
   opacity:0;
   transition: opacity var(--text-fade-ms) ease;
 }
-.againBtn.show{ opacity:1; }
+#screen3 .againBtn.show{ opacity:1; }
 .againBtn:hover{ background: rgba(255,255,255,.12); }
 .againBtn:active{ transform: translateX(-50%) scale(.98); }
 .againBtn:focus-visible{
